@@ -40,6 +40,8 @@ This is a list of the most important features supported by the plugin:
   * ID3 tags
   * EMSG
 
+<br> 
+
 ## Compatibility
 
 ### Supported Android Version
