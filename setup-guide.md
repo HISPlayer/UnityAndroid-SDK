@@ -74,3 +74,4 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 ![](/assets/attach-rendertexture.png)
 
+Once all this process it’s done, associate the **RenderTexture** to the script component. 
