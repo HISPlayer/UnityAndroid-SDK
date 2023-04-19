@@ -79,3 +79,16 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 </p>
 
 Once all this process it’s done, associate the **RenderTexture** to the script component. 
+
+## Configure HISPlayer properties
+
+### <ins>License Key</ins>
+Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
+
+### <ins>Multi Stream Properties</ins>
+Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element has its own configuration:
+
+* <ins>Render</ins>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
+* <ins>URL</ins>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](#Playing Local Files) for more details).
+* <ins>Autoplay</ins>: Property to determine whether the player will start automatically after set up.
+* <ins>Digital Rights Management (DRM)</ins>: The DRM will be disabled by default.  See [DRM](#DRM) for more details.
