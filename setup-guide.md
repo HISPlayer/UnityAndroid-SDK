@@ -72,5 +72,5 @@ First of all, check if the Resources folder exists and contains the RenderTextur
 The RenderTexture has to be attached to the GameObject which will be a screen for rendering the multimedia stream. 
 For creating this object, select **GameObject > 3D Object > Quad**. Then select the GameObject and remove the material attached to its Mesh Renderer component, then replace it with the RenderTexture created. The RenderTextures folder provided by the SDK contains the Material folder and this material is the one which is needed to be used for the replacement. If the RenderTexture resource has been created from 0, then another option is to grab the RenderTexture from the Assets folder and drop it at the end of the GameObject’s Inspector. This will create a new material automatically.
 
-
+![](/assets/attach-rendertexture.png)
 
