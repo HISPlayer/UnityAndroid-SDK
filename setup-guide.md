@@ -92,3 +92,6 @@ Use Multi Stream Properties to set all the configuration needed for multi stream
 * <ins>URL</ins>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](#Playing Local Files) for more details).
 * <ins>Autoplay</ins>: Property to determine whether the player will start automatically after set up.
 * <ins>Digital Rights Management (DRM)</ins>: The DRM will be disabled by default.  See [DRM](#DRM) for more details.
+
+## Build and Run
+Once the configuration it’s done, open 'Build Settings' and press 'Build And Run'.
