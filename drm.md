@@ -23,3 +23,7 @@ The below image shows an example of the usage of the DRM fields in the editor:
 * There are 3 elements in DRM Tokens list:
   * The first and the second elements are empty because URLs don't require DRM headers.
   * The third element is protected both with a license key and header.
+
+<p align="center">
+<img src="/assets/drm.png">
+</p>
