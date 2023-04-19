@@ -49,3 +49,19 @@ public class HISPlayerAndroidSample : HisPlayerManager
 }
 ```
 It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs
+
+## Attach Unity resources
+
+Move to **Unity Editor** to attach all the resources. The rendering system is supporting Material, RawImage and RenderTexture Unity’s components.
+
+### Material
+
+Create a new Material from **Assets > Create > Material** and attach it to the GameObject that will be used as screen.
+
+![](/assets/attach-material.png)
+
+### Raw Image
+
+This action will be related to Unity’s Canvas. If there is not a Canvas created yet, creating a Raw Image will create one automatically. 
+To create a raw image, select **GameObject > UI > Raw Image**.
+Once it is created, it can be associated with the stream controller script without doing anything else (Refer to **Configure HisPlayer Properties**).
