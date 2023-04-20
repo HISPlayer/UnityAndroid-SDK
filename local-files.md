@@ -1,5 +1,14 @@
 # Playing Local Files
 
-HISPlayer Android for Unity can playback local content, both from the device's storage and Unity Streaming Assets.
+HISPlayer Android for Unity can playback local content, both from the device's storage and [Unity Streaming Assets](./local-files.md#Unity-Streaming-Assets).
+
+<br>
+
 In addition, Android’s devices need permission for using some features such as exploring or using the device’s folders and files. Asking for permissions can be configured following [Configure Unity for Android](./setup-guide.md#Configure-Unity-for-Android).
 
+## Unity Streaming Assets
+To use this format, it’s necessary to create a new folder into the Assets folder of Unity named StreamingAssets.
+<p align="center">
+<img src="/assets/streaming-assets.png" width="200" height="100">
+</p>
+The next step is to add a video content inside the folder and pass the name (with the extension) to the Multi Stream Properties.
