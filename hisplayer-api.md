@@ -19,10 +19,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public string tokenValue**: Value of the token associated with the key.
 
 * **public enum HisPlayerRenderMode**: Type of texture for rendering:
-    * RenderTexture
-    * Material
-    * RawImage
-    * NONE
+    * **RenderTexture**
+    * **Material**
+    * **RawImage**
+    * **NONE**
 
 * **public enum HisPlayerEvent**: The list of events provided by HisPlayer SDK. The events can be used with the virtual functions in the next section:
     * **HISPLAYER_EVENT_PLAYBACK_READY**
