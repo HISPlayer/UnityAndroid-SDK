@@ -8,3 +8,5 @@
     - [Build and Run](/setup-guide.md#Build-and-Run)
 - [DRM](/drm.md)
 - [Playing Local Files](/local-files.md)
+- [HISPlayer API](/hisplayer-api.md)
+- [Releases](/releases.md)
