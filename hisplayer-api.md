@@ -41,3 +41,39 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
 
+* **public enum HisPlayerError**: The list of errors provided by HisPlayer SDK. The errors can be used with the virtual functions in the next section:
+   * **HISPLAYER_ERROR_TIMELOCK_EXPIRED** (no function on this)
+   * **HISPLAYER_ERROR_NOT_VALID_APPID** (no function on this)
+   * **HISPLAYER_ERROR_GENERAL_LICENSE_ERROR** (no function on this)
+   * **HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED** (no function on this)
+   * **HISPLAYER_ERROR_NETWORK_FAILED**
+   
+* **public struct HisPlayerEventInfo**: The information of the triggered event.
+   * **public HisPlayerEvent eventType**: The type of the event triggered.
+   * **public int playerIndex**: The index of the player where the event is triggered.
+   * **public float param1**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
+   * **public float param2**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
+   * **public float param3**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
+   * **public float param4**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
+   * **public string stringInfo**: Log information about the event.
+
+* **public struct HisPlayerErrorInfo**: The information of the triggered error.
+   * **public HisPlayerError errorType**: The type of the error triggered.
+   * **public int playerIndex**: The index of the player where the error is triggered.
+   * **public float param1**: This will have different meanings depending on the error. If there is no information about the parameter, it will have the default value -1.
+   * **public string stringInfo**: Log information about the error.
+
+* **public struct HisPlayerCaptionElement**: The information of the triggered event turns into caption’s format.
+   * **public int playerIndex**: The index of the player where the event is triggered.
+   * **public string caption**: The next generated caption text.
+
+* **public struct HisPlayerTrack**:
+   * **public string id**: Id of the track
+   * **public int bitrate**: Bitrate of the track in bits per second.
+   * **public int width**: Width of the track.
+   * **public int height**: Height of the track.
+   * **public int framerate**: Framerate of the track in frames per second.
+
+* **public struct HisPlayerCaptionTrack**:
+   * **public string id**: ID of the caption
+   * **public string language**: Language of the caption
