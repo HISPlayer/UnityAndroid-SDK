@@ -19,12 +19,12 @@ Select the package of HisPlayer SDK and import it.
 
 Open the window HISPlayer located in the upper side of the screen.
 
-<img src="/assets/configure-unity.png">
+<img src="./assets/configure-unity.png">
 
 Select Android target (this action will change the target platform for Unity).
 
 <p align="center">
-<img src="/assets/android-target.png" width="600" height="1000">
+<img src="./assets/android-target.png" width="600" height="1000">
 </p>
 
 ## Setup HISPlayer Manager
@@ -60,7 +60,7 @@ Move to **Unity Editor** to attach all the resources. The rendering system is su
 
 Create a new Material from **Assets > Create > Material** and attach it to the GameObject that will be used as screen.
 
-<img src="/assets/attach-material.png">
+<img src="./assets/attach-material.png">
 
 ### <ins>Raw Image</ins>
 
@@ -75,7 +75,7 @@ The RenderTexture has to be attached to the GameObject which will be a screen fo
 For creating this object, select **GameObject > 3D Object > Quad**. Then select the GameObject and remove the material attached to its Mesh Renderer component, then replace it with the RenderTexture created. The RenderTextures folder provided by the SDK contains the Material folder and this material is the one which is needed to be used for the replacement. If the RenderTexture resource has been created from 0, then another option is to grab the RenderTexture from the Assets folder and drop it at the end of the GameObject’s Inspector. This will create a new material automatically.
 
 <p align="center">
-<img src="/assets/attach-rendertexture.png" width="600" height="400">
+<img src="./assets/attach-rendertexture.png" width="600" height="400">
 </p>
 
 Once all this process it’s done, associate the **RenderTexture** to the script component. 
