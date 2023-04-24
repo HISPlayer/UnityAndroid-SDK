@@ -19,7 +19,7 @@ Select the package of HisPlayer SDK and import it.
 
 Open the window HISPlayer located in the upper side of the screen.
 
-![](/assets/configure-unity.png)
+<img src="/assets/configure-unity.png">
 
 Select Android target (this action will change the target platform for Unity).
 
@@ -60,7 +60,7 @@ Move to **Unity Editor** to attach all the resources. The rendering system is su
 
 Create a new Material from **Assets > Create > Material** and attach it to the GameObject that will be used as screen.
 
-![](/assets/attach-material.png)
+<img src="/assets/attach-material.png">
 
 ### <ins>Raw Image</ins>
 
