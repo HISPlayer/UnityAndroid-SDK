@@ -10,7 +10,7 @@ Select the package of HisPlayer SDK and import it.
 **Assets > Import Package > Custom Package**
 
 <p align="center">
-<img src="/assets/import-package.png">
+<img src="./assets/import-package.png">
 </p>
 
 <br>
