@@ -31,6 +31,7 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 
 ### Content Protection
   * Widevine DRM
+  * DRM token
 
 ### Metadata
   * ID3 tags
