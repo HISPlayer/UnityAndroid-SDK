@@ -82,7 +82,7 @@ The following public APIs are provided by **HISPlayerManager**:
 ## Functions
 The following functions are provided by HisPlayerManager. They are not public so it’s necessary to create a custom script which inherits from HisPlayerManager.
 
-### Virtual functions - This functions can be overridden
+### Virtual functions - These functions can be overridden
 
 #### protected virtual void Awake()
 MonoBehaviour function which will be called from the beginning of the scene. It can be overridden but to make the system work it’s necessary to call base.Awake() into the overridden function.
