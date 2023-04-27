@@ -8,7 +8,7 @@ https://hisplayer.github.io/UnityAndroid-SDK
 
 ## Try our UnityEngine Video Player SDK Now!
 
-To get a demo of our latest Unity Video Player SDK for Android, contact us here.
+To get a demo of our latest Unity Player SDK for Android, contact us here.
 
 * [Request demo](https://www.hisplayer.com/demo-unity-player-sdk-github/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
 
