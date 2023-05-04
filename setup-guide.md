@@ -29,10 +29,9 @@ Select Android target (this action will change the target platform for Unity).
 
 ## Setup HISPlayer Manager
 
-Create a new script which will inherit from **HisPlayerManager**  It is necessary to add the **'using HisPlayerAPI;'** dependancy.
-Then, add this component to a new game object (recommended to be empty).
+Create a new script which will inherit from **HisPlayerManager**. It is necessary to add the **'using HisPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
 
-Call the ‘SetUpPlayer()’ function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
+Call the ‘**SetUpPlayer()**’ function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
 For example, using the Awake function:
 
 ```C#
@@ -48,7 +47,7 @@ public class HISPlayerAndroidSample : HisPlayerManager
         base.Awake();
         SetUpPlayer();
     }
-}
+}1
 ```
 It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs
 
@@ -66,7 +65,7 @@ Create a new Material from **Assets > Create > Material** and attach it to the G
 
 This action will be related to Unity’s Canvas. If there is not a Canvas created yet, creating a Raw Image will create one automatically. 
 To create a raw image, select **GameObject > UI > Raw Image**.
-Once it is created, it can be associated with the stream controller script without doing anything else (Refer to **Configure HisPlayer Properties**).
+Once it is created, it can be associated with the stream controller script without doing anything else (Refer to [**Configure HisPlayer Properties**](#cfgprop)).
 
 ### <ins>RenderTexture</ins>
 
@@ -80,7 +79,7 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 Once all this process it’s done, associate the **RenderTexture** to the script component. 
 
-## Configure HISPlayer properties
+## <a name = "cfgprop"></a>Configure HISPlayer properties
 
 ### <ins>License Key</ins>
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
@@ -89,7 +88,7 @@ Input the license key that is associated with the SDK. If the license key is not
 Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element has its own configuration:
 
 * <ins>Render</ins>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
-* <ins>URL</ins>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](#Playing Local Files) for more details).
+* <ins>URL</ins>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](/local-files.md) for more details).
 * <ins>Autoplay</ins>: Property to determine whether the player will start automatically after set up.
 * <ins>Digital Rights Management (DRM)</ins>: The DRM will be disabled by default.  See [DRM](#DRM) for more details.
 
