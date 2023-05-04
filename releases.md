@@ -1,5 +1,8 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 2.1.0
+The Android package is combined with iOS package.
+
 ### Version 1.6.0
 - [**Add**] New Error Listener System for handling different errors:
     - HISPLAYER_ERROR_TIMELOCK_EXPIRED = 0,
@@ -8,14 +11,6 @@
     - HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED = 3
 
 - [**Add**] **HISPLAYER_EVENT_NETWORK_CONNECTED** and **EventNetworkConnected**: This event occurs whenever the network has been reconnected.
-
-- [**Update**] The Decoded Frame Buffer System has been updated. It's delaying the video rendering depending on the number of the chosen buffer size. For example, if the bufferSize = 60, the video rendering will be delayed 30 frames (always the half). 
-
-    **Functions**
-
-    - void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0, int bufferSize = 60)
-    - Texture2D GetDecodedFrameAtTimestamp(long msec)
-    - Vector2 GetDecodedFramesBufferRange()
 
 ### Version 1.5.0
 - [**Add**] The tokens has been added. The tokens are a new layer for protecting the url content. There is a new field for adding tokens associated with the url
