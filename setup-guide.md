@@ -5,7 +5,7 @@ Through this guide, you will be introduced to the basic steps for setting up the
 ## Import package
 
 Importing the package is the same as importing other normal packages in Unity. 
-Select the package of HisPlayer SDK and import it.
+Select the package of HISPlayer SDK and import it.
 
 **Assets > Import Package > Custom Package**
 
@@ -29,7 +29,7 @@ Select Android target (this action will change the target platform for Unity).
 
 ## Setup HISPlayer Manager
 
-Create a new script which will inherit from **HisPlayerManager**. It is necessary to add the **'using HisPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
+Create a new script which will inherit from **HISPlayerManager**. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
 
 Call the ‘**SetUpPlayer()**’ function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
 For example, using the Awake function:
@@ -38,9 +38,9 @@ For example, using the Awake function:
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HisPlayerAPI;
+using HISPlayerAPI;
 
-public class HISPlayerAndroidSample : HisPlayerManager
+public class HISPlayerAndroidSample : HISPlayerManager
 {
     protected override void Awake()
     {
@@ -65,7 +65,7 @@ Create a new Material from **Assets > Create > Material** and attach it to the G
 
 This action will be related to Unity’s Canvas. If there is not a Canvas created yet, creating a Raw Image will create one automatically. 
 To create a raw image, select **GameObject > UI > Raw Image**.
-Once it is created, it can be associated with the stream controller script without doing anything else (Refer to [**Configure HisPlayer Properties**](#cfgprop)).
+Once it is created, it can be associated with the stream controller script without doing anything else (Refer to [**Configure HISPlayer Properties**](./setup-guide.md#Configure-HISPlayer-properties)).
 
 ### <ins>RenderTexture</ins>
 
@@ -79,7 +79,7 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 Once all this process it’s done, associate the **RenderTexture** to the script component. 
 
-## <a name = "cfgprop"></a>Configure HISPlayer properties
+## Configure HISPlayer properties
 
 ### <ins>License Key</ins>
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
