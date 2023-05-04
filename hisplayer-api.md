@@ -6,7 +6,7 @@ The following public APIs are provided by **HISPlayerManager**:
 * **public string licenseKey**: License key for making the SDK works.
 * **public List \<StreamProperties\> multiStreamProperties**: List of properties for multi stream.
 * **public class StreamProperties**:
-    * **public HisPlayerRenderMode renderMode**: Type of texture for rendering.
+    * **public HISPlayerRenderMode renderMode**: Type of texture for rendering.
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
@@ -26,7 +26,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **RawImage**
     * **NONE**
 
-* **public enum HISPlayerEvent**: The list of events provided by HisPlayer SDK. The events can be used with the virtual functions in the next section:
+* **public enum HISPlayerEvent**: The list of events provided by HISPlayer SDK. The events can be used with the virtual functions in the next section:
     * **HISPLAYER_EVENT_PLAYBACK_READY**
     * **HISPLAYER_EVENT_PLAYLIST_CHANGE**
     * **HISPLAYER_EVENT_VIDEO_SIZE_CHANGE**
@@ -43,7 +43,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
 
-* **public enum HISPlayerError**: The list of errors provided by HisPlayer SDK. The errors can be used with the virtual functions in the next section:
+* **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_TIMELOCK_EXPIRED** (no function on this)
    * **HISPLAYER_ERROR_NOT_VALID_APPID** (no function on this)
    * **HISPLAYER_ERROR_GENERAL_LICENSE_ERROR** (no function on this)
