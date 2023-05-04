@@ -91,33 +91,63 @@ MonoBehaviour function which will be called from the beginning of the scene. It 
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_READY is triggered.
 This event occurs when the current playback of a stream is ready to be used.
 Calling functions such as GetTracks before this event is triggered will provide null information.
-| Name  | Description  | 
-|---|---|
-|param1| Number of tracks of the playback.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Number of tracks of the playback.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventPlaylistChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYLIST_CHANGE is triggered.
 This event occurs whenever the current playlist has been modified. It could happen when an URL has been  added or deleted.
-| Name  | Description  | 
-|---|---|
-|param1| Playlist length.|
-
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Playlist length.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventVideoSizeChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_VIDEO_SIZE_CHANGE is triggered.
 This event occurs whenever the internal video size of the current track changes.
 This event is triggered by the ABR feature.
-| Name  | Description  | 
-|---|---|
-|param1| Width of the video.|
-|param2| Heigth of the video.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Width of the video.</td>
+  </tr>
+   <tr>
+    <td>param2</td>
+    <td>Heigth of the video.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventPlaybackPlay(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_PLAY is triggered.
 This event occurs whenever an internal playback has been played.
-| Name  | Description  | 
-|---|---|
-|param1| PLAY = 1, PAUSE = 0|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>PLAY = 1, PAUSE = 0</td>
+  </tr>
+</table>
 
 #### protected virtual void EventPlaybackPause(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_PAUSE is triggered.
@@ -130,18 +160,34 @@ This event occurs whenever an internal playback has been stopped.
 #### protected virtual void EventPlaybackSeek(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_SEEK is triggered.
 This event occurs whenever an internal playback has been sought to a new time position.
-| Name  | Description  | 
-|---|---|
-|param1| Value of the old track position in milliseconds.|
-|param2| Value of the new track position in milliseconds.|
-
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Value of the old track position in milliseconds.</td>
+  </tr>
+   <tr>
+    <td>param2</td>
+    <td>Value of the new track position in milliseconds.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventVolumeChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_VOLUME_CHANGE is triggered.
 This event occurs whenever the volume has been modified.
-| Name  | Description  | 
-|---|---|
-|param1| New value for the volume.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>New value for the volume.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventEndOfPlaylist(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING is triggered.
@@ -150,25 +196,52 @@ This event occurs whenever an internal playlist reaches the end of the list.
 #### protected virtual void EventOnTrackChange(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_ON_TRACK_CHANGE is triggered.
 This event occurs whenever the tracks of the stream have changed. This event is not triggered by the ABR feature.
-| Name  | Description  | 
-|---|---|
-|param1| Number of video tracks available.|
-|param2| Number of subtitles tracks available.|
-|param3| Number of audio tracks available.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Number of video tracks available.</td>
+  </tr>
+   <tr>
+    <td>param2</td>
+    <td>Number of subtitles tracks available.</td>
+  </tr>
+   <tr>
+    <td>param2</td>
+    <td>Number of audio tracks available.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventOnStreamRelease(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_ON_STREAM_RELEASE is triggered.
 This event occurs whenever a player/stream has been released.
-| Name  | Description  | 
-|---|---|
-|param1| Number of players after releasing.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Number of players after releasing.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventTextRender(HisPlayerCaptionElement subtitlesInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_TEXT_RENDER is triggered.
 This event occurs whenever a caption's text has been generated.
-| Name  | Description  | 
-|---|---|
-|caption| The next generated caption text.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>caption</td>
+    <td>The next generated caption text.</td>
+  </tr>
+</table>
 
 #### protected virtual void EventAutoTransition(HisPlayerEventInfo eventInfo)
 Override this method to add custom logic when HisPlayerEvent.HISPLAYER_EVENT_AUTO_TRANSITION is triggered.
@@ -185,9 +258,16 @@ This event occurs whenever the network has been reconnected.
 #### protected virtual void ErrorNetworkFailed(HisPlayerErrorInfo errorInfo)
 Override this method to add custom logic when HisPlayerError.HISPLAYER_ERROR_NETWORK_FAILED is triggered.
 This error occurs whenever the network on a stream playback has failed.
-| Name  | Description  | 
-|---|---|
-|param1| Number of tracks of the playback.|
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>param1</td>
+    <td>Number of tracks of the playback.</td>
+  </tr>
+</table>
 
 ### Non-virtual functions 
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
