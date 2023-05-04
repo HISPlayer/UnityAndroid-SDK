@@ -5,11 +5,11 @@ Encrypted content is prepared using an encryption server and stored in a content
 
 The HISPlayer Unity Video Player SDK for Android provides an API to the users for usage of the MediaDRM module.
 
-Use **Multi Stream Properties** to set the DRM fields. It is possible to add license keys both in the editor and from code (see AddStream and AddVideoContent for more details):
+Use **Multi Stream Properties** to set the DRM fields. It is possible to add license keys both in the editor and from code (see AddStream and AddVideoContent in [HISPlayer API](/hisplayer-api.md) for more details):
 
-* <ins>**Enable DRM**</ins>: Check to enable DRM usage. When enabled, there should be one license key URI per content URL even though the content is clear (empty license key URI). This field will have effect during the AddVideoContent functionality.
-* <ins>**Key Server URI**</ins>: Add license URLs for DRM-protected contents. There must be one license key URL per content URL when the “Enable DRM” is checked.
-* <ins>**DRM Headers**</ins>: If your key server needs more information, add drm headers for DRM-protected contents alongside the respective Key Server URI. There must be one token per key server uri when the “Enable DRM” is checked. The headers are composed of a Key and a Value. This field will have effect during the AddVideoContent functionality.
+* <span style="color:blue"><ins>**Enable DRM**</ins></span>: Check to enable DRM usage. When enabled, there should be one license key URI per content URL even though the content is clear (empty license key URI). This field will have effect during the AddVideoContent functionality.
+* <span style="color:blue"><ins>**Key Server URI**</ins></span>: Add license URLs for DRM-protected contents. There must be one license key URL per content URL when the “Enable DRM” is checked.
+* <span style="color:blue"><ins>**DRM Headers**</ins></span>: If your key server needs more information, add drm headers for DRM-protected contents alongside the respective Key Server URI. There must be one token per key server uri when the “Enable DRM” is checked. The headers are composed of a Key and a Value. This field will have effect during the AddVideoContent functionality.
 
 The below image shows an example of the usage of the DRM fields in the editor:
 * There are 3 URLs:
