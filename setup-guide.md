@@ -47,7 +47,7 @@ public class HISPlayerAndroidSample : HISPlayerManager
         base.Awake();
         SetUpPlayer();
     }
-}1
+}
 ```
 It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs
 
