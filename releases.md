@@ -1,5 +1,13 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 2.2.0
+- [**Add**] Audio track selection functionalities: 
+    - GetAudioTrackList(int playerIndex)
+    - GetAudiosCount(int playerIndex)
+    - GetAudioID(int playerIndex, int audioTrackIndex)
+    - GetAudioLanguage(int playerIndex, int audioTrackIndex)
+    - SelectAudioTrack(int playerIndex, int audioTrackIndex)
+ 
 ### Version 2.1.0
 The Android package is combined with iOS package.
 
