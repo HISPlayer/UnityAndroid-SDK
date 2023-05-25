@@ -80,6 +80,9 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public string id**: ID of the caption
    * **public string language**: Language of the caption
 
+* **public struct HisPlayerAudioTrack**:
+   * **public string id**: ID of the caption
+   * **public string language**: Language of the caption
 
 ## Functions
 The following functions are provided by HISPlayerManager. They are not public so it’s necessary to create a custom script which inherits from HisPlayerManager.
@@ -378,3 +381,15 @@ Retrieves the range of the Decoded Frame Buffer in milliseconds. The X value of 
 
 #### protected int GetNetworkBandwidth()
 Returns the current network bandwidth. This value is an estimation in kbps.
+   
+#### public HisPlayerAudioTrack[] GetAudioTrackList(int playerIndex)
+Provide information about all the audio tracks of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public int GetAudioCount(int playerIndex)
+Obtain the number of audio of a  certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+   
+#### public string GetAudioID(int playerIndex, int ccTrackIndex)
+Obtain the ID of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public string GetAudioLanguage(int playerIndex, int ccTrackIndex)
+Obtain the language of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
