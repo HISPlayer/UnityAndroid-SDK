@@ -7,6 +7,8 @@
     - GetAudioID(int playerIndex, int audioTrackIndex)
     - GetAudioLanguage(int playerIndex, int audioTrackIndex)
     - SelectAudioTrack(int playerIndex, int audioTrackIndex)
+
+- [**Add**] MacOS Editor support
  
 ### Version 2.1.0
 The Android package is combined with iOS package.
