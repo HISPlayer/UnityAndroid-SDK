@@ -59,3 +59,4 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 
 ### Supported Editor
   * Windows Editor (Multi stream is not supported)
+  * MacOS Editor
