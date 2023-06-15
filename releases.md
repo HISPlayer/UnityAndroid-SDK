@@ -1,5 +1,8 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 2.4.0
+- [**Improvement**] Optimized gradle build for Unity version 2020.
+
 ### Version 2.2.0
 - [**Added**] Audio track selection functionalities: 
     - GetAudioTrackList(int playerIndex)
