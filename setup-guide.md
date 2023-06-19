@@ -85,12 +85,18 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
 
 ### <ins>Multi Stream Properties</ins>
-Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element has its own configuration:
+Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element added has its own configuration for multiple players and corresponds to 1 Render Surface. If you just need a single stream, then you just need to add 1 element with 1 URL.
 
 * <span style="color:blue">**Render**</span>: Select the render surface. It can be RenderTexture, Material, RawImage or NONE.
+* <span style="color:blue">**Material**</span>: Attach the **Material** asset created to the **Material** section of the element.
+* <span style="color:blue">**Raw Image**</span>: Attach the **RawImage** asset created to the **RawImage** section of the element.
+* <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
 * <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](/local-files.md) for more details).
 * <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
 * <span style="color:blue">**Digital Rights Management (DRM)**</span>: The DRM will be disabled by default.  See [DRM](#DRM) for more details.
+<p align="center">
+<img src="./assets/multistream-properties.PNG">
+</p>
 
 ## Build and Run
 Once the configuration it’s done, open 'Build Settings' and press 'Build And Run'.
