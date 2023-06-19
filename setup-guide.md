@@ -93,7 +93,7 @@ Use Multi Stream Properties to set all the configuration needed for multi stream
 * <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
 * <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](/local-files.md) for more details).
 * <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
-* <span style="color:blue">**Digital Rights Management (DRM)**</span>: The DRM will be disabled by default.  See [DRM](#DRM) for more details.
+* <span style="color:blue">**Digital Rights Management (DRM)**</span>: The DRM will be disabled by default.  See [DRM](/drm.md) for more details.
 <p align="center">
 <img src="./assets/multistream-properties.PNG">
 </p>
