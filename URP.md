@@ -14,6 +14,5 @@ The HISPlayerSDK is compatible with the following shaders:
 * 2D/Sprite-Lit-Default
 * 2D/Sprite-Unity-Default
 
-|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/e0f36fee-bef9-4b94-b626-0978b348b1cd)|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/bd82574c-0181-4fd1-9627-8832c8510df1)
-|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/9c4e7921-4814-4388-a29b-e82ecf433928)|
+|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/e0f36fee-bef9-4b94-b626-0978b348b1cd)|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/bd82574c-0181-4fd1-9627-8832c8510df1)|![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/9c4e7921-4814-4388-a29b-e82ecf433928)|
 |-|-|-|
