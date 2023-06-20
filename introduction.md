@@ -61,6 +61,6 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
   * Windows Editor (Multi stream is not supported)
   * MacOS Editor
 
-### Supported Universal Render Pipeline Shaders
+### Supported URP (Universal Render Pipeline) Shaders 
   * 2D/Sprite-Lit-Default
   * 2D/Sprite-Unity-Default
