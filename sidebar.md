@@ -2,5 +2,6 @@
 - [Quickstart Guide](/setup-guide.md)
 - [DRM](/drm.md)
 - [Playing Local Files](/local-files.md)
+- [Unity URP](/URP.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Releases](/releases.md)
