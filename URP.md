@@ -6,6 +6,7 @@ For installing in your project just go to **Window > Package Manager**, select  
 ![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/f8724872-d81b-4921-ad3c-d255b6792fe4)
  
 Create a material and check the "Inspector" window. You will see a section named **Shader** in the top part of the window. Just click on it and select the desire shader. 
+
 ![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6dbf211e-29a0-4686-8982-8c87a2d44103)
 
 The HISPlayerSDK is compatible with the following shaders: 
