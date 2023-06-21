@@ -29,5 +29,3 @@ With the rest of the shaders is almost the same, because they all have different
 
 |<img width="363" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/0dbfd019-2bc8-452f-90a4-1d865f3a4f95">|<img width="363" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/589b3c4a-ed3a-4f23-8bc2-7e4a955a76cf">|
 |-|-|
-
-![image]()
