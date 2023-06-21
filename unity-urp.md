@@ -1,21 +1,33 @@
 # URP (Universal Render Pipeline)
+The Universal Render Pipeline (URP) is a prebuilt Scriptable Render Pipeline, made by Unity. URP provides artist-friendly workflows that let you 
+quickly and easily create optimized graphics.
 
-In Unity there is a plugin available from the Unity Package Manager for using several options of shader for our material components. 
-For installing in your project just go to **Window > Package Manager**, select  the **Packages: Unity Registry**, look for "Universal RP" and install it.
+### Installing URP
+Unity provides a template creating a URP Project. You can create both 2D and 3D scene with URP. Otherwise, you will need to install the *Universal RP* package from from **Window > Package Manager > Packagges: Unity Registry** and then set your own [Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@7.1/manual/configuring-universalrp-for-use.html).
 
-![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/f8724872-d81b-4921-ad3c-d255b6792fe4)
- 
-Create a material and check the "Inspector" window. You will see a section named **Shader** in the top part of the window. Just click on it and select the desire shader. 
+<p align="center">
+<img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/9bfdc177-e79b-4a87-929b-cfc858ab2e74">
+</p>
 
-![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6dbf211e-29a0-4686-8982-8c87a2d44103)
+### Using *Universal Render Pipeline/Lit* Material
+After setting up correctly the URP, you can create a Material in the Assets folder and select different shaders. You can try with *Universal Render PipeLine/Lit* shader. 
 
-The HISPlayerSDK is compatible with the following shaders: 
+Attach the material to a GameObject (you can try with a simple cube), create a Render Texture and attach it to the *Base Map* attribute from the material. 
 
-* 2D/Sprite-Lit-Default
-* 2D/Sprite-Unity-Default
+Finally, attach the created Render Texture to the Multi Stream Properties in the Editor (more information in [**Configure HISPlayer Properties**](./setup-guide.md#Configure-HISPlayer-properties)) and play the scene.
 
-![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/e0f36fee-bef9-4b94-b626-0978b348b1cd)
+|<img width="363" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/0a80a410-cc1b-44c7-8c87-c05c0429a94f">|<img width="361" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/a89815f2-cc97-49d1-a8f7-dd0bf2c81f30">|
+|-|-|
 
-![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/bd82574c-0181-4fd1-9627-8832c8510df1)
+### Trying other shaders
+The created RenderTexture will work with the rest of the shaders provided by URP, but not all of them are useful for playing a stream or a normal video (it depends on the objective of the project), because they have different attributes and combinations. For using the render texture in other shaders, please make sure that the RenderTexture is attached in the correct places. Otherwise it may not work as expected. Also some shaders could have effect to other shaders.
 
-![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/9c4e7921-4814-4388-a29b-e82ecf433928)
+If you try with **Universal Render Pipeline/Particles/Lit** , it's possible to attach the RenderTexture to the *BaseMap* attribute. 
+Nevertheless, if you change the color in this shader, it is going to affect the **Universal Render Pipeline/Lit** color as well.
+
+With the rest of the shaders is almost the same, because they all have different settings and the way of attaching a RenderTexture to them could change.
+
+|<img width="363" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/0dbfd019-2bc8-452f-90a4-1d865f3a4f95">|<img width="363" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/589b3c4a-ed3a-4f23-8bc2-7e4a955a76cf">|
+|-|-|
+
+![image]()
