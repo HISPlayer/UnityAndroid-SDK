@@ -287,7 +287,7 @@ These functions can’t be overridden and they can be used only inside the inher
 Initialize the player video stream system internally. It is necessary to use this function before anything else.
 
 #### protected void Release()
-Free all resources internally.
+Free all resources internally. When using different scenes, it's necessary to call this function before changing the scene. 
 
 #### protected void Play(int playerIndex)
 Play a certain stream giving a playerIndex. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
