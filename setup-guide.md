@@ -49,7 +49,9 @@ public class HISPlayerAndroidSample : HISPlayerManager
     }
 }
 ```
-It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs
+It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs. 
+
+Remember to call the Release function after closing the app or before changing scenes in Unity for freeing the internal resources. 
 
 ## Attach Unity resources
 
