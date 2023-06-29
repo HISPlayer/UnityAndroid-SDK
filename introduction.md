@@ -29,6 +29,16 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
   * CEA-608
   * WebVTT
 
+### Supported Local Formats
+* MP4
+* MP3
+* MOV
+* M4A
+* MKV
+* WAV
+* OGG
+* FLV
+
 ### Content Protection
   * Widevine DRM
   * DRM token
