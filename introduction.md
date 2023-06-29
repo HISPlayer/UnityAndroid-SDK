@@ -46,11 +46,12 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 |Name|SDK|
 |-|-|
 |Minor version - Android 8.0 ‘Oreo’ | Minimum SDK: 26|
-|Major version - Android 12 'Snow Cone' |Maximum SDK: 32|
+|Major version - Android 13 'Tiramisu' |Target SDK: 33|
 
 ### Supported Unity Versions
   * 2020
   * 2021
+  * 2022
 
 ### Supported Unity's Rendering Mode
   * Render Texture
