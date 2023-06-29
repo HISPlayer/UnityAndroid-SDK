@@ -9,8 +9,9 @@ Select the package of HISPlayer SDK and import it.
 
 **Assets > Import Package > Custom Package**
 
+
 <p align="center">
-<img src="./assets/import-package.png">
+<img width="450" src="./assets/import-package.png">
 </p>
 
 <br>
@@ -19,12 +20,20 @@ Select the package of HISPlayer SDK and import it.
 
 Open the window HISPlayer located in the upper side of the screen.
 
-<img src="./assets/configure-unity.png">
+<p align="center">
+<img width="550" src="./assets/configure-unity.png">
+</p>
 
 Select Android target (this action will change the target platform for Unity).
 
 <p align="center">
-<img src="./assets/android-target.png" width="600" height="1000">
+<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/add6d0c9-19c0-4a6c-8b81-a0c935ab8e1c">
+</p>
+
+In the case you don't have the SDK 33 installed, Unity is going to ask you to update. Please, press "Update Android SDK" button.
+
+<p align="center">
+<img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
 </p>
 
 ## Setup HISPlayer Manager
