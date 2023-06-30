@@ -1,9 +1,5 @@
 # HISPlayer Unity Android SDK Release Notes
 
-### Version 2.4.1
-##### June 23, 2023
-- [**Improvement**] Optimized Release function for Windows Editor.
-
 ### Version 2.4.0
 ##### June 15, 2023
 - [**Improvement**] Optimized gradle build for Unity version 2020.
