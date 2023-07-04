@@ -24,13 +24,11 @@ Open the window HISPlayer located in the upper side of the screen.
 <img width="550" src="./assets/configure-unity.png">
 </p>
 
-Select Android target (this action will change the target platform for Unity).
-
 <p align="center">
 <img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/add6d0c9-19c0-4a6c-8b81-a0c935ab8e1c">
 </p>
 
-In the case you don't have the SDK 33 installed, Unity is going to ask you to update. Please, press "Update Android SDK" button.
+By selecting Android target 33 Unity is going to ask you to update, in the case you don't have the SDK 33 installed. Please, press "Update Android SDK" button.
 
 <p align="center">
 <img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
@@ -58,6 +56,7 @@ public class HISPlayerAndroidSample : HISPlayerManager
     }
 }
 ```
+
 It is strictly necessary to use SetUpPlayer before using anything else. This function initializes everything else that will be needed during the usage of HISPlayer APIs. 
 
 Remember to call the Release function after closing the app or before changing scenes in Unity for freeing the internal resources. 
