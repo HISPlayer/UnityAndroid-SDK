@@ -10,9 +10,10 @@
     - string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
     - void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
 - [**Improvement**] Optimized Android HISPlayer settings panel. There is a new field in the settings for putting target SDK as 33.
-- [**Improvement**] Optimized AddNewStream function on Windows Editor
-- [**Improvement**] Optimized Release function on Windows Editor
+- [**Improvement**] Optimized AddNewStream API on Windows Editor
+- [**Improvement**] Optimized Release API on Windows Editor
 - [**Improvement**] Optimized SDK for Unity 2022
+- [**Improvement**] Optimized SetupPlayer API during runtime for Windows Editor.
 
 ### Version 2.4.0
 ##### June 15, 2023
