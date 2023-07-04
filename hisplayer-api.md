@@ -349,6 +349,9 @@ Get the ID of a certain track of a certain stream. The playerIndex is associated
 #### protected int GetTrackCount(int playerIndex)
 Get the number of tracks of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
+#### public void EnableCaptions(int playerIndex, bool enabled)
+Enables the captions of the stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
 #### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
 Provide information about all the captions of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
@@ -360,6 +363,9 @@ Obtain the ID of a certain caption of a certain player. The playerIndex is assoc
 
 #### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
 Obtain the language of a certain caption of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
+Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetMaxBitrate(int playerIndex, int bitrate)
 Set a new maximum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
