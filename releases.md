@@ -1,4 +1,17 @@
 # HISPlayer Unity Android SDK Release Notes
+### Version 2.5.0
+##### July 4, 2023
+- [**Added**] Android support for Unity 2022
+- [**Added**] Subtitles support for MacOS Editor
+    - HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
+    - int GetCaptionsCount(int playerIndex)
+    - void EnableCaptions(int playerIndex, bool enabled)
+    - string GetCaptionID(int playerIndex, int ccTrackIndex)
+    - string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
+    - void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
+- [**Improvement**] Optimized Android HISPlayer settings panel. There is a new field in the settings for putting target SDK as 33.
+- [**Improvement**] Optimized AddNewStream function on Windows Editor
+- [**Improvement**] Optimized Release function on Windows Editor
 
 ### Version 2.4.0
 ##### June 15, 2023
