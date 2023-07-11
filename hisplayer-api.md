@@ -13,8 +13,8 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
-    * **public List \<string\> keyServerURI**: List of the license key for each URL.
-    * **public List \<DRM_Token\> DRMTokens**: List of the tokens for each URL.
+    * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
+    * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
 * **public struct DRM_Token**: Information for the DRM token:
     * **public string tokenKey**: Key of the token associated with the url.
