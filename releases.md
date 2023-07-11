@@ -1,7 +1,7 @@
 # HISPlayer Unity Android SDK Release Notes
 ### Version 2.6.0
 ##### July 11, 2023
-- [**Added**] Flip texture vertical API for Android
+- [**Added**] Flip texture vertical API.
 - [**Added**] Audio-Track-Selection support for MacOS Editor
     - HISPlayerAudioTrack[] GetAudioTrackList(int playerIndex)
     - int GetAudioCount(int playerIndex)
