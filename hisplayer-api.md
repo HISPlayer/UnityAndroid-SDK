@@ -13,7 +13,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
-    * **public bool FliTextureVertically**: Flip the texture of the stream vertically when it's created. Only supported on Android. This function should be called before **SetUpPlayer**  or **AddStream** function, otherwise it won't have effect.
+    * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This function should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
