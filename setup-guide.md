@@ -94,6 +94,10 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 ### <ins>License Key</ins>
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
 
+<p align="center">
+<img width="400" src="./assets/license-key.PNG">
+</p>
+
 ### <ins>Multi Stream Properties</ins>
 Use Multi Stream Properties to set all the configuration needed for multi stream (not supported on Windows Editor). It starts with 0 elements. Each element added has its own configuration for multiple players and corresponds to 1 Render Surface. If you just need a single stream, then you just need to add 1 element with 1 URL.
 
