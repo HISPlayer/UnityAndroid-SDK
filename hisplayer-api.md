@@ -400,3 +400,9 @@ Obtain the ID of a certain audio of a certain player. The playerIndex is associa
 
 #### public string GetAudioLanguage(int playerIndex, int ccTrackIndex)
 Obtain the language of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public void SetPlaybackSpeedRate(int playerIndex, float speed)
+Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed ranges between 0.0f (excluded) and 8.0f (included). The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public float GetPlaybackSpeedRate(int playerIndex)
+Obtain the **speed rate** of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
