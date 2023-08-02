@@ -20,8 +20,7 @@ import the [OculusIntegration.unitypackage](https://developer.oculus.com/downloa
 - IL2CPP - ARM64
 
 #### Oculus platform
-  For making the project works on the Oculus device, please, make sure you have the **Oculus** option checked. 
-  Otherwise, when you run the application, it will show a 2D window without XR environment.
+In XR Plug-in Management, please make sure that you have the **Oculus** option checked. Otherwise, when you run the application, it will show a 2D window without XR environment.
   
   - **Edit > Project Settings > XR Plug-in Management**
 
