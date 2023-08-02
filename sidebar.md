@@ -4,6 +4,7 @@
 - [Playing Local Files](/local-files.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
+- [Oculus Set Up Guide](/oculus.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Update the SDK](/update-the-sdk.md)
 - [Releases](/releases.md)
