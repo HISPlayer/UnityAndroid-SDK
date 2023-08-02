@@ -7,15 +7,11 @@ First, please configure the Unity project for Oculus by following this [Tutorial
 It's necessary to install the [Oculus XRPlugin](https://developer.oculus.com/documentation/unity/unity-xr-plugin/) and 
 import the [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
 
-- **Assets > Import Package > Cusstom Package > OculusIntegration.unitypackage**
+- **Assets > Import Package > Custom Package > OculusIntegration.unitypackage**
 
 #### Supported Android Version
-<table>
-  <tr>
-    <th>Minor version - Android 10.0 ‘Quince Tart’</th>
-    <th>Minimum SDK: 29</th>
-  </tr>
-</table>
+- Minor version - Android 10.0 ‘Quince Tart’
+- Minimum SDK: 29
 
 #### Supported Unity Color Space
 - Linear
