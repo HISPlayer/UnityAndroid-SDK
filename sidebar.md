@@ -6,5 +6,6 @@
 - [Unity HDRP](/unity-hdrp.md)
 - [Oculus Set Up Guide](/oculus.md)
 - [HISPlayer API](/hisplayer-api.md)
+- [Obtaining Logs](/obtaining-logs.md)
 - [Update the SDK](/update-the-sdk.md)
 - [Releases](/releases.md)
