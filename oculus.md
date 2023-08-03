@@ -26,5 +26,19 @@ In XR Plug-in Management, please make sure that you have the **Oculus** option c
 
 <img width="1040" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/beb2689c-d884-495c-9fa4-07b70014dfed">
 
+#### OpenGLES3 and OVRRuntimeController Compatibility
+OpenGLES3 graphics API is required in order to render video. If you use **OVRRuntimeController** in your project, you need to change the **Controller Model Shader** from **Mobile/Diffuse** to other shader.
+Click on the right circle next to Mobile/Diffuse, you will get an entire list of all the shaders available.
+
+<p align="center">
+<img width="800" src="./assets/oculus-ovrruntimecontroller.PNG">
+</p>
+
+We recommend to use **MixedReality/FatFingers** shader.
+
+<p align="center">
+<img width="500" src="./assets/oculus-ovrshader.png">
+</p>
+
 ## Import HISPlayer SDK
 If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide](./setup-guide.md).
