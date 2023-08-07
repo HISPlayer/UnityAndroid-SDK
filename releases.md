@@ -7,8 +7,8 @@
 ### Version 2.7.0
 ##### July 28, 2023
 - [**Added**] Playback Speed Controller. Values must be greater than 0 and less than or equal to 8.
-    - void SetPlaybackSpeedRate(int playerIndex, float speed);
-    - float GetPlaybackSpeedRate(int playerIndex);   
+    - void SetPlaybackSpeedRate(int playerIndex, float speed)
+    - float GetPlaybackSpeedRate(int playerIndex)
 - [**Improvement**] Optimized Release function for MacOS Editor
   
 ### Version 2.6.0
