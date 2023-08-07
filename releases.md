@@ -1,4 +1,9 @@
 # HISPlayer Unity Android SDK Release Notes
+
+### Version 2.8.0
+##### August 7, 2023
+- [**Added**] Playback Speed Controller for Windows and MacOS editors. 
+
 ### Version 2.7.0
 ##### July 28, 2023
 - [**Added**] Playback Speed Controller. Values must be greater than 0 and less than or equal to 8.
