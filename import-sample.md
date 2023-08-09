@@ -3,7 +3,7 @@ Please, download the sample here -> [**HISPlayer Android & iOS Sample**](https:/
 
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
 
-- **Assets > Import Package > Custom Package > HISPlayerUnitySample.unitypackage**
+- **Assets > Import Package > Custom Package > HISPlayer_Android_iOS_Sample.unitypackage**
 
 <p align="center">
 <img src="./assets/import-package.png">
@@ -14,7 +14,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Open the scene **Assets/HISPlayerSample/Scenes/HISPlayerSample.unity**
 
 <p align="center">
-<img src="./assets/webglsample-addscene.PNG" width=50%>
+<img src="./assets/android-ios-scene.PNG" width=50%>
 </p>
 
 - Import TextMesh Pro Essential
@@ -28,7 +28,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Open **File** > **Build Settings** > **Add Open Scenes**
 
 <p align="center">
-<img src="./assets/webglsample-buildsetting.PNG" width=80%>
+<img src="./assets/android-buildsetting.PNG" width=80%>
 </p>
 
 - Build and Run
@@ -39,9 +39,9 @@ To check how to set up the SDK and API usage, please refer to **Assets/HISPlayer
 The UI components in the sample scene are fully modifiable. The sample is intended to show a comprehensive scene using the HISPlayer SDK to help demonstrate features such as play, pause, seek, etc.
 
 <p align="center">
-<img src="./assets/webglsample-ui.PNG">
+<img src="./assets/android-ios-uicomponent.PNG">
 </p>
 
 <p align="center">
-<img width="70%" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/928ca4d0-5bfe-4231-a511-63e13292b892">
+<img src="./assets/android-ios-sampleui.PNG" width=70%>
 </p>
