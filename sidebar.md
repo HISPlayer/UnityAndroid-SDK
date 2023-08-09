@@ -1,5 +1,6 @@
 - [HISPlayer Unity Android SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
+- [Import HISPlayer Sample](/import-sample.md)
 - [DRM](/drm.md)
 - [Playing Local Files](/local-files.md)
 - [Unity URP](/unity-urp.md)
