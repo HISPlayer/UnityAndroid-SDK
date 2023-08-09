@@ -3,7 +3,7 @@ Please, download the sample here -> [**HISPlayer Android & iOS Sample**](https:/
 
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
 
-- **Assets > Import Package > Custom Package > HISPlayerUnityWebGLSample.unitypackage**
+- **Assets > Import Package > Custom Package > HISPlayerUnitySample.unitypackage**
 
 <p align="center">
 <img src="./assets/import-package.png">
@@ -11,7 +11,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 
 - Complete the configuration for Android ->  [**Configure Unity for Android**](./setup-guide.md#12-configure-unity-for-android)
 
-- Open the scene **Assets/HISPlayerWebGLSample/Scenes/HISPlayerSample.unity**
+- Open the scene **Assets/HISPlayerSample/Scenes/HISPlayerSample.unity**
 
 <p align="center">
 <img src="./assets/webglsample-addscene.PNG" width=50%>
