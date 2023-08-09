@@ -1,8 +1,25 @@
-# Setup Guide
+# QuickStart Guide
+Getting started with HISPlayer consists of implementing the following steps:
 
-Through this guide, you will be introduced to the basic steps for setting up the playback.
+1. Import and configure package   
 
-## Import package
+      1.1. Import package
+ 
+      1.2. Configure Unity for Android
+   
+2. Create your own sample
+   
+    2.1 Setup HISPlayer Manager
+   
+    2.2 Attach Unity Resources
+   
+    2.3 Configure HISPlayer Properties
+
+    2.4 Build and Run
+
+It's also possible to download the [HISPlayer Sample](/import-sample.md) after completing step 1. The sample is a comprehensive example scene using the HISPlayerSDK to help demonstrate features like play, pause, seek, etc.
+
+## 1.1 Import package
 
 Importing the package is the same as importing other normal packages in Unity. 
 Select the package of HISPlayer SDK and import it.
@@ -16,7 +33,7 @@ Select the package of HISPlayer SDK and import it.
 
 <br>
 
-## Configure Unity for Android
+## 1.2 Configure Unity for Android
 
 Open the window HISPlayer located in the upper side of the screen.
 
@@ -34,7 +51,7 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 <img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
 </p>
 
-## Setup HISPlayer Manager
+## 2.1 Setup HISPlayer Manager
 
 Create a new script which will inherit from **HISPlayerManager**. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
 
@@ -61,7 +78,7 @@ It is strictly necessary to use SetUpPlayer before using anything else. This fun
 
 Remember to call the Release function after closing the app or before changing scenes in Unity for freeing the internal resources. 
 
-## Attach Unity resources
+## 2.2 Attach Unity resources
 
 Move to **Unity Editor** to attach all the resources. The rendering system is supporting **Material**, **RawImage** and **RenderTexture** Unity’s components.
 
@@ -89,7 +106,7 @@ For creating this object, select **GameObject > 3D Object > Quad**. Then select 
 
 Once all this process it’s done, associate the **RenderTexture** to the script component. 
 
-## Configure HISPlayer properties
+## 2.3 Configure HISPlayer properties
 
 ### <ins>License Key</ins>
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message.
