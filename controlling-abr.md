@@ -25,4 +25,4 @@ ABR is disabled and the player selects single resolution. To disable ABR and sel
 [**protected void SelectTrack(int playerIndex, int bitrate)**](./hisplayer-api.md#protected-void-selecttrackint-playerindex-int-bitrate)
 
 If you need to re-enable ABR after disabling it, you need to set the minimum and maximum bitrate values by calling [SetMinBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#protected-void-setminbitrateint-playerindex-int-bitrate) and [SetMaxBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#protected-void-setmaxbitrateint-playerindex-int-bitrate) . 
-Please refer to the previous section :  [ABR with Maximum and Minimum Resolution](#abr-with-maximum-and-minimum-resolution)
+Please refer to the previous section :  [ABR with Maximum and Minimum Resolution](controlling-abr.md#abr-with-maximum-and-minimum-resolution)
