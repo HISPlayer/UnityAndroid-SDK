@@ -5,6 +5,7 @@
 - [Playing Local Files](/local-files.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
+- [Controlling ABR](/controlling-abr.md)
 - [Oculus Set Up Guide](/oculus.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Obtaining Logs](/obtaining-logs.md)
