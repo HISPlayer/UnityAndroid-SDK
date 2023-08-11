@@ -375,7 +375,7 @@ Set a new maximum bitrate (in bits per second) of a specific track. This doesn't
 Set a new minimum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SelectTrack(int playerIndex, int bitrate)
-Select a certain track of a certain stream to be used as the main track. This action will disable ABR. It is possible to activate ABR using SetMaxBitrate and SetMinBitrate with different values for each one. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Select a certain track of a certain stream to be used as the main track. This action will disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0opt)
 Enable the Decoded Frame Buffer Functionality. This function can be called independently of the SetUp function. This functionality can only be called for one single stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
