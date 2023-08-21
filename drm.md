@@ -9,20 +9,20 @@ Use **Multi Stream Properties** to set the DRM fields. It is possible to add lic
 
 * <span style="color:blue">**Enable DRM**</span>: Check to enable DRM usage. When enabled, there should be one license key URI per content URL even though the content is clear (empty license key URI). This field will have effect during the AddVideoContent functionality.
 * <span style="color:blue">**Key Server URI**</span>: Add license URLs for DRM-protected contents. There must be one license key URL per content URL when the “Enable DRM” is checked.
-* <span style="color:blue">**DRM Headers**</span>: If your key server needs more information, add drm headers for DRM-protected contents alongside the respective Key Server URI. There must be one token per key server uri when the “Enable DRM” is checked. The headers are composed of a Key and a Value. This field will have effect during the AddVideoContent functionality.
+* <span style="color:blue">**DRM Tokens**</span>: If your key server needs more information, add drm tokens for DRM-protected contents alongside the respective Key Server URI. There must be one token per key server uri when the “Enable DRM” is checked. The tokens are composed of a Key and a Value. This field will have effect during the AddVideoContent functionality.
 
 The below image shows an example of the usage of the DRM fields in the editor:
 * There are 3 URLs:
   * VIDEO CONTENT 1 CLEAR
   * VIDEO CONTENT 2 DRM
-  * VIDEO CONTENT 3 DRM + HEADERS
+  * VIDEO CONTENT 3 DRM + TOKEN
 * The 'enableDRM' field is checked.
 * There are 3 elements in Key Server URI list:
   * The first one is empty, because the first content is clear
   * The second and the third elements have their respective license key
 * There are 3 elements in DRM Tokens list:
-  * The first and the second elements are empty because URLs don't require DRM headers.
-  * The third element is protected both with a license key and header.
+  * The first and the second elements are empty because URLs don't require DRM tokens.
+  * The third element is protected both with a license key and token.
 
 <p align="center">
 <img src="./assets/drm.png">
