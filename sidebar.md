@@ -3,6 +3,7 @@
 - [Import HISPlayer Sample](/import-sample.md)
 - [DRM](/drm.md)
 - [Playing Local Files](/local-files.md)
+- [360 Video Playback](/android-360-video.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
 - [Controlling ABR](/controlling-abr.md)
