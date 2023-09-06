@@ -54,7 +54,7 @@ To render a 360 environment, set the Main Camera **Clear Flag** field to **Skybo
   <img width="424" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6d60c24c-ce80-453f-bc18-3a05e7173224">
 </p>
 
-Use a **Render Texture** attach to a **Unity Material** with the shader **Skybox/Panoramic**. You can check: 
+Use a **Render Texture** attach to a **Unity Material** with the shader **Skybox/Panoramic**. You can check the following : 
 
 - **Assets/HISPlayerSample/Resources/HISPlayer_360_Material.mat**
 - **Assets/HISPlayerSample/Resources/HISPlayer_360_RenderTexture.renderTexture**
