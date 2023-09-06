@@ -85,8 +85,8 @@ There are different ways to render a 360 video with Unity, this sample uses the 
 </p>
 
 ### How to use the Android Gyroscope
-The Gyroscope is a typical Android sensor used for different cases. We're using the gyroscope to control the camera of the demo. If you are using Oculus devices, 
-this step can be skip, since Oculus is controlling the camera by itself.
+The Gyroscope is a typical Android sensor used for different cases. We're using the gyroscope to control the camera movement of the demo. If you are using Oculus devices, 
+this step can be skip, since Oculus controls the camera movement using the headset.
 
 To check how to use the Gyroscope, please refer to **Assets/HISPlayerSample/Scripts/GyroscopeController.cs** and **Main Camera GameObject** in the Editor. 
 
