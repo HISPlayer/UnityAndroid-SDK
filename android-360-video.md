@@ -1,5 +1,5 @@
-# 360 Video on Android devices
-It is possible to integrate HISPlayer SDK with 360 videos in mobile devices. In the case of using Oculus devices, please refer to this section
+# 360 Video Playback on Android devices
+It is possible to integrate HISPlayer SDK with 360 videos on mobile devices. In the case of using Oculus devices, please refer to this section
 [**Oculus Set Up Guide**](https://hisplayer.github.io/UnityAndroid-SDK/#/oculus) before continuing with this guide.
 
 Please, download the sample here -> [**HISPlayer Android 360 Sample**](TODO:ADD_THE_URL_HERE) (no need to download it if you have received it in the email).
@@ -47,8 +47,8 @@ such as play, pause, seek, etc.
 <img src="./assets/android-ios-uicomponent.PNG">
 </p>
 
-### How to display a 360 video
-To display a 360 environment, set the Main Camera **Clear Flag** field to **Skybox**.
+### How to Render a 360 Video
+To render a 360 environment, set the Main Camera **Clear Flag** field to **Skybox**.
 
 <p align="center">
   <img width="424" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6d60c24c-ce80-453f-bc18-3a05e7173224">
