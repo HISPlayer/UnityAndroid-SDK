@@ -2,7 +2,7 @@
 It is possible to integrate HISPlayer SDK with 360 videos on mobile devices. In the case of using Oculus devices, please refer to this section
 [**Oculus Set Up Guide**](https://hisplayer.github.io/UnityAndroid-SDK/#/oculus) before continuing with this guide.
 
-Please, download the sample here -> [**HISPlayer Android 360 Sample**](TODO:ADD_THE_URL_HERE) (no need to download it if you have received it in the email).
+Please, download the sample here -> [**HISPlayer Android 360 Sample**](https://downloads.hisplayer.com/Unity/Android_iOS/HISPlayer_Android_360_Sample.unitypackage) (no need to download it if you have received it in the email).
 
 ## Import HISPlayer Sample
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
