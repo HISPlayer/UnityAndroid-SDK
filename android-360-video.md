@@ -4,7 +4,7 @@ It is possible to integrate HISPlayer SDK with 360 videos on mobile devices. In 
 
 Please, download the sample here -> [**HISPlayer Android 360 Sample**](https://downloads.hisplayer.com/Unity/Android_iOS/HISPlayer_Android_360_Sample.unitypackage) (no need to download it if you have received it in the email).
 
-## Import HISPlayer Sample
+## Import HISPlayer 360 Sample
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
 
 - **Assets > Import Package > Custom Package > HISPlayer_Android_360_Sample.unitypackage**
@@ -39,7 +39,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 
 To check how to set up the SDK and API usage, please refer to **Assets/HISPlayerSample/Scripts/HISPlayerSample.cs** and **StreamController GameObject** in the Editor.
 
-## UI Demo
+## Sample Explanation
 The UI components in the sample scene are fully modifiable. The sample is intended to show a comprehensive scene using the HISPlayer SDK to help demonstrate features
 such as play, pause, seek, etc.
 
