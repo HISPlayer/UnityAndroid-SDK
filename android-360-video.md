@@ -44,36 +44,44 @@ The UI components in the sample scene are fully modifiable. The sample is intend
 such as play, pause, seek, etc.
 
 <p align="center">
-<img src="./assets/android-ios-uicomponent.PNG">
+  <img width="350" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/12defc0a-44c6-46ae-aeca-f103e4160fb4">
 </p>
 
 ### How to Render a 360 Video
-To render a 360 environment, set the Main Camera **Clear Flag** field to **Skybox**.
+There are different ways of rendering a 360 video, but in our case we will use the **Skybox material**.
+
+* Set the Main Camera **Clear Flag** field to **Skybox**.
 
 <p align="center">
   <img width="424" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/6d60c24c-ce80-453f-bc18-3a05e7173224">
 </p>
 
-Use a **Render Texture** attach to a **Unity Material** with the shader **Skybox/Panoramic**. You can check the following : 
+* Use a **Render Texture** attach to a **Unity Material** with the shader **Skybox/Panoramic**. You can check the following : 
 
-- **Assets/HISPlayerSample/Resources/HISPlayer_360_Material.mat**
-- **Assets/HISPlayerSample/Resources/HISPlayer_360_RenderTexture.renderTexture**
+  * **Assets/HISPlayerSample/Resources/HISPlayer_360_Material.mat**
+  * **Assets/HISPlayerSample/Resources/HISPlayer_360_RenderTexture.renderTexture**
 
 <p align="center">
   <img width="504" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/c57d15b8-9468-4cb1-be12-a054ee169f12">
   <img width="425" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/2dd0131f-4bcd-4e21-b353-4da7d156f710">
 </p>
 
-Open **Window** > **Rendering** > **Lighting** > **Environment** and attach the **Material** to the **Skybox Material** in the Lighting configuration. 
+* Open **Window** > **Rendering** > **Lighting** > **Environment** and attach the **Material** to the **Skybox Material** in the Lighting configuration. 
 
 <p align="center">
   <img width="611" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d6c8edcd-041f-47f4-aaa1-be5356ff061b">
 </p>
 
-Select **Render Mode** > **Render Texture** and attach the previous **Render Texture** to the **StreamController Render Texture** field
+* Select **Render Mode** > **Render Texture** and attach the previous **Render Texture** to the **StreamController Render Texture** field
 
 <p align="center">
   <img width="413" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/fd033f25-8c58-4d84-a56c-88357e5684da">
+</p>
+
+* Call the **FlipTextureVertically** API before **SetUpPlayer** or **AddStream** functions. Check the Awake function into **Assets/HISPlayerSample/Scripts/HISPlayerSample.cs**.
+
+<p align="center">
+  <img width="636" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/8472c0c1-11c2-4667-b293-d898df913db9">
 </p>
 
 ### How to use the Android Gyroscope
