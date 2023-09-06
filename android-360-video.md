@@ -75,7 +75,7 @@ There are different ways of rendering a 360 video, but in our case we will use t
 * Select **Render Mode** > **Render Texture** and attach the previous **Render Texture** to the **StreamController Render Texture** field
 
 <p align="center">
-  <img width="413" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/fd033f25-8c58-4d84-a56c-88357e5684da">
+  <img width="416" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/1bb3e46d-3ad2-41a8-a0e0-b0681f1fcf06">
 </p>
 
 * Call the **FlipTextureVertically** API before **SetUpPlayer** or **AddStream** functions. Check the Awake function into **Assets/HISPlayerSample/Scripts/HISPlayerSample.cs**.
