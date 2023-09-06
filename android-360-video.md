@@ -78,7 +78,7 @@ There are different ways to render a 360 video with Unity, this sample uses the 
   <img width="416" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/1bb3e46d-3ad2-41a8-a0e0-b0681f1fcf06">
 </p>
 
-* Call the **FlipTextureVertically** API before **SetUpPlayer** or **AddStream** functions. Check the Awake function into **Assets/HISPlayerSample/Scripts/HISPlayerSample.cs**.
+* Call the **FlipTextureVertically** API before **SetUpPlayer** or **AddStream** functions. Check the Awake function in **Assets/HISPlayerSample/Scripts/HISPlayerSample.cs**.
 
 <p align="center">
   <img width="636" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/8472c0c1-11c2-4667-b293-d898df913db9">
