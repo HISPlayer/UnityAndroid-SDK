@@ -48,7 +48,7 @@ such as play, pause, seek, etc.
 </p>
 
 ### How to Render a 360 Video
-There are different ways of rendering a 360 video, but in our case we will use the **Skybox material**.
+There are different ways to render a 360 video with Unity, this sample uses the **Skybox material**.
 
 * Set the Main Camera **Clear Flag** field to **Skybox**.
 
