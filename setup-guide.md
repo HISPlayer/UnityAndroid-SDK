@@ -42,7 +42,7 @@ Open the window HISPlayer located in the upper side of the screen > Click on Pla
 </p>
 
 <p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/add6d0c9-19c0-4a6c-8b81-a0c935ab8e1c">
+<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/020bb6bb-fbc4-47b4-9503-347908f64254">
 </p>
 
 By selecting Android target 33, Unity is going to ask you to update (in the case you don't have the SDK 33 installed). Please, press "Update Android SDK" button.
