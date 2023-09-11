@@ -55,7 +55,7 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 
 Create a new script which will inherit from **HISPlayerManager**. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
 
-Call the ‘**SetUpPlayer()**’ function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
+Call the **SetUpPlayer()** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
 For example, using the Awake function:
 
 ```C#
