@@ -1,4 +1,4 @@
-# Oculus Set Up Guide
+# Oculus / Meta Quest Set Up Guide
 It is possible to integrate HISPlayer SDK with the Oculus environment.
 First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/). 
 
