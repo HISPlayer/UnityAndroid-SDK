@@ -28,3 +28,17 @@ In XR Plug-in Management, please make sure that you have the **Oculus** option c
 
 ## Import HISPlayer SDK
 If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide](./setup-guide.md).
+
+## Import HISPlayer Oculus Sample
+Please, download the sample here -> [**HISPlayer Oculus 360 Sample**](https://downloads.hisplayer.com/Unity/Android_iOS/HISPlayer_Oculus_360_Sample.unitypackage) (no need to download it if you have received it in the email).
+
+Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus, and HISPlayer SDK has been imported. To use the sample, please follow these steps :
+  - Import HISPlayer Oculus Sample package
+  - Open Assets/HISPlayerOculusSample/Scenes/HISPlayerOculusSample
+  - Input the license key through the Inspector Window. StreamController game object > HISPlayerSample component > License Key
+  - Open File > Build Settings > Add Open Scenes
+  - Build and Run
+
+To check how to set up the SDK and API usage, please refer to Assets/HISPlayerOculusSample/Scripts/Sample/HISPlayerSample.cs and StreamController game object in the Editor.
+
+To check more about the project explanation, please refer to Assets/HISPlayerOculusSample/README.pdf
