@@ -7,7 +7,7 @@
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
 - [Controlling ABR](/controlling-abr.md)
-- [Oculus Set Up Guide](/oculus.md)
+- [Oculus / Meta Quest Set Up Guide](/oculus.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Obtaining Logs](/obtaining-logs.md)
 - [Update the SDK](/update-the-sdk.md)
