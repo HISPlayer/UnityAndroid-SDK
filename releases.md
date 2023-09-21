@@ -1,7 +1,7 @@
 # HISPlayer Unity Android SDK Release Notes
 ### Version 2.10.0
 ##### September 21, 2023
-- [**Added**] - [Custom Shaders for Linear Color Space](/shaders.md)
+- [**Added**] [Custom Shaders for Linear Color Space](/shaders.md)
 
 ### Version 2.9.0
 ##### September 7, 2023
