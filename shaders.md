@@ -18,9 +18,9 @@ For more details, you can check the following folders and files:
 - **Packages/HISPlayer Android SDK/HisPlayer/Scripts/Shaders/** - Here you can find the custom shaders. These files contain the code to simulate the Gamma color space when using Linear color space.
   - **HISPlayerDefaultShader.shader**
   - **HISPlayerDefaultShaderRawImage.shader**
- 
+
 <p align="center">
-<img width = "600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/962fd08d-c31e-4b74-9d14-23d11bf5b458">
+<img width = "600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/2df21e45-cac0-4acc-8617-0ea460c29518">
 </p>
 
 - **Packages/HISPlayer Android SDK/HisPlayer/Resources/Materials/** - Here you can find 3 different Unity materials:
@@ -28,9 +28,8 @@ For more details, you can check the following folders and files:
   - **HISPlayerDefaultMaterialRawImage.mat**: It uses the **HISPlayerDefaultShaderRawImage.shader** and can be used attaching the material to the material attribute of the RawImage component.
   - **HISPlayerDefaultMaterialRenderTexture.mat**: It uses the HISPlayerDefaultShader.shader and the HISPlayerDefaultRenderTexture.renderTexture.
 
-
 <p align="center">
-<img width = "600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/2df21e45-cac0-4acc-8617-0ea460c29518">
+<img width = "600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/962fd08d-c31e-4b74-9d14-23d11bf5b458">
 </p>
 
 - **Packages/HISPlayer Android SDK/HisPlayer/Resources/RenderTextures/**
