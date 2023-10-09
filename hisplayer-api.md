@@ -42,7 +42,6 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLATER_EVENT_ON_TRACK_CHANGE**
     * **HISPLAYER_EVENT_ON_STREAM_RELEASE**
     * **HISPLAYER_EVENT_TEXT_RENDER**
-    * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
 
@@ -259,10 +258,6 @@ This event occurs whenever a caption's text has been generated.
     <td>The next generated caption text.</td>
   </tr>
 </table>
-
-#### protected virtual void EventAutoTransition(HISPlayerEventInfo eventInfo)
-Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_AUTO_TRANSITION** is triggered.
-This event occurs whenever the playlist has changed of playback automatically. The change is due to the end of the current playback, so the next playback in the list is released.
 
 #### protected virtual void EventPlaybackBuffering(HISPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING** is triggered.
