@@ -203,7 +203,7 @@ This event occurs whenever the volume has been modified.
 </table>
 
 #### protected virtual void EventEndOfPlaylist(HISPlayerEventInfo eventInfo)
-Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING** is triggered.
+Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_END_OF_PLAYLIST** is triggered.
 This event occurs whenever an internal playlist reaches the end of the list.
 
 #### protected virtual void EventOnTrackChange(HISPlayerEventInfo eventInfo)
