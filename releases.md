@@ -1,4 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
+### Version 2.11.0
+##### October 18, 2023
+- [**Added**] EnableABR and DisableABR API
+- [**Added**] LoopPlayback API to loop the current playback. This will trigger HISPlayerEvent.HISPLAYER_EVENT_END_OF_CONTENT
+    - Refer to [Stream Properties - LoopPlayback](https://hisplayer.github.io/UnityAndroid-SDK/#/hisplayer-api)
+- [**Added**] AutoTransition API to change the playback to the next video in the playlist. This will trigger the HISPlayerEvent.HISPLAYER_EVENT_AUTO_TRANSITION
+    - Refer to [Stream Properties - AutoTransition](https://hisplayer.github.io/UnityAndroid-SDK/#/hisplayer-api) 
+
 ### Version 2.10.0
 ##### September 21, 2023
 - [**Added**] [Custom Shaders for Linear Color Space](/shaders.md)
@@ -9,11 +17,11 @@
 
 ### Version 2.8.0
 ##### August 7, 2023
-- [**Added**] Playback Speed Controller for Windows and MacOS editors. 
+- [**Added**] Playback Speed Controller for Windows and MacOS editors
 
 ### Version 2.7.0
 ##### July 28, 2023
-- [**Added**] Playback Speed Controller. Values must be greater than 0 and less than or equal to 8.
+- [**Added**] Playback Speed Controller. Values must be greater than 0 and less than or equal to 8
     - void SetPlaybackSpeedRate(int playerIndex, float speed)
     - float GetPlaybackSpeedRate(int playerIndex)
 - [**Improvement**] Optimized Release function for MacOS Editor
@@ -38,15 +46,15 @@
     - string GetCaptionID(int playerIndex, int ccTrackIndex)
     - string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
     - void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
-- [**Improvement**] Optimized Android HISPlayer settings panel. There is a new field in the settings for putting target SDK as 33.
+- [**Improvement**] Optimized Android HISPlayer settings panel. There is a new field in the settings for putting target SDK as 33
 - [**Improvement**] Optimized AddNewStream API on Windows Editor
 - [**Improvement**] Optimized Release API on Windows Editor
 - [**Improvement**] Optimized SDK for Unity 2022
-- [**Improvement**] Optimized SetupPlayer API during runtime for Windows Editor.
+- [**Improvement**] Optimized SetupPlayer API during runtime for Windows Editor
 
 ### Version 2.4.0
 ##### June 15, 2023
-- [**Improvement**] Optimized gradle build for Unity version 2020.
+- [**Improvement**] Optimized gradle build for Unity version 2020
 
 ### Version 2.2.0
 ##### May 25, 2023
@@ -71,12 +79,12 @@ The Android package is combined with iOS package.
     - HISPLAYER_ERROR_GENERAL_LICENSE_ERROR = 2,
     - HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED = 3
 
-- [**Added**] **HISPLAYER_EVENT_NETWORK_CONNECTED** and **EventNetworkConnected**: This event occurs whenever the network has been reconnected.
+- [**Added**] **HISPLAYER_EVENT_NETWORK_CONNECTED** and **EventNetworkConnected**: This event occurs whenever the network has been reconnected
 
 ### Version 1.5.0
 ##### April 10, 2023
 - [**Added**] The tokens has been added. The tokens are a new layer for protecting the url content. There is a new field for adding tokens associated with the url
-- DRM Tokens: List that contains DRM_Token elements. Each one has a string tokenKey and a string tokenValue.
+- DRM Tokens: List that contains DRM_Token elements. Each one has a string tokenKey and a string tokenValue
 
 ### Version 1.4.0
 ##### April 5, 2023
@@ -94,13 +102,13 @@ The Android package is combined with iOS package.
 ### Version 1.3.0
 ##### March 27, 2023
 - [**Added**] New **HISPlayerRenderMode** option 'NONE' has been added. Choose this option if the stream is not going to be rendered on any surface
-- [**Added**] **Decoded Frame Buffer Functionality** is now compatible with not rendering the stream on any surface.
+- [**Added**] **Decoded Frame Buffer Functionality** is now compatible with not rendering the stream on any surface
 
 ### Version 1.2.0
 ##### March 22, 2023
-- [**Added**] **HISPLAYER_EVENT_AUTO_TRANSITION** and **EventAutoTransition** for detecting whenever the playlist has changed of playback automatically.
+- [**Added**] **HISPLAYER_EVENT_AUTO_TRANSITION** and **EventAutoTransition** for detecting whenever the playlist has changed of playback automatically
 - [**Changed**] **HISPLAYER_EVENT_END_OF_CONTENT** and **EventEndOfContent** changed to **HISPLAYER_EVENT_END_OF_PLAYLIST** and **EventEndOfPlaylist**
-- [**Added**] Subtitles functionalities for WebVTT and CEA-608 added: The subtitles are being obtained from the url of the playback. Functionality for obtaining subtitles from a single uri has not been implemented yet.
+- [**Added**] Subtitles functionalities for WebVTT and CEA-608 added: The subtitles are being obtained from the url of the playback. Functionality for obtaining subtitles from a single uri has not been implemented yet
     
     - EnableCaptions(int playerIndex, bool enabled)
     - GetCaptionTrackList(int playerIndex)
@@ -116,14 +124,14 @@ The Android package is combined with iOS package.
 
 ### Version 1.1.0
 ##### March 16, 2023
-- [**Added**] Decoded Frame Buffer functionalities included.
+- [**Added**] Decoded Frame Buffer functionalities included
 
     - GetDecodedFrameAtTimestamp(int msec, bool deletePreviousFrames = true)
     - GetDecodedFramesBufferRange()
 
 ### Version 1.0.1
 ##### March 9, 2023
-- [**Added**] Added parameters for each Event. The meaning of each parameter depends on the triggered event. The information is both in the documentation and in the function's comments.
+- [**Added**] Added parameters for each Event. The meaning of each parameter depends on the triggered event. The information is both in the documentation and in the function's comments
 
 ### Version 1.0.0
 ##### March 7, 2023
