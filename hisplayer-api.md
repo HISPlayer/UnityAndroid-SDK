@@ -5,17 +5,20 @@ The following public APIs are provided by **HISPlayerManager**:
 
 * **public string licenseKey**: License key for making the SDK works.
 
-* **public List < StreamProperties > multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly, use the **AddStream** or **RemoveStream** functions instead.
+* **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly, use the **AddStream** or **RemoveStream** functions instead.
   
 * **public class StreamProperties**:
-    * **public HISPlayerRenderMode renderMode**: Type of texture for rendering.
+    * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback** and **AutoTransition** properties respectively. 
+    * **public HISPlayerRenderMode renderMode**: Type of texture for rendering. **HISPlayerRenderMode.NONE** by default.
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
-    * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This function should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
+    * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This value should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
+    * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the alternative constructor **StreamProperties(loopPlayback, autoTransition)**.
+    * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the alternative constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
@@ -42,8 +45,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLATER_EVENT_ON_TRACK_CHANGE**
     * **HISPLAYER_EVENT_ON_STREAM_RELEASE**
     * **HISPLAYER_EVENT_TEXT_RENDER**
+    * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
+    * HISPLAYER_EVENT_END_OF_CONTENT
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_TIMELOCK_EXPIRED** (no function on this)
@@ -259,6 +264,10 @@ This event occurs whenever a caption's text has been generated.
   </tr>
 </table>
 
+#### protected virtual void EventAutoTransition(HISPlayerCaptionElement subtitlesInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPLAYER_EVENT_AUTO_TRANSITION** is triggered.
+This event occurs when the playback has changed to the next video in the playlist automatically.
+
 #### protected virtual void EventPlaybackBuffering(HISPlayerEventInfo eventInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING** is triggered.
 This event occurs whenever an internal playback is buffering.
@@ -277,6 +286,10 @@ This error occurs whenever the network on a stream playback has failed.
     <td>Number of tracks of the playback.</td>
   </tr>
 </table>
+
+#### protected virtual void EventEndOfContent(HISPlayerCaptionElement subtitlesInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPlayer_EVENT_END_OF_CONTENT** is triggered.
+This event occurs whenever an internal playlist reaches the end of the list.
 
 ### Non-virtual functions 
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
@@ -372,7 +385,7 @@ Set a new maximum bitrate (in bits per second) of a specific track. This doesn't
 Set a new minimum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SelectTrack(int playerIndex, int bitrate)
-Select a certain track of a certain stream to be used as the main track. This action will disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Select a certain track of a certain stream to be used as the main track. This action will disable ABR, to enable it again you can use EnableABR API. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0opt)
 Enable the Decoded Frame Buffer Functionality. This function can be called independently of the SetUp function. This functionality can only be called for one single stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
@@ -395,14 +408,20 @@ Obtain the number of audio of a  certain stream. The playerIndex is associated w
 #### public string GetAudioID(int playerIndex, int audioTrackIndex)
 Obtain the ID of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### public string GetAudioLanguage(int playerIndex, int audioTrackIndex)
+#### protected string GetAudioLanguage(int playerIndex, int audioTrackIndex)
 Obtain the language of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### public void SelectAudioTrack(int playerIndex, int audioTrackIndex)
+#### protected void SelectAudioTrack(int playerIndex, int audioTrackIndex)
 Select a certain audio-track of a certain stream to be used. Before using this functions is recommended to use GetAudioTrackList in order to know all the information about the audio-tracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### public void SetPlaybackSpeedRate(int playerIndex, float speed)
+#### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### public float GetPlaybackSpeedRate(int playerIndex)
+#### protected float GetPlaybackSpeedRate(int playerIndex)
 Obtain the **speed rate** of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public void EnableABR(int playerIndex)
+Enables the **ABR** to change automatically between tracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### protected void DisableABR(int playerIndex)
+Disables the **ABR** to prevent the player from changing tracks regardless of bandwidth. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
