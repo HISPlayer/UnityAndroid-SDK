@@ -17,8 +17,8 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This value should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
-    * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the alternative constructor **StreamProperties(loopPlayback, autoTransition)**.
-    * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the alternative constructor **StreamProperties(loopPlayback, autoTransition)**.
+    * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+    * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
@@ -50,7 +50,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_END_OF_CONTENT**
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
-   * **HISPLAYER_ERROR_TIMELOCK_EXPIRED** (no function on this)
+   * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
    * **HISPLAYER_ERROR_NOT_VALID_APPID** (no function on this)
    * **HISPLAYER_ERROR_GENERAL_LICENSE_ERROR** (no function on this)
    * **HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED** (no function on this)
