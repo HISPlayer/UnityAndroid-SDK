@@ -1,4 +1,8 @@
 # HISPlayer Unity Android SDK Release Notes
+### Version 2.12.0
+##### October 24, 2023
+- [**Added**] Unity 2023 supported
+
 ### Version 2.11.0
 ##### October 18, 2023
 - [**Added**] EnableABR and DisableABR API
