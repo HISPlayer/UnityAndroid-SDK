@@ -62,6 +62,7 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
   * 2020
   * 2021
   * 2022
+  * 2023
 
 ### Supported Unity's Rendering Mode
   * Render Texture
