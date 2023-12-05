@@ -1,4 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
+
+### Version 2.13.0
+##### December 5, 2023
+- [**Added**] Local documentation
+- [**Update**] HISPlayer Settings is now visible under 'Tools' Unity window
+    - Refer to [Configure Unity for Android](https://hisplayer.github.io/UnityAndroid-SDK/#/setup-guide?id=_12-configure-unity-for-android) 
+- [**Improvement**] Improvement of software robustness.
+
 ### Version 2.12.0
 ##### October 24, 2023
 - [**Added**] Unity 2023 support
