@@ -38,7 +38,7 @@ Select the package of HISPlayer SDK and import it.
 Open the window HISPlayer located in the upper side of the screen > Click on Player Settings Configuration > Select Build Target to Android > Set all the required settings.
 
 <p align="center">
-<img width="550" src="./assets/configure-unity.png">
+<img width="550" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b3203548-b0c3-46c9-ae74-dded00c5915a">
 </p>
 
 <p align="center">
