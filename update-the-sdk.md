@@ -30,14 +30,14 @@ Select the package of HISPlayer SDK and import it.
 
 ## Configure Unity for Android
 
-Open the window HISPlayer located in the upper side of the screen.
+Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to Android** > Set all the required settings.
 
 <p align="center">
-<img width="550" src="./assets/configure-unity.png">
+<img width="550" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b3203548-b0c3-46c9-ae74-dded00c5915a">
 </p>
 
 <p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/add6d0c9-19c0-4a6c-8b81-a0c935ab8e1c">
+<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/020bb6bb-fbc4-47b4-9503-347908f64254">
 </p>
 
 By selecting Android target 33, Unity is going to ask you to update (in the case you don't have the SDK 33 installed). Please, press "Update Android SDK" button.
