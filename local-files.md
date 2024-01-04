@@ -1,6 +1,6 @@
 # Playing Local Files
 
-HISPlayer Android for Unity can playback local content, both from the device's storage and [**Unity Streaming Assets**](./local-files.md#Unity-Streaming-Assets).
+HISPlayer Android for Unity can play local content, both from the device's storage and [**Unity Streaming Assets**](./local-files.md#Unity-Streaming-Assets).
 
 <br>
 
