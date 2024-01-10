@@ -3,7 +3,7 @@
 In the video streaming industry, the DRM (Digital Rights Management) makes possible a secure distribution of contents over the network.
 Encrypted content is prepared using an encryption server and stored in a content library. The encrypted content is streamed or downloaded from the content library to client devices via content servers. Licenses to view the content are obtained from the License Server.
 
-The HISPlayer Unity Video Player SDK for Android supports [Widevine DRM](https://www.widevine.com/solutions/widevine-drm) and provides an API to the users for usage of the MediaDRM module.
+The HISPlayer Unity Video Player SDK for Android supports [Widevine DRM](https://www.widevine.com/solutions/widevine-drm) and provides an API to the users for usage of the MediaDRM module. Only Widevine with security L3 is supported.
 
 Use **Multi Stream Properties** to set the DRM fields. It is possible to add license keys both in the editor and from code (see AddStream and AddVideoContent in [HISPlayer API](/hisplayer-api.md) for more details):
 
