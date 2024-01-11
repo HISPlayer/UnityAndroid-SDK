@@ -328,13 +328,13 @@ Modify the volume of a certain stream giving a **playerIndex**. The **volume** o
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
 #### protected void AddVideoContent(int playerIndex, string url)
-Add new content to a certain player. If the enableDRM variable is true, a video content with an empty license will be added. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The url is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
+Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
 
 #### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “empty”opt, string token value= “empty”opt)
-Add new content to a certain player and its respective key server uri and tokens if needed. The enableDRM variable must be true for using this function. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The url is the link to the new video. The keyServerUri is the license key associated with the url. Please, make sure the string is correct. This function supports local file paths.
+Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the url. Please, make sure the string is correct. This function supports local file paths.
 
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex, int resumePosition = 0, AdsProperties ads = null)
-Change the video’s url  of a certain player. The next playback will start paused. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The urlIndex is associated with the index of the element in the list of urls.
+Change the video’s url  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
 The parameters **resumePosition** and **AdsProperties** are not supported for Android, please, let them in blank when using this function.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
@@ -342,9 +342,6 @@ Remove content from a certain player. The **playerIndex** is associated with the
 
 #### protected void RemoveStream(int playerIndex)
 Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
-
-#### public void EnableCaptions(int playerIndex, bool enabled)
-Enables the captions of the stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a **playerIndex**. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
@@ -381,6 +378,9 @@ Get the ID of a certain track of a certain stream. The **playerIndex** is associ
 
 #### protected int GetTrackCount(int playerIndex)
 Get the number of tracks of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+
+#### public void EnableCaptions(int playerIndex, bool enabled)
+Enables the captions of the stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
 Provide information about all the captions of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
