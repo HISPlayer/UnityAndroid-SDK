@@ -21,10 +21,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
-    * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
-    * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
-    * **public int manifestTimeout**: The manifest request connection timeout, in milliseconds. Zero means unlimited. Defaults to 10000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
-    * **public int segmentsTimeout**: The segments requests connection timeout, in milliseconds. Zero means unlimited. Defaults to 5000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
+    * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
+    * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
+    * **public int manifestTimeout**: The manifest request connection timeout, in milliseconds. Zero means unlimited. Defaults to 10000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
+    * **public int segmentsTimeout**: The segments requests connection timeout, in milliseconds. Zero means unlimited. Defaults to 5000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
 
 * **public struct DRM_Token**: Information for the DRM token:
     * **public string tokenKey**: Key of the token associated with the url.
@@ -105,7 +105,7 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public string caption**: The next generated caption text.
 
 ## Functions
-The following functions are provided by **HISPlayerManager**. They are not public so it’s necessary to create a custom script which inherits from **HisPlayerManager**.
+The following functions are provided by **HISPlayerManager**. They are not public so it’s necessary to create a custom script which inherits from **HISPlayerManager**.
 
 ### Virtual functions - These functions can be overridden
 
@@ -383,31 +383,31 @@ Get the number of tracks of a certain stream. The **playerIndex** is associated 
 Enables the captions of the stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
-Provide information about all the captions of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Provide information about all the captions of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public int GetCaptionsCount(int playerIndex)
-Obtain the number of captions of a  certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Obtain the number of captions of a  certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public string GetCaptionID(int playerIndex, int ccTrackIndex)
-Obtain the ID of a certain caption of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Obtain the ID of a certain caption of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
-Obtain the language of a certain caption of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Obtain the language of a certain caption of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
-Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetMaxBitrate(int playerIndex, int bitrate)
-Set a new maximum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Set a new maximum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetMinBitrate(int playerIndex, int bitrate)
-Set a new minimum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Set a new minimum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SelectTrack(int playerIndex, int bitrate)
 Select a certain track of a certain stream to be used as the main track. This action will disable ABR, to enable it again you can use **EnableABR** API. The possible tracks can be obtained from the tracks returned from the method GetTracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0opt)
-Enable the Decoded Frame Buffer Functionality. This function can be called independently of the SetUp function. This functionality can only be called for one single stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Enable the Decoded Frame Buffer Functionality. This function can be called independently of the SetUp function. This functionality can only be called for one single stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected async Task<Texture2D> GetDecodedFrameAtTimestamp(int msec, bool deletePreviousFrames = true opt)
 Retrieves the Texture2D of the requested frame or null if the frame is not available for the given timestamp (parameter msec in milliseconds).
