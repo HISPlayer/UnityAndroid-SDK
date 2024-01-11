@@ -21,6 +21,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
+    * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. Platform supported: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
+    * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. Platform supported: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
+    * **public int manifestTimeout**: The manifest request connection timeout, in milliseconds. Zero means unlimited. Defaults to 10000 milliseconds. Not visible in the Editor. Platform supported: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
+    * **public int segmentsTimeout**: The segments requests connection timeout, in milliseconds. Zero means unlimited. Defaults to 5000 milliseconds. Not visible in the Editor. Platform supported: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/)
 
 * **public struct DRM_Token**: Information for the DRM token:
     * **public string tokenKey**: Key of the token associated with the url.
@@ -47,13 +51,23 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_TEXT_RENDER**
     * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
+    * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
+    * **HISPLAYER_EVENT_AD_BLOCK_STARTED**
+    * **HISPLAYER_EVENT_AD_BLOCK_ENDY**
+    * **HISPLAYER_EVENT_AD_STARTED**
+    * **HISPLAYER_EVENT_AD_STOPPED**
+    * **HISPLAYER_EVENT_AD_PODS_INFO**
+    * **HISPLAYER_EVENT_ID3_METADATA**
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
    * **HISPLAYER_ERROR_NOT_VALID_APPID** (no function on this)
    * **HISPLAYER_ERROR_GENERAL_LICENSE_ERROR** (no function on this)
    * **HISPLAYER_ERROR_ANDROID_API_NOT_SUPPORTED** (no function on this)
+   * **HISPLAYER_ERROR_LICENSE_DISABLED** (no function on this)
+   * **HISPLAYER_ERROR_IMPRESSIONS_LIMIT_REACHED** (no function on this)
+   * **HISPLAYER_ERROR_PLAYBACK_DURATION_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_NETWORK_FAILED**
    
 * **public struct HISPlayerEventInfo**: The information of the triggered event.
@@ -71,10 +85,6 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public float param1**: This will have different meanings depending on the error. If there is no information about the parameter, it will have the default value -1.
    * **public string stringInfo**: Log information about the error.
 
-* **public struct HISPlayerCaptionElement**: The information of the triggered event turns into caption’s format.
-   * **public int playerIndex**: The index of the player where the event is triggered.
-   * **public string caption**: The next generated caption text.
-
 * **public struct HISPlayerTrack**:
    * **public string id**: Id of the track
    * **public int bitrate**: Bitrate of the track in bits per second.
@@ -89,6 +99,10 @@ The following public APIs are provided by **HISPlayerManager**:
 * **public struct HisPlayerAudioTrack**:
    * **public string id**: ID of the caption
    * **public string language**: Language of the caption
+ 
+* **public struct HISPlayerCaptionElement**: The information of the triggered event turns into caption’s format.
+   * **public int playerIndex**: The index of the player where the event is triggered.
+   * **public string caption**: The next generated caption text.
 
 ## Functions
 The following functions are provided by HISPlayerManager. They are not public so it’s necessary to create a custom script which inherits from HisPlayerManager.
@@ -271,9 +285,16 @@ This event occurs when the playback has changed to the next video in the playlis
 Override this method to add custom logic when **HISPlayerEvent.HISPLAYER_EVENT_PLAYBACK_BUFFERING** is triggered.
 This event occurs whenever an internal playback is buffering.
 
-#### protected virtual void EventEndOfContent(HISPlayerCaptionElement subtitlesInfo)
+#### protected virtual void EventEndOfContent(HISPlayerEventInfo subtitlesInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPlayer_EVENT_END_OF_CONTENT** is triggered.
 This event occurs whenever an internal playlist reaches the end of the list.
+
+#### protected virtual void EventNetworkConnected(HISPlayerEventInfo subtitlesInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPLAYER_EVENT_NETWORK_CONNECTED** is triggered.
+This event occurs whenever the network has been reconnected.
+
+#### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
+Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
 
 #### protected virtual void ErrorNetworkFailed(HISPlayerErrorInfo errorInfo)
 Override this method to add custom logic when **HISPlayerError.HISPLAYER_ERROR_NETWORK_FAILED** is triggered.
@@ -317,20 +338,29 @@ Modify the volume of a certain stream giving a playerIndex. The volume of the tr
 #### protected void AddStream(StreamProperties newStream)
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
-#### protected void ChangeVideoContent(int playerIndex, int urlIndex)
-Change the video’s url  of a certain player. The next playback will start paused. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The urlIndex is associated with the index of the element in the list of urls.
-
 #### protected void AddVideoContent(int playerIndex, string url)
 Add new content to a certain player. If the enableDRM variable is true, a video content with an empty license will be added. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The url is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
 
 #### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “empty”opt, string token value= “empty”opt)
 Add new content to a certain player and its respective key server uri and tokens if needed. The enableDRM variable must be true for using this function. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The url is the link to the new video. The keyServerUri is the license key associated with the url. Please, make sure the string is correct. This function supports local file paths.
 
+#### protected void ChangeVideoContent(int playerIndex, int urlIndex)
+Change the video’s url  of a certain player. The next playback will start paused. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list. The urlIndex is associated with the index of the element in the list of urls.
+
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.  The urlIndex is associated with the index of the element in the list of urls.
 
 #### protected void RemoveStream(int playerIndex)
 Remove a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### public void EnableCaptions(int playerIndex, bool enabled)
+Enables the captions of the stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
+Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### protected float GetPlaybackSpeedRate(int playerIndex)
+Obtain the **speed rate** of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected string GetPlayerLog(int playerIndex)
 Provides a log message obtained from a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
@@ -348,19 +378,22 @@ Provides information about a track of a certain stream. The playerIndex is assoc
 Get the bitrate of a certain track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected int GetTrackWidth(int playerIndex, int trackIndex)
-Get the width of a certain track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+Get the width of a **certain** track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected int GetTrackHeight(int playerIndex, int trackIndex)
-Get the height of a certain track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 of the list.
+Get the height of a **certain** track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 of the list.
+
+#### protected int GetVideoWidth(int playerIndex)
+Get the width of the **current** track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
+
+#### protected int GetVideoHeight(int playerIndex)
+Get the height of the **current** track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected int GetTrackID(int playerIndex, int trackIndex)
 Get the ID of a certain track of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### protected int GetTrackCount(int playerIndex)
 Get the number of tracks of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
-
-#### public void EnableCaptions(int playerIndex, bool enabled)
-Enables the captions of the stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
 Provide information about all the captions of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
@@ -412,12 +445,6 @@ Obtain the language of a certain audio of a certain player. The playerIndex is a
 
 #### protected void SelectAudioTrack(int playerIndex, int audioTrackIndex)
 Select a certain audio-track of a certain stream to be used. Before using this functions is recommended to use GetAudioTrackList in order to know all the information about the audio-tracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
-
-#### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
-Modify the **speed rate** of a certain stream giving a playerIndex. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
-
-#### protected float GetPlaybackSpeedRate(int playerIndex)
-Obtain the **speed rate** of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
 #### public void EnableABR(int playerIndex)
 Enables the **ABR** to change automatically between tracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
