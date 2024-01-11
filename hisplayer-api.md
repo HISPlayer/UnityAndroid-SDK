@@ -1,4 +1,4 @@
-<img width="484" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/c9a32b9d-cd6e-47e3-8ad2-e0f79dfaa3df"># HISPlayer API
+# HISPlayer API
 
 ## Public API
 The following public APIs are provided by **HISPlayerManager**:
