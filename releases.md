@@ -1,11 +1,24 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 3.2.0
+##### December 7, 2023
+- [**Added**] AutoTransition and LoopPlayback APIs
+- [**Added**] EnableABR and DisableABR APIs
+
+### Version 3.1.0
+##### October 11, 2023
+- [**Improvement**] Improved Android IL2CPP build
+
+### Version 3.0.0
+##### September 5, 2023
+The Android SDK is moved to multiplatform HISPlayerSDK (Android, iOS, macOS, WebGL, Windows)
+
 ### Version 2.13.0
 ##### December 5, 2023
 - [**Added**] Local documentation
 - [**Update**] HISPlayer Settings is now visible under 'Tools' Unity window
     - Refer to [Configure Unity for Android](https://hisplayer.github.io/UnityAndroid-SDK/#/setup-guide?id=_12-configure-unity-for-android) 
-- [**Improvement**] Improvement of software robustness.
+- [**Improvement**] Improvement of software robustness
 
 ### Version 2.12.0
 ##### October 24, 2023
