@@ -1,9 +1,9 @@
 # Import HISPlayer Sample
-Please, download the sample here -> [**HISPlayer Android & iOS Sample**](https://downloads.hisplayer.com/Unity/Android_iOS/HISPlayer_Android_iOS_Sample.unitypackage) (no need to download it if you have received it in the email).
+Please, download the sample here -> [**HISPlayer Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Sample.unitypackage) (no need to download it if you have received it in the email).
 
 Importing the package is the same as importing other normal packages in Unity. Select the downloaded package and import it.
 
-- **Assets > Import Package > Custom Package > HISPlayer_Android_iOS_Sample.unitypackage**
+- **Assets > Import Package > Custom Package > HISPlayer_Sample.unitypackage**
 
 <p align="center">
 <img src="./assets/import-package.png">
@@ -14,15 +14,15 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Open the scene **Assets/HISPlayerSample/Scenes/HISPlayerSample.unity**
 
 <p align="center">
-<img src="./assets/android-ios-scene.PNG" width=50%>
+<img width="392" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/daee6484-ac9f-4313-b4d3-857b7d0b3b9a">
 </p>
 
 - Import TextMesh Pro Essential
 
-- Input the license key through the Inspector Window. **StreamController** game object -> **HISPlayerSample** component -> **License Key**
+- Input the license key through the Inspector Window. **StreamController** GameObject -> **HISPlayerSample** component -> **License Key**
 
 <p align="center">
-<img src="./assets/license-key.PNG">
+  <img width="475" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/09c245f6-0dfb-44ca-9618-3d1aa7174b14"
 </p>
 
 - Open **File** > **Build Settings** > **Add Open Scenes**
@@ -39,9 +39,9 @@ To check how to set up the SDK and API usage, please refer to **Assets/HISPlayer
 The UI components in the sample scene are fully modifiable. The sample is intended to show a comprehensive scene using the HISPlayer SDK to help demonstrate features such as play, pause, seek, etc.
 
 <p align="center">
-<img src="./assets/android-ios-uicomponent.PNG">
+  <img width="196" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/5ca70635-f2e0-4873-863e-d9eaf108255b">
 </p>
 
 <p align="center">
-<img src="./assets/android-ios-sampleui.PNG" width=70%>
+<img width="70%" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/6dfc9bdb-bfff-4b5e-8a68-3180bceef993">
 </p>
