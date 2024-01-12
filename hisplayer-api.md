@@ -23,8 +23,6 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
     * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
     * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
-    * **public int manifestTimeout**: The manifest request connection timeout, in milliseconds. Zero means unlimited. Defaults to 10000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
-    * **public int segmentsTimeout**: The segments requests connection timeout, in milliseconds. Zero means unlimited. Defaults to 5000 milliseconds. Not visible in the Editor. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
 
 * **public struct DRM_Token**: Information for the DRM token:
     * **public string tokenKey**: Key of the token associated with the url.
