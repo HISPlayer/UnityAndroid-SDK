@@ -24,7 +24,7 @@ It's also possible to import the [HISPlayer Sample](https://hisplayer.github.io/
 Importing the package is the same as importing other normal packages in Unity. 
 Select the package of HISPlayer SDK and import it.
 
-**Assets > Import Package > Custom Package > HISPlayerSDK_Android_iOS unity package**
+**Assets > Import Package > Custom Package > HISPlayerSDK unity package**
 
 
 <p align="center">
@@ -116,7 +116,7 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 ## 2.3 Configure HISPlayer properties
 
 ### <ins>License Key</ins>
-Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor
+Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor usage.
 
 <p align="center">
 <img width="400" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/7e7ca754-8d92-4c1b-b4aa-8218b6108bbc">
