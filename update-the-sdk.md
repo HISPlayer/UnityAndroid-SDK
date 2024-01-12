@@ -4,7 +4,7 @@ Through this guide, you will be introduced how to update the SDK if you already 
 
 ## Remove Old Package
 
-Remove the previous HISPlayer Android / iOS SDK package from Unity Package Manager
+Remove the previous HISPlayer SDK package from Unity Package Manager.
 
 **Window > Package Manager > Packages - HISPlayer > HISPlayer SDK > Remove**
 
