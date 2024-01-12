@@ -4,6 +4,7 @@
 ##### December 7, 2023
 - [**Added**] AutoTransition and LoopPlayback APIs
 - [**Added**] EnableABR and DisableABR APIs
+- [**Added**] Unity 2023 support
 
 ### Version 3.1.0
 ##### October 11, 2023
