@@ -2,9 +2,9 @@
 
 ### Version 3.2.0
 ##### December 7, 2023
-- [**Added**] AutoTransition and LoopPlayback APIs
-- [**Added**] EnableABR and DisableABR APIs
-- [**Added**] Unity 2023 support
+- [**Added**] AutoTransition and LoopPlayback APIs to multiplatform SDK
+- [**Added**] EnableABR and DisableABR APIs to multiplatform SDK
+- [**Added**] Unity 2023 support to multiplatform SDK
 
 ### Version 3.1.0
 ##### October 11, 2023
