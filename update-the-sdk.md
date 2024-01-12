@@ -12,7 +12,6 @@ Remove the previous HISPlayer Android / iOS SDK package from Unity Package Manag
   <img width="793" alt="Remove" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/00071022-a78b-4b36-bd1d-eaf64aad49fc">
 </p>
 
-
 <br>
 
 ## Import New package
