@@ -331,9 +331,8 @@ Add new content to a certain player. If the **enableDRM** variable is true, a vi
 #### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “empty”opt, string token value= “empty”opt)
 Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the url. Please, make sure the string is correct. This function supports local file paths.
 
-#### protected void ChangeVideoContent(int playerIndex, int urlIndex, int resumePosition = 0, AdsProperties ads = null)
+#### protected void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s url  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
-The parameters **resumePosition** and **AdsProperties** are not supported for Android and null by default. Please leave them empty when using this function.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of urls.
