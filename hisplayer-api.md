@@ -21,8 +21,6 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
-    * **public List <AdsProperties> adsProperties**: List of properties to configure advertisement insertions for each player in the scene. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
-    * **public int startingBitrate**: The bitrate in bps the player will try to start playing. Setting it to 0 will make the player start with the lowest track. This API is not supported for Android. Supported Platform: [WebGL](https://hisplayer.github.io/UnityWebGL-SDK/#/).
 
 * **public struct DRM_Token**: Information for the DRM token:
     * **public string tokenKey**: Key of the token associated with the url.
