@@ -23,7 +23,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
 * **public struct DRM_Token**: Information for the DRM token:
-    * **public string tokenKey**: Key of the token associated with the url.
+    * **public string tokenKey**: Key of the token associated with the URL.
     * **public string tokenValue**: Value of the token associated with the key.
 
 * **public enum HISPlayerRenderMode**: Type of texture for rendering:
@@ -326,14 +326,20 @@ Add a new stream to the list multiStreamProperties. The stream must be added usi
 #### protected void AddVideoContent(int playerIndex, string url)
 Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
 
-#### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “empty”opt, string token value= “empty”opt)
-Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the url. Please, make sure the string is correct. This function supports local file paths.
+#### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “” (opt), string token value= “” (opt))
+Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the string is correct. This function supports local file paths.
 
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
-Change the video’s url  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of urls.
+Change the video’s URL  of a certain player. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
+
+#### protected void ChangeVideoContent(int playerIndex, string url)
+Change the video’s URL of a certain player given a new URL. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL.
+
+#### protected void ChangeVideoContent(int playerIndex, string url, string keyServerUri, string token key = “” (opt), string token value= “” (opt))
+Change the video’s URL of a certain player given a new URL with DRM protection. The next playback will start paused. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the parameters are correctly written. This function supports local file paths. This function will replace the Playlist with the new element.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
-Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of urls.
+Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of URLs.
 
 #### protected void RemoveStream(int playerIndex)
 Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
