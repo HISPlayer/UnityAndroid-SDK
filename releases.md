@@ -1,5 +1,10 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 3.3.0
+##### January 25, 2024
+- [**Added**] **ChangeVideoContent(int playerIndex, string url)** API to change the content passing the video URL directly
+- [**Improvement**] Optimized Unity logs improvement
+
 ### Version 3.2.0
 ##### December 7, 2023
 - [**Added**] AutoTransition and LoopPlayback APIs to multiplatform SDK
