@@ -17,7 +17,7 @@
 ##### October 11, 2023
 - [**Improvement**] Improved Android IL2CPP build
 
-### Version 3.0.0
+### Version 3.0.0 (Multiplatform SDK)
 ##### September 5, 2023
 The Android SDK is moved to multiplatform HISPlayerSDK (Android, iOS, macOS, WebGL, Windows)
 
