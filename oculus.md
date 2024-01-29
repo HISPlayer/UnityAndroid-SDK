@@ -5,9 +5,13 @@ First, please configure the Unity project for Oculus by following this [Tutorial
 ## Requirements
 
 It's necessary to install the [Oculus XRPlugin](https://developer.oculus.com/documentation/unity/unity-xr-plugin/) and 
-import the [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
+import the [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/) and accept all the pop-ups in order to config properly the SDK.
 
 - **Assets > Import Package > Custom Package > OculusIntegration.unitypackage**
+
+<p align="center">
+<img width="800" alt="Step 1" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/e20e9b45-9ec5-44b8-8d73-78d22f58275f">
+</p>
 
 #### Supported Android Version
 - Minor version - Android 10.0 ‘Quince Tart’
@@ -20,6 +24,7 @@ import the [OculusIntegration.unitypackage](https://developer.oculus.com/downloa
 - IL2CPP - ARM64
 
 #### Oculus platform
+
 In XR Plug-in Management, please make sure that you have the **Oculus** option checked. Otherwise, when you run the application, it will show a 2D window without XR environment.
   
   - **Edit > Project Settings > XR Plug-in Management**
