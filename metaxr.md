@@ -46,7 +46,7 @@ In XR Plug-in Management, please make sure that you have the **Oculus** option c
 ## Import HISPlayer SDK
 If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide](./setup-guide.md).
 
-## Import HISPlayer Oculus Sample
+## Import HISPlayer Meta XR Sample
 Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_Sample.unitypackage) (no need to download it if you have received it in the email).
 
 Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps :
