@@ -56,3 +56,8 @@ Before using the sample, please make sure you have followed the above requiremen
 To check how to set up the SDK and API usage, please refer to Assets/HISPlayerOculusSample/Scripts/Sample/HISPlayerSample.cs and StreamController GameObject in the Editor.
 
 To check more about the project explanation, please refer to Assets/HISPlayerOculusSample/README.pdf
+
+## HISPlayer Oculus Controllers
+<p align="center">
+  <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/c50c46da-68ea-4b43-80f0-0f54d7d9b4e8">
+</p>
