@@ -44,12 +44,12 @@ If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide]
 Please, download the sample here -> [**HISPlayer Oculus 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Oculus_360_Sample.unitypackage) (no need to download it if you have received it in the email).
 
 Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps :
-  - Import HISPlayer Oculus Sample package
+  - Import Oculus Integration SDK
   - Set up the Oculus environment
   - Import HISPlayer SDK
   - Import HISPlayer Oculus 360 Sample
   - Open Assets/HISPlayerOculusSample/Scenes/HISPlayerOculusSample
-  - Input the license key through the Inspector Window. StreamController GameObject > HISPlayerSample component > License Key
+  - Input the license key through the Inspector Unity window: **StreamController GameObject > HISPlayerSample component > License Key**
   - Open File > Build Settings > Add Open Scenes
   - Build and Run
 
