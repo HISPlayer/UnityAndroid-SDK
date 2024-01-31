@@ -55,5 +55,5 @@ To check more about the project explanation, please refer to Assets/HISPlayerOcu
 
 ## HISPlayer Oculus Controllers
 <p align="center">
-  <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/c50c46da-68ea-4b43-80f0-0f54d7d9b4e8">
+  <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d820d25f-a38b-4fa6-8bcc-8b7a8824125f">
 </p>
