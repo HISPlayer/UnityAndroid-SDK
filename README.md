@@ -2,9 +2,7 @@
 
 HISPlayer is the most advanced Unity video streaming player for Android, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming inside your Unity games and metaverses on Android. We include the support of DRM protection for premium contents and advanced features such as multistream or automatic bitrate adaptation to secure the best video quality.
 
-Here you can find the full Documentation:
-
-https://hisplayer.github.io/UnityAndroid-SDK
+# [The full Documentation](https://hisplayer.github.io/UnityAndroid-SDK)
 
 ## Try our UnityEngine Video Player SDK Now!
 
