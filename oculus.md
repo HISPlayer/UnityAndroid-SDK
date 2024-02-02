@@ -53,11 +53,26 @@ Before using the sample, please make sure you have followed the above requiremen
   - Open File > Build Settings > Add Open Scenes
   - Build and Run
 
-To check how to set up the SDK and API usage, please refer to Assets/HISPlayerOculusSample/Scripts/Sample/HISPlayerSample.cs and StreamController GameObject in the Editor.
+To check how to set up the SDK and API usage, please refer to **Assets/HISPlayerOculusSample/Scripts/Sample/HISPlayerSample.cs** and StreamController GameObject in the Editor.
 
 To check more about the project explanation, please refer to Assets/HISPlayerOculusSample/README.pdf
 
 ## HISPlayer Oculus Controllers
 <p align="center">
   <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d820d25f-a38b-4fa6-8bcc-8b7a8824125f">
+</p>
+
+## HISPlayer 360 Material
+Unity provides ways of configure the way you will display your video content on the 360 environment. Please, refer to the following Unity documentation to check what kind of content you're using: [Unity Video Panoramic Tutorial](https://docs.unity3d.com/Manual/VideoPanoramic.html).
+
+We provide a material to configure the options of your video so please, refer to **Assets/HISPlayerOculusSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.material** to check the 360 settings.
+
+In our sample we're using the following options: 
+
+* **Mapping**: Latitude Longitude Layout
+* **Image Type**: 360 Degrees
+* **3D Layout**: None
+
+<p align="center">
+<img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a1f1958-ed35-4283-9f54-dae66d43d24d">
 </p>
