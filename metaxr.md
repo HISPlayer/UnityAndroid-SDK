@@ -68,7 +68,7 @@ To check more about the project explanation, please refer to Assets/HISPlayerOcu
 </p>
 
 ## HISPlayer 360 Material
-Unity provides ways of configure the way you will display your video content on the 360 environment. Please, refer to the following Unity documentation to check what kind of content you're using: [Unity Video Panoramic Tutorial](https://docs.unity3d.com/Manual/VideoPanoramic.html).
+Unity provides ways to configure how you will display your video content on the 360 environment. Please, refer to the following Unity documentation to check what kind of content you're using: [Unity Video Panoramic Tutorial](https://docs.unity3d.com/Manual/VideoPanoramic.html).
 
 We provide a material to configure the options of your video so please, refer to **Assets/HISPlayerOculusSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.material** to check the 360 settings.
 
