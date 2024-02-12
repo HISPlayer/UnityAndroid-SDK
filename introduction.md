@@ -81,3 +81,4 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 
 ### Supported Application Layer Protocol
   * HTTPS
+    * HTTP is not supported
