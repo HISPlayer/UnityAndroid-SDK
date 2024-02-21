@@ -70,6 +70,8 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 
 ### Supported Graphics API
   * OpenGLES3
+  * Vulkan
+    * OpenGLES3 must be enabled to use Vulkan
 
 ### Supported Editor
   * Windows Editor (Multi stream is not supported)
