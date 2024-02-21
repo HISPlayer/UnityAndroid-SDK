@@ -51,15 +51,6 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 <img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
 </p>
 
-### Vulkan 
-
-Vulkan is supported as long as OpenGLES3 is enabled. Please go to File > Build Settings > Player Settings > Android > Other Settings > Rendering > Disable Auto Graphics API > Graphics APIs > Add **OpenGLES3** and **Vulkan**
-
-<p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/3d12c35c-f88f-4a2b-90c1-3a47789be931">
-</p>
-
-
 ## 2.1 Setup HISPlayer Manager
 
 Create a new script which will inherit from **HISPlayerManager**, for example, AndroidStreamController. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
