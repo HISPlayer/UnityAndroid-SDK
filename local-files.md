@@ -36,7 +36,7 @@ Prepare a folder where all the HLS manifest files are stored, including the play
 
 If the content is encrypted with AES-128 key, the key file must be stored in the correct location following the `#EXT-X-KEY` tag URI in the manifest file. 
 
-For example below *stream.m3u8* includes the following : `#EXT-X-KEY:METHOD=AES-128,URI="key.bin"`. The key file *key.bin* must be stored in the valid path. 
+For example below *stream.m3u8* includes the following : `#EXT-X-KEY:METHOD=AES-128,URI="key.bin"`. The key file *key.bin* must exist in the valid path. 
 
 ![image](https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/c5c7b6c6-3dc7-463b-accf-61b732b08d22)
 
