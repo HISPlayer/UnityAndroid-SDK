@@ -24,7 +24,7 @@ Importing the package is the same as importing other normal packages in Unity. S
 - Input the license key through the Inspector. **HISPlayerMultiStreamController** GameObject -> **HISPlayerMultiStreamController** component -> **License Key**
 
 <p align="center">
-  <img width=80% alt="image" src="https://github.com/HISPlayer/UnityiOS-SDK/assets/47497948/af5403d2-1d0c-46c0-b70e-c4217c52d151"
+  <img width=80% alt="image" src="https://github.com/HISPlayer/UnityiOS-SDK/assets/47497948/af5403d2-1d0c-46c0-b70e-c4217c52d151">
 </p>
 
 - Open **File** > **Build Settings** > **Add Open Scenes**
