@@ -21,10 +21,10 @@ Importing the package is the same as importing other normal packages in Unity. S
 
 - Import TextMesh Pro Essential
 
-- Input the license key through the Inspector Window. **StreamController** GameObject -> **HISPlayerSample** component -> **License Key**
+- Input the license key through the Inspector. **HISPlayerMultiStreamController** GameObject -> **HISPlayerMultiStreamController** component -> **License Key**
 
 <p align="center">
-  <img width="475" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/09c245f6-0dfb-44ca-9618-3d1aa7174b14"
+  <img width=70% alt="image" src="https://github.com/HISPlayer/UnityiOS-SDK/assets/47497948/af5403d2-1d0c-46c0-b70e-c4217c52d151"
 </p>
 
 - Open **File** > **Build Settings** > **Add Open Scenes**
