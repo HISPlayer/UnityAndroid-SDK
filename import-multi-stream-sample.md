@@ -47,3 +47,24 @@ The UI components in the sample scene are fully modifiable and each stream has i
 <p align="center">
 <img width=70% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/965817d8-32f8-40f9-9bbc-7471929558ae">
 </p>
+
+## MultiStream Streams and URLs
+In order to add/remove streams and URLs, please refer to the component **HISPlayerMultiStreamController** attached to the **HISPlayerMultiStreamController GameObject** in the **Inspector**. 
+
+### Add/Remove Streams
+
+You can add/remove streams by pressing the buttons **+/-** in the **Multi Stream Properties list**. Once a new stream is added, please, select the render mode and the surface where you want to display your videos (Material, Raw Image or RenderTexture). 
+
+<p align="center">
+  <img width=49% alt="streams" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4bae2a6a-16ba-4ba7-ae7a-911a8f0a3185">
+  <img width=49% alt="render" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4e93b5bd-c0e8-420b-aa67-fae5c4e59f7c">
+</p>
+
+### Add/Remove URLs
+
+You can add/remove URLs by selecting one element from the **Multi Stream Properties list** and then pressing the buttons **+/-** in the **Url list**. For changing the content of the videos, please refer to **[ChangeVideoContent](https://hisplayer.github.io/UnityAndroid-SDK/#/hisplayer-api)** API.
+
+<p align="center">
+  <img width=50% alt="urls" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/bf03d4a3-d1a5-4e4d-b572-10bbe18c1f86">
+</p>
+
