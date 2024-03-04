@@ -11,6 +11,7 @@
 - [Controlling ABR](/controlling-abr.md)
 - [Meta XR All-in-One SDK / Meta Quest Set Up Guide](/metaxr.md)
 - [Oculus Integration SDK / Meta Quest Set Up Guide](/oculus.md)
+- [Google Cardboard Guide](/cardboard.md)
 - [HISPlayer API](/hisplayer-api.md)
 - [Obtaining Logs](/obtaining-logs.md)
 - [Update the SDK](/update-the-sdk.md)
