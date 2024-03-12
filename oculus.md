@@ -1,6 +1,6 @@
 # Oculus Integration
 
-It is possible to integrate HISPlayer SDK with the Oculus environment. 
+Integrate HISPlayer SDK with the Oculus environment. 
 
 The **Meta XR All-in-One SDK** is available since November 13th, 2023, but in this tutorial we will explain how to use the old [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
 
