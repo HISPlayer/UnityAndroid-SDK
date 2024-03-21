@@ -58,6 +58,7 @@ The following public APIs are provided by **HISPlayerManager**:
    * **HISPLAYER_ERROR_LICENSE_DISABLED** (no function on this)
    * **HISPLAYER_ERROR_IMPRESSIONS_LIMIT_REACHED** (no function on this)
    * **HISPLAYER_ERROR_PLAYBACK_DURATION_LIMIT_REACHED** (no function on this)
+   * **HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED** (no function on this)
    * **HISPLAYER_ERROR_NETWORK_FAILED**
    
 * **public struct HISPlayerEventInfo**: The information of the triggered event.
