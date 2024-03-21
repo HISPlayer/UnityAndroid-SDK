@@ -1,5 +1,14 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 3.4.0
+##### March 21, 2024
+- [**Improvement**] Optimized URL video initialization
+- [**Added**] HISPlayer360Shader.shader for the 360 Oculus mode
+- [**Added**] Local Playback Persistent Datapath support 
+- [**Improvement**] Optimized HISPlayer Settings
+    - A warning message will be displayed in case a field required by HISPlayer SDK is missing
+- [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
+
 ### Version 3.3.0
 ##### January 25, 2024
 - [**Added**] New API to change video content using the URL string as a parameter:
@@ -15,7 +24,7 @@
 
 ### Version 3.1.0
 ##### October 11, 2023
-- [**Improvement**] Improved Android IL2CPP build
+- [**Improvement**] Optimized Android IL2CPP build
 
 ### Version 3.0.0 (Multiplatform SDK)
 ##### September 5, 2023
