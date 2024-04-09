@@ -14,7 +14,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
     * **public List \<string\> url**: List of the URLs for the stream.
-    * **publici list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
+    * **public list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This value should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
