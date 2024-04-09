@@ -2,12 +2,16 @@
 
 ### Version 3.4.0
 ##### March 21, 2024
-- [**Improvement**] Optimized URL video initialization
 - [**Added**] HISPlayer360Shader.shader for the 360 Oculus mode
 - [**Added**] Local Playback Persistent Datapath support 
+- [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
+- [**Added**] URL_EXTENSION, HLS and DASH MIME Types support. Please, refer to HISPlayerMimeTypes
+    -  URL_EXTENSION (Default)
+    -  HLS
+    -  DASH
+- [**Improvement**] Optimized URL video initialization
 - [**Improvement**] Optimized HISPlayer Settings
     - A warning message will be displayed in case a field required by HISPlayer SDK is missing
-- [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
 
 ### Version 3.3.0
 ##### January 25, 2024
