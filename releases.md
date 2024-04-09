@@ -5,7 +5,7 @@
 - [**Added**] HISPlayer360Shader.shader for the 360 Oculus mode
 - [**Added**] Local Playback Persistent Datapath support 
 - [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
-- [**Added**] URL_EXTENSION, HLS and DASH MIME Types support. Please, refer to HISPlayerMimeTypes
+- [**Added**] URL_EXTENSION, HLS and DASH MIME Types support. Please, refer to HISPlayerMimeTypes on [HISPlayer API](https://hisplayer.github.io/UnityAndroid-SDK/#/hisplayer-api)
     -  URL_EXTENSION (Default)
     -  HLS
     -  DASH
