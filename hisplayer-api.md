@@ -14,6 +14,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
     * **public List \<string\> url**: List of the URLs for the stream.
+    * **publici list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This value should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
@@ -31,6 +32,11 @@ The following public APIs are provided by **HISPlayerManager**:
     * **Material**
     * **RawImage**
     * **NONE**
+ 
+* * **public enum HISPlayerMimeTypes**: The list of the supported MIME Types:
+   * **URL_EXTENSION**
+   * **HLS**
+   * **DASH**      
 
 * **public enum HISPlayerEvent**: The list of events provided by HISPlayer SDK. The events can be used with the virtual functions in the next section:
     * **HISPLAYER_EVENT_PLAYBACK_READY**
@@ -318,11 +324,11 @@ Modify the volume of a certain stream giving a **playerIndex**. The **volume** o
 #### protected void AddStream(StreamProperties newStream)
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
-#### protected void AddVideoContent(int playerIndex, string url)
-Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths.
+#### protected void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION)
+Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths. The **mimeType** indicates which MIME type will be used for the new url.
 
-#### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “” (opt), string token value= “” (opt))
-Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the string is correct. This function supports local file paths.
+#### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string token key = “” (opt), string token value= “” (opt), HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION)
+Add new content to a certain player and its respective key server uri and tokens if needed. The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the string is correct. This function supports local file paths. The **mimeType** indicates which MIME type will be used for the new url.
 
 #### protected void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s URL  of a certain player. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
@@ -330,8 +336,11 @@ Change the video’s URL  of a certain player. The next playback will start paus
 #### protected void ChangeVideoContent(int playerIndex, string url)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL.
 
-#### protected void ChangeVideoContent(int playerIndex, string url, string keyServerUri, string token key = “” (opt), string token value= “” (opt))
-Change the video’s URL of a certain player given a new URL with DRM protection. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the parameters are correctly written. This function supports local file paths. This function will replace the Playlist with the new element.
+#### protected void ChangeVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType)
+Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL. The **mimeType** indicates which MIME type will be used for the new url.
+
+#### protected void ChangeVideoContent(int playerIndex, string url, string keyServerUri, string token key = “” (opt), string token value= “” (opt), HISPlayerMimeTypes, mimeType = HISPlayerMimeTypes.URL_EXTENSION)
+Change the video’s URL of a certain player given a new URL with DRM protection. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the parameters are correctly written. This function supports local file paths. This function will replace the Playlist with the new element. The **mimeType** indicates which MIME type will be used for the new url.
 
 #### protected void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of URLs.
