@@ -1,6 +1,5 @@
 - [HISPlayer Unity Android SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
-- [Import HISPlayer Sample](/import-sample.md)
 - [Custom Shaders for Linear Color Space](/shaders.md)
 - [DRM](/drm.md)
 - [Playing Local Files](/local-files.md)
