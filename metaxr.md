@@ -1,5 +1,6 @@
+# HISPlayer MetaXR 360 Sample
 
-# Meta XR All-in-One SDK
+## Integrate Meta XR All-in-One SDK
 
 Integrate HISPlayer SDK with the **[Meta XR All-in-One SDK](https://developer.oculus.com/downloads/package/meta-xr-sdk-all-in-one-upm/)**.
 
