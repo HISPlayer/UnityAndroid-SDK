@@ -1,7 +1,7 @@
 # HISPlayer Unity Android SDK Release Notes
 
 ### Version 3.4.0
-##### April 9, 2024
+##### April 10, 2024
 - [**Added**] HISPlayer360Shader.shader for the 360 Oculus mode
 - [**Added**] Local Playback Persistent Datapath support 
 - [**Added**] HISPLAYER_ERROR_PLATFORM_NOT_REGISTERED error event
