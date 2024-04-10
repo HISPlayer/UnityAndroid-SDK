@@ -17,7 +17,7 @@ Getting started with HISPlayer consists of implementing the following steps:
 
     2.4 Build and Run
 
-It's also possible to import the [HISPlayer Sample](https://hisplayer.github.io/UnityAndroid-SDK/#/import-sample) after completing step 1. The sample is a comprehensive example scene using the HISPlayerSDK to help demonstrate features like play, pause, seek, etc.
+It's also possible to import the [HISPlayer Sample]() after completing step 1. The sample is a comprehensive example scene using the HISPlayerSDK to help demonstrate features like play, pause, seek, etc.
 
 ## 1.1 Import package
 
@@ -30,7 +30,7 @@ Select the package of _HISPlayer SDK_ and import it.
 
 **Assets > Import Package > Custom Package > HISPlayerSDK unity package**
 
-Refer to [HISPlayer Sample](https://hisplayer.github.io/UnityAndroid-SDK/#/import-sample) to know more about the HISPlayer Sample.
+Refer to [HISPlayer Sample]() to know more about the HISPlayer Sample.
 
 <p align="center">
 <img width=70% src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/c8ff9e55-524e-48f1-a323-95b00aa5c6c7">
@@ -50,7 +50,7 @@ Select the package of HISPlayer SDK and import it.
 **Assets > Import Package > Custom Package > HISPlayerSDK unity package**
 
 Only the SDK will be imported using HISPlayer SDK versions lower than 3.4.0. 
-Refer to [HISPlayer Sample](https://hisplayer.github.io/UnityAndroid-SDK/#/import-sample) to know more about the _HISPlayer Sample_.
+Refer to [HISPlayer Sample]() to know more about the _HISPlayer Sample_.
 
 <p align="center">
 <img width=70% src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/7c52ba95-4420-4db3-972d-77930ce5cb9f">
