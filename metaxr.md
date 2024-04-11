@@ -91,7 +91,7 @@ If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISP
 
 HISPlayerOculusSample uses the default Unity Skybox/Panoramic shader, as explained in the [HISPlayer 360 Material](./metaxr.md#HISPlayer-360-Material).
 
-If you use Linear Color Space in the Unity Project Settings > Player Settings > Other Settings > Rendering > Color Space, please change the default shader to HISPlayer360Shader by following these steps : 
+If you use Linear Color Space in the Unity Project Settings > Player Settings > Other Settings > Rendering > Color Space, please change the default shader to HISPlayer360Shader which will improve the video rendering quality by following these steps : 
 * Open Assets/HISPlayerOculusSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.mat
 <p align="center">
   <img width="50%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/2e32d3c3-86b9-4bc2-829a-e1750a8524ba">
