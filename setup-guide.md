@@ -126,7 +126,7 @@ This action will be related to Unity’s Canvas. If there is not a Canvas create
 For the creation, select **GameObject > UI > Raw Image**. Once it is created, attach it to the stream controller component
 
 <p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/af854bfb-215e-4ec5-bc6e-2c3ad4f0321b">
+<img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/af854bfb-215e-4ec5-bc6e-2c3ad4f0321b">
 </p>
 
 ### <ins>RenderTexture</ins>
@@ -146,7 +146,7 @@ Once all this process it’s done, associate the **RenderTexture** to the script
 Input the license key that is associated with the SDK. If the license key is not valid, the player won't work and will throw an error message. License key is not required for Unity Editor usage.
 
 <p align="center">
-<img width="400" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/7e7ca754-8d92-4c1b-b4aa-8218b6108bbc">
+<img width="600" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/7e7ca754-8d92-4c1b-b4aa-8218b6108bbc">
 </p>
 
 ### <ins>Multi Stream Properties</ins>
@@ -157,10 +157,13 @@ Use Multi Stream Properties to set all the configuration needed for multi stream
 * <span style="color:blue">**Raw Image**</span>: Attach the **RawImage** asset created to the **RawImage** section of the element.
 * <span style="color:blue">**Render Texture**</span>: Attach the **RenderTexture** to the **RenderTexture** section of the element.
 * <span style="color:blue">**URL**</span>: Add the URL associated to the stream. Each stream can have multiple URLs, therefore users can use the same render surface to play different URLs. It is also possible to add local files allocated in the device’s storage and the StreamingAssets special folder of Unity (see [Playing Local Files](/local-files.md) for more details).
+* <span style="color:blue">**URL MIME Types**</span>: Set the MIME types of each stream. It can be using URL Extension, HLS or DASH. 
 * <span style="color:blue">**Autoplay**</span>: Property to determine whether the player will start automatically after set up.
+* <span style="color:blue">**Loop Playback**</span>: Property to loop the current playback. It’s true by default.
+* <span style="color:blue">**Auto Transition**</span>: Property to change the playback to the next video in the playlist. This action won’t have effect when loopPlayback is true. It’s false by default.
 * <span style="color:blue">**Digital Rights Management (DRM)**</span>: The DRM will be disabled by default.  See [DRM](/drm.md) for more details.
 <p align="center">
-<img src="./assets/multistream-properties.PNG">
+<img src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/a6cddeab-c0d2-4607-b14f-1cbaf97db56c">
 </p>
 
 ## Build and Run
