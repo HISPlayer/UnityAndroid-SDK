@@ -95,3 +95,24 @@ this step can be skip, since Oculus controls the camera movement using the heads
 
 To check how to use the Gyroscope, please refer to **Assets/HISPlayerSample/Scripts/GyroscopeController.cs** and **Main Camera GameObject** in the Editor. 
 
+## HISPlayer 360 Shader for Linear Color Space
+If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/*.
+<p align="center">
+  <img width="70%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/e95a25a0-82ca-4c7b-b27b-e5ea3a84ae84">
+</p>
+
+The HISPlayer360Sample uses the default Unity Skybox/Panoramic shader, as explained in the [How to Render a 360 Video](./android-360-video.md#How-to-Render-a-360-Video).
+
+If you use Linear Color Space in the Unity Project Settings > Player Settings > Other Settings > Rendering > Color Space, please change the default shader to HISPlayer360Shader which will improve the video rendering quality by following these steps : 
+* Open Assets/HISPlayer360Sample/Resources/RenderTextures/Materials/HISPlayer_360_Material.mat
+
+* In the Inspector window, change Shader to HISPlayer360Shader
+<p align="center">
+  <img width="60%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/a981eb80-d2e6-4c99-8ba6-201d4ca615a9">
+</p>
+
+* Make sure you have the following setting of the material:
+<p align="center">
+  <img width="60%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/5ba12394-cc6a-4846-b7fc-4a682669dd66">
+</p>
+
