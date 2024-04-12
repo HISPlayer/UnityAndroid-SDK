@@ -41,7 +41,7 @@ In XR Plug-in Management, please make sure that you have the **Oculus** option c
 If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide](./setup-guide.md).
 
 ## Import HISPlayer Oculus Sample
-Please, download the sample here: [**HISPlayer Oculus 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Oculus_360_Sample.unitypackage) (no need to download it if you have received it in the email).
+Please, download the sample here: [**HISPlayer Oculus 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Oculus_360_Sample.unitypackage) (no need to download it if you have received it in the email). The sample is intended for playing 360 video. 
 
 Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps :
   - Import Oculus Integration SDK
@@ -78,7 +78,7 @@ In our sample we're using the following options:
 </p>
 
 ## HISPlayer 360 Shader for Linear Color Space
-If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/*.
+If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/* for 360 video playback.
 <p align="center">
   <img width="70%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/e95a25a0-82ca-4c7b-b27b-e5ea3a84ae84">
 </p>
