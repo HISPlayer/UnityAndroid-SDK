@@ -32,13 +32,13 @@ First, please configure the Unity project for Oculus by following this [Tutorial
 - IL2CPP - ARM64
 
 #### Oculus platform
-Open **Edit > Player Settings > Oculus**, select the Android platform and clik "**Select All**" and "**Apply All**" in order to set up all the Oculus settings. 
+Open **Edit > Player Settings > MetaXR**, select the Android platform and clik "**Select All**" and "**Apply All**" in order to set up all the Oculus settings. 
 
 <p align="center">
-<img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a907bcb-4689-4ad3-b4c1-7c53478a07fb">
+<img width="90%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/691d9de5-3874-4b6a-bb1e-3b2981020590">
 </p>
 
-In XR Plug-in Management, please make sure that you have the **Oculus** option checked. Otherwise, when you run the application, it will show a 2D window without XR environment.
+Select XR Plug-in Management, please make sure that you have the **Oculus** option checked. Otherwise, when you run the application, it will show a 2D window without XR environment.
   
   - **Edit > Project Settings > XR Plug-in Management**
 
