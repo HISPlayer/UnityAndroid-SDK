@@ -76,6 +76,8 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 <img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
 </p>
 
+Setting "Plugins Folder" will create **mainTemplate.gradle** and **gradleTemplate.properties** in your ProjectRoot\Assets\Plugins\Android.
+
 ## 2.1 Setup HISPlayer Manager
 
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
