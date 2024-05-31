@@ -7,7 +7,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 <br>
 
 ##  [NEW!](https://hisplayer.github.io/UnityVideoUpload/#/README)
-> **[HISPlayer Video Upload / Hosting](https://hisplayer.github.io/UnityVideoUpload/#/README)** is a new feature of our **Unity Video Player SDK** that allows you to upload a local video file to our server and transcode it into HLS and DASH streaming formats quickly and reliably. Need to convert your videos into HLS and DASH streams for multi-screen delivery at scale? Contact us here: [contact@hisplayer.com](mailto:contact@hisplayer.com)
+> **[HISPlayer Video Upload / Hosting](https://hisplayer.github.io/UnityVideoUpload/#/README)** is a new feature of our **Unity Video Player SDK**. It allows you to upload a local video file to our server and transcode it into HLS and DASH streaming formats quickly and reliably. Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? Contact us here: [contact@hisplayer.com](mailto:contact@hisplayer.com)
 > 
 > We can help you with the full **end-to-end** delivery and playback.
 
