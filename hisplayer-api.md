@@ -442,16 +442,16 @@ Disables the ABR to prevent the player from changing tracks regardless of bandwi
 Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
 
 #### protected void AddURLToCache(string url)
-Given the URL, a miminum amount of data will be stored in cache in order to initialize the video faster when it's needed. Once the video is loaded and played, it will continue caching the remaining fragments of the video. In the case the cache folder is full, the old files will be removed when new data is downloaded following LRU policy.
+The cache must be initialized before using this function. Given the URL, a miminum amount of data will be stored in cache in order to initialize the video faster when it's needed. Once the video is loaded and played, it will continue caching the remaining fragments of the video. Live and Local content are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy.
 
 #### protected void RemoveURLFromCache(string url)
-Removes the given URL from the cache if exists.  It's possible the cached data from AddUrlToCache doesn't exist anymore because of the LRU policy.
+The cache must be initialized before using this function. Removes the given URL from the cache if exists. Live and Local content are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
 
 #### protected bool IsURLCached(string url)
-Determines if the given URL is cached. It's possible the cached data added from AddUrlToCache doesn't exist anymore because of the LRU policy.
-
+The cache must be initialized before using this function. Determines if the given URL is cached. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
+  
 #### protected long GetRemainingCacheSpace() 
-Retrieves the remaining cache space in bytes.
+The cache must be initialized before using this function. Retrieves the remaining cache space in bytes.
 
 #### protected void FlushCacheFolder()
-Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
+The cache must be initialized before using this function. Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
