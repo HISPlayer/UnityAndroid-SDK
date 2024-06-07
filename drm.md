@@ -11,7 +11,12 @@ Use **Multi Stream Properties** to set the DRM fields. It is possible to add lic
 * <span style="color:blue">**Key Server URI**</span>: Add license URLs for DRM-protected contents. There must be one license key URL per content URL when the “Enable DRM” is checked.
 * <span style="color:blue">**DRM Tokens**</span>: If your key server needs more information, add drm tokens for DRM-protected contents alongside the respective Key Server URI. There must be one token per key server uri when the “Enable DRM” is checked. The tokens are composed of a Key and a Value. This field will have effect during the AddVideoContent functionality.
 
-The below image shows an example of the usage of the DRM fields in the editor:
+You may find the Widevine DRM video content URL and the key server URL sample here: [Widevine DRM Sample](https://integration.widevine.com/player). Then you can input the URLs in the **Multi Stream Properties** like image below:
+<p align="center">
+<img src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/82aaba44-ee4e-4004-9fdd-8a733fe025b2">
+</p>
+
+Belos is an example of the usage of the DRM fields in the editor with different properties of each video stream:
 * There are 3 URLs:
   * VIDEO CONTENT 1 CLEAR
   * VIDEO CONTENT 2 DRM
@@ -27,3 +32,4 @@ The below image shows an example of the usage of the DRM fields in the editor:
 <p align="center">
 <img src="./assets/drm.png">
 </p>
+
