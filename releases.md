@@ -1,5 +1,18 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 3.4.3
+##### June 7, 2024
+- [**Added**] Cache functionalites support
+    - protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
+    - protected void AddURLToCache(string url)
+    - protected void RemoveURLFromCache(string url)
+    - protected bool IsURLCached(string url)
+    - protected long GetRemainingCacheSpace()  
+  
+### Version 3.4.2
+##### April 24, 2024
+- [**Improvement**] Improvement of software robustness
+
 ### Version 3.4.1
 ##### April 23, 2024
 - [**Improvement**] Improvement of software robustness
