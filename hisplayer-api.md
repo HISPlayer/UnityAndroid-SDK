@@ -438,14 +438,6 @@ Enables the ABR to change automatically between tracks. The **playerIndex** is a
 #### protected void DisableABR(int playerIndex)
 Disables the ABR to prevent the player from changing tracks regardless of bandwidth. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void DisableABR(int playerIndex)
-Disables the ABR to prevent the player from changing tracks regardless of bandwidth. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
-
-#### protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
-Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). 
-The default maxCacheSize is 150 MB (150 * 1024 * 1024L bytes).
-
-
 #### protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
 Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
 
