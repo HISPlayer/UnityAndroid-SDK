@@ -100,11 +100,6 @@ The following public APIs are provided by **HISPlayerManager**:
 * **public struct HISPlayerCaptionElement**: The information of the triggered event turns into caption’s format.
    * **public int playerIndex**: The index of the player where the event is triggered.
    * **public string caption**: The next generated caption text.
-
-* **public CacheProperties cacheProperties**: Reference to the CacheProperties class
-  
-* **public class CacheProperties**
-  * **public long maxCacheSize**: The maximum size of the cache. 150 MB will be set by default
   
 ## Functions
 The following functions are provided by **HISPlayerManager**. They are not public so it’s necessary to create a custom script which inherits from **HISPlayerManager**.
