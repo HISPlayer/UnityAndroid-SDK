@@ -55,6 +55,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
+    * **HISPLAYER_EVENT_CACHE_PROGRESS**
+    * **HISPLAYER_EVENT_CACHE_URL_ADDED**
+    * **HISPLAYER_EVENT_CACHE_URL_REMOVED**
+    * **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED**
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
@@ -75,6 +79,15 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public float param3**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
    * **public float param4**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
    * **public string stringInfo**: Log information about the event.
+
+* **public class HISPlayerEventCacheProgress**: The information of the CacheProgress event.
+   * **public float requestLength**: The length of the content being cached in bytes.
+   * **public float bytesCached**: The number of bytes that are cached.
+   * **public float newBytesCached**: The number of bytes that have been newly cached since the last progress update.
+
+* **public class HISPlayerEventCacheURL**: The information of the Cache URL that is added or removed.
+   * **public HISPlayerEvent eventType**: The type of the event triggered.
+   * **public string url**: The URL attached to the event.
 
 * **public struct HISPlayerErrorInfo**: The information of the triggered error.
    * **public HISPlayerError errorType**: The type of the error triggered.
@@ -278,6 +291,22 @@ This event occurs whenever an internal playback reaches the end of the video con
 #### protected virtual void EventNetworkConnected(HISPlayerEventInfo subtitlesInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPLAYER_EVENT_NETWORK_CONNECTED** is triggered.
 This event occurs whenever the network has been reconnected.
+
+#### protected virtual void EventCacheProgress(HISPlayerEventCacheProgress cacheProgress)
+Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_PROGRESS** is triggered. 
+This event occurs whenever there is a process of caching a certain URL. It shows the progress data of the current cache operation.
+
+#### protected virtual void EventCacheURLAdded(HISPlayerEventCacheURL cacheURL)
+Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_ADDED** is triggered.
+This event occurs whenever the current cache operation has finished of adding the URL to the cache.
+
+#### protected virtual void EventCacheURLRemoved(HISPlayerEventCacheURL cacheURL)
+Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_REMOVED** is triggered.
+This event occurs whenever the current cache operation has finished of removing the URL from cache.
+
+#### protected virtual void EventCacheFlushed(HISPlayerEventInfo eventInfo)
+Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED** is triggered.
+This event occurs whenever the cache data has been flushed.
 
 #### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
 Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
