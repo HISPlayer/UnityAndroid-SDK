@@ -10,6 +10,7 @@
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
 - [Controlling ABR](/controlling-abr.md)
+- [Caching](/caching.md)
 - [Google Cardboard Guide](/cardboard.md)
 - [Obtaining Logs](/obtaining-logs.md)
 - [Update the SDK](/update-the-sdk.md)
