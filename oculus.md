@@ -1,10 +1,10 @@
-# Oculus Integration
+# Oculus Integration (Deprecated)
 
-Integrate HISPlayer SDK with the Oculus environment. 
+In this tutorial we will explain how to integrated HISPlayer SDK with the deprecated [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
 
-The **Meta XR All-in-One SDK** is available since November 13th, 2023, but in this tutorial we will explain how to use the old [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
+If you need the latest **Meta XR All-in-One SDK** integration (available since November 13th 2023), please refer to the following documentation:[HISPlayer MetaXR Integration](./metaxr.md)
 
-First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/). In the **Step 4. Import Meta XR All-in-One SDK from the Unity Asset Store**, please, import the Oculus Integration package instead and accept all the pop-ups in order to config properly the SDK.
+First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/). In the **Step 4. Import Meta XR All-in-One SDK from the Unity Asset Store**, instead of importing Meta XR All-in-One SDK, please import the Oculus Integration package instead and accept all the pop-ups in order to config properly the SDK.
 
 - **Assets > Import Package > Custom Package > OculusIntegration.unitypackage**
 
@@ -101,3 +101,11 @@ If you use Linear Color Space in the Unity Project Settings > Player Settings > 
   <img width="60%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/5ba12394-cc6a-4846-b7fc-4a682669dd66">
 </p>
 
+## Vertically Inverted Video Issue
+
+If you face an issue where the video is vertically inverted or rendered upside down, please set **FlipTextureVertically** of the StreamProperties to **true** before calling SetUpPlayer() in your project script. This API will flip the texture vertically. This API will work only for Android and Meta Quest devices, it will not have effect in the Unity editor. For example:
+```
+// Flip texture vertically to render the texture correctly for Skybox material.
+multiStreamProperties[0].FlipTextureVertically = true;
+SetUpPlayer();
+```
