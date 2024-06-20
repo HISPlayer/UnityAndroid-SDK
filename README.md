@@ -23,5 +23,5 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 <br>
 
 > [!NOTE]
-> ***If you need DRM content protection, video caching, fast channel switching, video thumbnail generation, custom development, and expedited customer support, please [contact us here](https://hisplayer.com/contact-hisplayer-unity-sdk-premium/) to get the HISPlayer SDK Premium Version.***
+> ***If you need DRM content protection, video caching, fast channel switching, video thumbnails, custom development, and expedited customer support, please [contact us here](https://hisplayer.com/contact-hisplayer-unity-sdk-premium/) to get the HISPlayer SDK Premium Version.***
 
