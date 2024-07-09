@@ -8,7 +8,7 @@
     - protected void RemoveURLFromCache(string url)
     - protected bool IsURLCached(string url)
     - protected long GetRemainingCacheSpace()  
-  
+
 ### Version 3.4.2
 ##### April 24, 2024
 - [**Improvement**] Improvement of software robustness
