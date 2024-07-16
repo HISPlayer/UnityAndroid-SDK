@@ -7,13 +7,13 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 <br>
 
 ## NEW!: Upload and Host your videos with HISPlayer
-> Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? HISPlayer includes now the option to upload and host your videos that can be played by HISPlayer SDK. **[Start your FREE trial here!](https://dashboard.hisplayer.com/signup)**
+> Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? HISPlayer includes now the option to upload and host your videos that can be played by HISPlayer Unity SDK. **[Start your FREE trial here!](https://dashboard.hisplayer.com/signup)**
 >
->Moreover, there is a version of HISPlayer SDK that allows you to upload your videos directly from the Unity editor, **[contact our team to get more info about it](https://hisplayer.com/contact-unity3d-video-upload-hosting/).**
+>Moreover, there is a version of HISPlayer Unity SDK that allows you to upload your videos directly from the Unity Editor, **[contact our team to get more info about it](https://hisplayer.com/contact-unity3d-video-upload-hosting/).**
 > 
 >The following videos show how it works:
 > * **[How to upload videos from the Unity Editor with HISPlayer](https://www.youtube.com/watch?v=POzM5U31tzc)**
-> * **[How to upload video from HISPlayer Dashboard](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
+> * **[How to upload video from HISPlayer Video Platform](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
 >   
 > We can help you with the full **end-to-end** delivery and playback.
 
@@ -27,3 +27,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 > [!NOTE]
 > ***If you need DRM content protection, video caching, fast channel switching, video thumbnails, custom development, and expedited customer support, please [contact us here](https://hisplayer.com/contact-hisplayer-unity-sdk-premium/) to get the HISPlayer SDK Premium Version.***
 
+<br>
+
+<sub><sup>Related Keywords:
+Online Video Platform, OVP, Video Platform, Video Hosting, Vimeo, YouTube, video streaming platform, video upload, video on demand, all-in-one video platform, DRM, content protection, Widevine DRM, AES encryption</sub><sup> 
