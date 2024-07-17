@@ -13,7 +13,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 > 
 >The following videos show how it works:
 > * **[How to upload videos from the Unity Editor with HISPlayer](https://www.youtube.com/watch?v=POzM5U31tzc)**
-> * **[How to upload video from HISPlayer Video Platform](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
+> * **[How to upload video from HISPlayer Dashboard](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
 >   
 > We can help you with the full **end-to-end** delivery and playback.
 
@@ -30,4 +30,4 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 <br>
 
 <sub><sup>Related Keywords:
-Online Video Platform, OVP, Video Platform, Video Hosting, Vimeo, YouTube, video streaming platform, video upload, video on demand, all-in-one video platform, DRM, content protection, Widevine DRM, AES encryption</sub><sup> 
+Online Video Platform, OVP, Video Platform, Video Hosting, video streaming platform, video upload, video on demand, all-in-one video platform, DRM, content protection, Widevine DRM, AES encryption</sub><sup> 
