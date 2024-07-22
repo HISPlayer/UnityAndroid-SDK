@@ -308,7 +308,7 @@ This event occurs whenever the current cache operation has finished of removing 
 Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED** is triggered.
 This event occurs whenever the cache data has been flushed.
 
-#### protected virtual void ErrorInfo(HISPlayerErrorInfo subtitlesInfo)
+#### protected virtual void ErrorInfo(HISPlayerErrorInfo errorInfo)
 Override this method to add custom logic when an error callback is triggered. Please, refer to the **HISPlayerError** list.
 
 #### protected virtual void ErrorNetworkFailed(HISPlayerErrorInfo errorInfo)
