@@ -77,6 +77,13 @@ In our sample we're using the following options:
 <img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a1f1958-ed35-4283-9f54-dae66d43d24d">
 </p>
 
+### 180 Degrees Video Playback
+For 180 degrees playback usage, please change the **Image Type** of the material (HISPlayer_360_Material.mat) to **180 Degrees**.
+
+<p align="center">
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/7834b9fc-8bb5-42de-a40e-ce04a4984ed4">
+</p>
+
 ## HISPlayer 360 Shader for Linear Color Space
 If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** for 360 video playback in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/*.
 <p align="center">
