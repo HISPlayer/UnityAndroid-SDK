@@ -59,7 +59,7 @@ License key is not required for Unity Editor.
 After updating the SDK, check whether you have a shader error that is attached to the material. For example as image below:
 
 <p align="center">
-<img width="80%" alt="image" src="https://github.com/user-attachments/assets/af33ab33-b2e0-4056-bb5f-58752250a766">
+<img alt="image" src="https://github.com/user-attachments/assets/af33ab33-b2e0-4056-bb5f-58752250a766">
 </p>
 
 If you have this issue, please re-attach the correct shader to the material.
