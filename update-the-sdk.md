@@ -54,3 +54,18 @@ License key is not required for Unity Editor.
 <p align="center">
 <img width="478" alt="image" src="https://github.com/HISPlayer/UnityWebGL-SDK/assets/47497948/50b10c75-c6e0-438d-ba1f-da6e66d51eed">
 </p>
+
+## Check Material and Shader
+After updating the SDK, check whether you have a shader error that is attached to the material. For example as image below:
+
+<p align="center">
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/af33ab33-b2e0-4056-bb5f-58752250a766">
+</p>
+
+If you have this issue, please re-attach the correct shader to the material.
+
+<p align="center">
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/d1f6783f-831a-402c-b992-b991c0b2013f">
+</p>
+
+
