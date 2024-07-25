@@ -122,3 +122,4 @@ If you face an issue where the video is vertically inverted or rendered upside d
 multiStreamProperties[0].FlipTextureVertically = true;
 SetUpPlayer();
 ```
+If the API exists but the video is still vertically inverted, please try to remove the API from the script. The video is probably flipped already due to other reasons. 
