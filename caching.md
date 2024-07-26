@@ -1,6 +1,6 @@
 # Caching
 
-HISPlayer Android for Unity supports caching for HLS, DASH and Progressive Download(mp4) URLs to load the video faster from the cache. Caching is supported from **SDK v3.4.3** and above. 
+HISPlayer Android for Unity supports caching for HLS, DASH and Progressive Download(mp4) URLs to load the video faster from the cache. Caching is supported in **SDK v3.4.3**. 
 
 ## Related APIs
 
