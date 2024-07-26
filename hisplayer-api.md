@@ -55,10 +55,10 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
-    * **HISPLAYER_EVENT_CACHE_PROGRESS**
-    * **HISPLAYER_EVENT_CACHE_URL_ADDED**
-    * **HISPLAYER_EVENT_CACHE_URL_REMOVED**
-    * **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED**
+    * **HISPLAYER_EVENT_CACHE_PROGRESS** (Only in SDK v3.4.3)
+    * **HISPLAYER_EVENT_CACHE_URL_ADDED** (Only in SDK v3.4.3)
+    * **HISPLAYER_EVENT_CACHE_URL_REMOVED** (Only in SDK v3.4.3)
+    * **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED** (Only in SDK v3.4.3)
 
 * **public enum HISPlayerError**: The list of errors provided by HISPlayer SDK. The errors can be used with the virtual functions in the next section:
    * **HISPLAYER_ERROR_LICENSE_EXPIRED** (no function on this)
@@ -80,12 +80,12 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public float param4**: This will have different meanings depending on the event. If there is no information about the parameter, it will have the default value -1.
    * **public string stringInfo**: Log information about the event.
 
-* **public class HISPlayerEventCacheProgress**: The information of the CacheProgress event.
+* **public class HISPlayerEventCacheProgress**: The information of the CacheProgress event. (Only in SDK v3.4.3)
    * **public float requestLength**: The length of the content being cached in bytes.
    * **public float bytesCached**: The number of bytes that are cached.
    * **public float newBytesCached**: The number of bytes that have been newly cached since the last progress update.
 
-* **public class HISPlayerEventCacheURL**: The information of the Cache URL that is added or removed.
+* **public class HISPlayerEventCacheURL**: The information of the Cache URL that is added or removed. (Only in SDK v3.4.3)
    * **public HISPlayerEvent eventType**: The type of the event triggered.
    * **public string url**: The URL attached to the event.
 
@@ -293,19 +293,19 @@ Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HI
 This event occurs whenever the network has been reconnected.
 
 #### protected virtual void EventCacheProgress(HISPlayerEventCacheProgress cacheProgress)
-Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_PROGRESS** is triggered. 
+Only in SDK v3.4.3. Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_PROGRESS** is triggered. 
 This event occurs whenever there is a process of caching a certain URL. It shows the progress data of the current cache operation.
 
 #### protected virtual void EventCacheURLAdded(HISPlayerEventCacheURL cacheURL)
-Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_ADDED** is triggered.
+Only in SDK v3.4.3. Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_ADDED** is triggered.
 This event occurs whenever the current cache operation has finished of adding the URL to the cache.
 
 #### protected virtual void EventCacheURLRemoved(HISPlayerEventCacheURL cacheURL)
-Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_REMOVED** is triggered.
+Only in SDK v3.4.3. Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_URL_REMOVED** is triggered.
 This event occurs whenever the current cache operation has finished of removing the URL from cache.
 
 #### protected virtual void EventCacheFlushed(HISPlayerEventInfo eventInfo)
-Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED** is triggered.
+Only in SDK v3.4.3. Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_FLUSH_FINISHED** is triggered.
 This event occurs whenever the cache data has been flushed.
 
 #### protected virtual void ErrorInfo(HISPlayerErrorInfo errorInfo)
@@ -463,19 +463,19 @@ Enables the ABR to change automatically between tracks. The **playerIndex** is a
 Disables the ABR to prevent the player from changing tracks regardless of bandwidth. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
-Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
+Only in SDK v3.4.3. Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
 
 #### protected void AddURLToCache(string url)
-The cache must be initialized before using this function. Given the URL, a miminum amount of data will be stored in cache in order to initialize the video faster when it's needed. Once the video is loaded and played, it will continue caching the remaining fragments of the video. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy.
+Only in SDK v3.4.3. The cache must be initialized before using this function. Given the URL, a miminum amount of data will be stored in cache in order to initialize the video faster when it's needed. Once the video is loaded and played, it will continue caching the remaining fragments of the video. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy.
 
 #### protected void RemoveURLFromCache(string url)
-The cache must be initialized before using this function. Removes the given URL from the cache if exists. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
+Only in SDK v3.4.3. The cache must be initialized before using this function. Removes the given URL from the cache if exists. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
 
 #### protected bool IsURLCached(string url)
-The cache must be initialized before using this function. Determines if the given URL is cached. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
+Only in SDK v3.4.3. The cache must be initialized before using this function. Determines if the given URL is cached. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
   
 #### protected long GetRemainingCacheSpace() 
-The cache must be initialized before using this function. Retrieves the remaining cache space in bytes.
+Only in SDK v3.4.3. The cache must be initialized before using this function. Retrieves the remaining cache space in bytes.
 
 #### protected void FlushCacheFolder()
-The cache must be initialized before using this function. Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
+Only in SDK v3.4.3. The cache must be initialized before using this function. Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
