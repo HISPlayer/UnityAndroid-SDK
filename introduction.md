@@ -72,6 +72,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 
 ### Supported Graphics API
   * OpenGLES3
+  * Vulkan
 
 ### Supported Editor
   * Windows Editor
