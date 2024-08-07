@@ -78,6 +78,15 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 
 Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTemplate.properties** in your ProjectRoot\Assets\Plugins\Android. Please make sure you use the correct **mainTemplate.gradle** that is generated from our SDK. If you need to modify it, please make sure the dependencies and configurations from HISPlayer SDK's mainTemplate.gradle exist in your modified gradle file.
 
+### HISPlayer SDK versions 4.3.0 and above
+
+ - On the **Project** window, open **Packages > HISPlayer SDK > HISPlayer > Plugins > visionOS**, select **HISPlayerVisionOS.framework** and exclude **Android**
+ - On the **Project** window, open **Packages > HISPlayer SDK > HISPlayer > Plugins > simulator > visionOS**, select **HISPlayerVisionOS.framework** and exclude **Android**
+
+<p align="center">
+      <img width="80%" alt="image" src="https://github.com/user-attachments/assets/c322a59d-181d-429d-a1c1-2426d98c695b">
+</p>
+ 
 ## 2.1 Setup HISPlayer Manager
 
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
