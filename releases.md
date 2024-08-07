@@ -1,5 +1,22 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.3.0
+##### August 7, 2024
+- [**Added**] Vulkan support
+- [**Added**] New HISPlayer Video Uploader feature. Turn local videos into streaming videos such as HLS or DASH. This videos are going to be stored in our server for you. Please, on the Editor refer to:
+    - Tools > HISPlayer > Upload Video
+- [**Update**] HISPlayer360Shader.shader is now including the field Flip Vertically. Please, refer to:
+    - Packages > HISPlayer SDK > HISPlayer > Resources > Materials > **HISPlayer360Material.mat**
+    - Packages > HISPlayer SDK > HISPlayer > Resources > Materials > **HISPlayer180Material.mat**
+    - Packages > HISPlayer SDK > HISPlayer > Scripts > Shaders > **HISPlayer360Shader.shader**
+- [**Improvement**] Optimized HISPlayer Settings log messages
+- [**Improvement**] Optimized Event and Error listeners
+- [**Improvement**] Optimized license checking
+- [**Improvement**] Optimized HISPlayer API function commentaries to be more clear
+- [**Improvement**] Optimized runtime log messages
+- [**Improvement**] Optimized initialization of the videos
+- [**Improvement**] Optimized 4k and 8k video experience on Android devices
+
 ### Version 3.4.3
 ##### June 7, 2024
 - [**Added**] Cache functionalites support
