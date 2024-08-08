@@ -20,7 +20,7 @@
 - [**Improvement**] Optimized HISPlayer API function commentaries to be more clear
 - [**Improvement**] Optimized runtime log messages
 - [**Improvement**] Optimized initialization of the videos
-- [**Improvement**] Optimized 4k and 8k video experience on Android devices
+- [**Improvement**] Optimized ABR and track selection without limitation from device's resolution
 
 ### Version 3.4.3
 ##### June 7, 2024
