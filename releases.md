@@ -1,5 +1,27 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.3.0
+##### August 8, 2024
+- [**Added**] Vulkan support
+- [**Added**] New HISPlayer Video Uploader feature. Turn local videos into streaming videos such as HLS or DASH. This videos are going to be stored in our server for you. Please, on the Editor refer to:
+    - [HISPlayer Video Upload documentation](https://hisplayer.github.io/UnityVideoUpload/#/)
+- [**Added**] Custom resources to support the stereoscopic rendering mode for Oculus
+    - Packages > HISPlayer SDK > HISPlayer > Scripts > Shaders > **HISPlayerStereoscopicShader.shader**
+    - Packages > HISPlayer SDK > HISPlayer > Resources > Materials > **HISPlayerStereoscopicMaterial.mat**
+    - Packages > HISPlayer SDK > HISPlayer > Scripts > RenderTextures > **HISPlayerStereoscopicRenderTexture.rendertexture**
+- [**Added**] Custom resources to play 180/360 videos
+    - Packages > HISPlayer SDK > HISPlayer > Resources > Materials > **HISPlayer360Material.mat**
+    - Packages > HISPlayer SDK > HISPlayer > Resources > Materials > **HISPlayer180Material.mat**
+    - Packages > HISPlayer SDK > HISPlayer > Scripts > Shaders > **HISPlayer360Shader.shader**
+    - Packages > HISPlayer SDK > HISPlayer > Scripts > RenderTextures > **HISPlayer360RenderTexture.rendertexture**
+- [**Improvement**] Optimized HISPlayer Settings log messages
+- [**Improvement**] Optimized Event and Error listeners
+- [**Improvement**] Optimized license checking
+- [**Improvement**] Optimized HISPlayer API function commentaries to be more clear
+- [**Improvement**] Optimized runtime log messages
+- [**Improvement**] Optimized initialization of the videos
+- [**Improvement**] Optimized ABR and track selection without limitation from device's resolution
+
 ### Version 3.4.3
 ##### June 7, 2024
 - [**Added**] Cache functionalites support
