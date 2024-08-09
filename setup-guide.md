@@ -80,7 +80,7 @@ Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTem
  
 ## 2.1 Setup HISPlayer Manager
 
-*You may skip this section if you are using [**HISPlayerSample**](./import-sample.md). The code set-up is already included in the sample script (HISPlayerSample.cs).*
+*You may skip this section if you are using [**HISPlayerSample**](./import-sample.md) or any other sample from HISPlayer. The code set-up is already included in the sample script (HISPlayerSample.cs).*
 
 Create a new script which will inherit from **HISPlayerManager**, for example, AndroidStreamController. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
 
