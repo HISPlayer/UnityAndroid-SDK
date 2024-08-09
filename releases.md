@@ -1,5 +1,9 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.3.2
+##### August 9, 2024
+- [**Added**] New RenderMode External Surface to play Widevine L1 content with Meta Quest devices
+
 ### Version 4.3.0
 ##### August 8, 2024
 - [**Added**] Vulkan support
