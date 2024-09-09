@@ -3,7 +3,7 @@
 In the video streaming industry, the DRM (Digital Rights Management) makes possible a secure distribution of contents over the network.
 Encrypted content is prepared using an encryption server and stored in a content library. The encrypted content is streamed or downloaded from the content library to client devices via content servers. Licenses to view the content are obtained from the License Server.
 
-The HISPlayer Unity Video Player SDK for Android supports [Widevine DRM](https://www.widevine.com/solutions/widevine-drm) and provides an API to the users for usage of the MediaDRM module. If you are using HISPlayer SDK v4.3.2 and above, Widevine with security L1 is supported on Meta Quest devices (please refer to next section), otherwise only Widevine with security L3 is supported.
+The HISPlayer Unity Video Player SDK for Android supports [Widevine DRM](https://www.widevine.com/solutions/widevine-drm) and provides an API to the users for usage of the MediaDRM module. By default only Widevine with security L3 is supported. If you need to play Widevine L1 content, please contact HISPlayer team. 
 
 Use **Multi Stream Properties** to set the DRM fields. It is possible to add license keys both in the editor and from code (see AddStream and AddVideoContent in [HISPlayer API](/hisplayer-api.md) for more details):
 
@@ -34,8 +34,5 @@ Belos is an example of the usage of the DRM fields in the editor with different 
 </p>
 
 ## Widevine L1
-If you are using HISPlayerSDK v4.3.2 and above, it is possible to play Widevine L1 content on Meta Quest devices only. It will require [**Meta Quest OVROverlay**](https://developer.oculus.com/documentation/unity/unity-ovroverlay/) that enables [**Compositor Layers**](https://developer.oculus.com/resources/os-compositor-layers/). 
-
-Please refer to the following sample to set-up the project and play Widevine L1 content: [**HISPlayer Meta Quest OVROverlay Sample**](https://hisplayer.github.io/UnitySamples/#/hisplayer-meta-ovroverlay-sample?id=meta-xr-all-in-one-version) 
-
+If you need to play Widevine L1 content with Meta Quest (Oculus) devices, please contact HISPlayer team. 
 
