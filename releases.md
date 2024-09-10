@@ -6,7 +6,6 @@
 - [**Added**] HISPLAYER_EVENT_TIMELINE_UPDATED and EventTimelineUpdated
     - This event occurs whenever the timeline of the current video has been updated. In the case of live content this may happen every certain time during the playback. This may change the current video position value from GetVideoPosition(...).
 - [**Improvement**] Optimized error log messages
-- [**Improvement**] Optimized license key management
 
 ### Version 4.3.2
 ##### August 9, 2024
