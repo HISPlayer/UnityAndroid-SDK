@@ -1,5 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.4.0
+##### September 10, 2024
+- [**Added**] Release API is called automatically when stopping the Editor, changing scenes or closing the app
+- [**Added**] HISPLAYER_EVENT_TIMELINE_UPDATED and EventTimelineUpdated
+    - This event occurs whenever the timeline of the current video has been updated. In the case of live content this may happen every certain time during the playback. This may change the current video position value from GetVideoPosition(...).
+- [**Improvement**] Optimized error log messages
+
 ### Version 4.3.2
 ##### August 9, 2024
 - [**Added**] New RenderMode External Surface to play Widevine L1 content with Meta Quest devices
