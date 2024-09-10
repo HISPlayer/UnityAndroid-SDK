@@ -56,6 +56,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **HISPLAYER_EVENT_AUTO_TRANSITION**
     * **HISPLAYER_EVENT_PLAYBACK_BUFFERING**
     * **HISPLAYER_EVENT_NETWORK_CONNECTED**
+    * **HISPLAYER_EVENT_TIMELINE_UPDATED**
     * **HISPLAYER_EVENT_END_OF_CONTENT**
     * **HISPLAYER_EVENT_CACHE_PROGRESS** (Only in SDK v3.4.3)
     * **HISPLAYER_EVENT_CACHE_URL_ADDED** (Only in SDK v3.4.3)
@@ -292,6 +293,10 @@ This event occurs whenever an internal playback reaches the end of the video con
 #### protected virtual void EventNetworkConnected(HISPlayerEventInfo subtitlesInfo)
 Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPLAYER_EVENT_NETWORK_CONNECTED** is triggered.
 This event occurs whenever the network has been reconnected.
+
+#### protected virtual void EventTimelineUpdated(HISPlayerEventInfo subtitlesInfo)
+Override this method to add custom logic when **HISPlayerEvent.HISPlayerEvent.HISPLAYER_EVENT_TIMELINE_UPDATED** is triggered.
+This event occurs whenever the timeline of the current video has been updated. In the case of live content this may happen every certain time during the playback. This may change the current video position value from GetVideoPosition().
 
 #### protected virtual void EventCacheProgress(HISPlayerEventCacheProgress cacheProgress)
 Only in SDK v3.4.3. Override this method to add custom logic when **HISPLAYER_EVENT_CACHE_PROGRESS** is triggered. 
