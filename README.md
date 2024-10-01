@@ -6,7 +6,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 
 <br>
 
-## 📣 NEW!: ✨  
+## 📣 NEW! ✨  
 
 > **Upload and Host your videos with HISPlayer**
 > 
