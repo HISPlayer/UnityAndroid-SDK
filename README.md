@@ -23,7 +23,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 
 <br>
 
-## [REQUEST FREE DEMO HERE!](https://hisplayer.com/demo-unity-player-sdk-github/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
+## [REQUEST A DEMO HERE!](https://hisplayer.com/demo-unity-player-sdk-github/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
 
 <br>
 
