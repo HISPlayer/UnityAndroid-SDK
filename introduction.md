@@ -42,7 +42,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 * FLV
 
 ### Content Protection
-  * Widevine DRM L3
+  * Widevine DRM 
 
 ### Metadata
   * ID3 tags
