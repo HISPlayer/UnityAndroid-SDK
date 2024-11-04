@@ -77,6 +77,13 @@ By selecting Android target 33, Unity is going to ask you to update (in the case
 </p>
 
 Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTemplate.properties** in your ProjectRoot\Assets\Plugins\Android. Please make sure you use the correct **mainTemplate.gradle** that is generated from our SDK. If you need to modify it, please make sure the dependencies and configurations from HISPlayer SDK's mainTemplate.gradle exist in your modified gradle file.
+
+If you use Unity 2023, please set the **Application Entry Point** to **Activity** and **disable GameActivity**. Please go to Edit > Project Settings > Player > Select Android tab > Other Settings > Configuration > Application Entry Point > Select **Activity**.
+
+<p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/a217594b-48e6-48cc-8eeb-8e9d681c84f4">
+</p>
+
  
 ## 2.1 Setup HISPlayer Manager
 
