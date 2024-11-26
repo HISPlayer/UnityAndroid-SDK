@@ -13,7 +13,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
-    * **public IntPtr externalSurface**: Reference to the external surface object. (SDK 4.3.2 and above)
+    * **public IntPtr externalSurface**: Reference to the external surface object. (Only in SDK v4.3.2)
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
@@ -328,7 +328,7 @@ These functions can’t be overridden and they can be used only inside the inher
 Initialize the player video stream system internally. It is necessary to use this function before anything else.
 
 #### protected void Release()
-Free all resources internally. When using different scenes, it's necessary to call this function before changing the scene. 
+Free all resources internally. In the SDK v4.3.0 and below, it's necessary to call this function before changing between Unity scenes or before quitting the application. In the SDK v4.4.0 and above, the release is called automatically when changing scenes or quitting the application and it's not required to call this function. 
 
 #### protected void Play(int playerIndex)
 Play a certain stream giving a **playerIndex**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
