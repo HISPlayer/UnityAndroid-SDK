@@ -4,7 +4,7 @@ It is possible to integrate HISPlayer SDK with 360 videos on mobile devices.
 
 Please, download the sample here -> [**HISPlayer Android 360 Sample**](https://downloads.hisplayer.com/Unity/Android_iOS/HISPlayer_Android_360_Sample.unitypackage) (no need to download it if you have received it in the email).
 
-In the case of using Oculus devices, please refer to the following link before continuing with this guide:
+In the case of using Meta Quest or Oculus devices, please go to the following link:
 - [**Meta XR All-in-One Integration Guide**](https://hisplayer.github.io/UnityAndroid-SDK/#/metaxr?id=meta-xr-all-in-one-sdk) in the case of using [Meta XR All-in-One SDK](https://developer.oculus.com/downloads/package/meta-xr-sdk-all-in-one-upm/)
 
 ## Import HISPlayer 360 Sample
