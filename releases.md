@@ -27,7 +27,7 @@
     - Packages > HISPlayer SDK > HISPlayer > Scripts > RenderTextures > **HISPlayer360RenderTexture.rendertexture**
 - [**Improvement**] Optimized HISPlayer Settings log messages
 - [**Improvement**] Optimized Event and Error listeners
-- [**Improvement**] Optimized license checking
+- [**Improvement**] Optimized license checking when date and time of the device are set to manual
 - [**Improvement**] Optimized HISPlayer API function commentaries to be more clear
 - [**Improvement**] Optimized runtime log messages
 - [**Improvement**] Optimized initialization of the videos
