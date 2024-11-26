@@ -113,6 +113,23 @@ If you use Linear Color Space in the Unity Project Settings > Player Settings > 
 
 * Make sure you have the following setting of the material:
 <p align="center">
-  <img width="60%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/5ba12394-cc6a-4846-b7fc-4a682669dd66">
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/23317c69-6f45-4075-a89d-83b66faae48b">
 </p>
+
+## Vertically Inverted Video Issue
+
+If you face an issue where the video is vertically inverted or rendered upside down, please follow 1 of these 2 approaches: 
+* Approach 1 (Recommended): Use **HISPlayer360Shader.shader** and attach it to the material as explained in the previous section. Make sure that the **Flip Vertically** option is enabled.
+
+<p align="center">
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/3102cf49-0598-4914-8a54-ef00443853d5">
+</p>
+
+* Approach 2: Set **FlipTextureVertically** of the StreamProperties to **true** before calling SetUpPlayer() in your project script. This API will flip the texture vertically. This API will work only for Android devices, it will not have effect in the Unity editor. For example:
+    ```
+    // Flip texture vertically to render the texture correctly for Skybox material.
+    multiStreamProperties[0].FlipTextureVertically = true;
+    SetUpPlayer();
+    ```
+Please don't mix both approaches, otherwise the video will be veritcally inverted.
 
