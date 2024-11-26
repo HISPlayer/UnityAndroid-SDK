@@ -4,7 +4,6 @@
 - [Custom Shaders for Linear Color Space](/shaders.md)
 - [DRM](/drm.md)
 - [Meta XR All-in-One SDK / Meta Quest Set Up Guide](/metaxr.md)
-- [Oculus Integration SDK (Deprecated) / Meta Quest Set Up Guide](/oculus.md)
 - [Playing Local Files](/local-files.md)
 - [360 Video Playback](/android-360-video.md)
 - [Unity URP](/unity-urp.md)
