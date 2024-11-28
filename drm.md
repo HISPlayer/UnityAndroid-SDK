@@ -34,5 +34,5 @@ Belos is an example of the usage of the DRM fields in the editor with different 
 </p>
 
 ## Widevine L1
-If you need to play Widevine L1 content with Meta Quest (Oculus) devices, please contact HISPlayer team. 
+If you need to play Widevine L1 content with Meta Quest (Oculus) devices, please [contact HISPlayer team](https://hisplayer.com/demo-unity-player-sdk-for-meta-quest/). 
 
