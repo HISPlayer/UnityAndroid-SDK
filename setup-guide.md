@@ -82,7 +82,7 @@ It is recommended to set Target API Level to 33. By selecting Android target 33,
 If your project requires Target API Level higher than 33 such as 34, then you can select the higher Target API Level and ignore the error message in the HISPlayer settings window. 
 
 #### Unity 2023, Unity 6 and Above
-If you use Unity 2023, Unity 6 and above, please set the **Application Entry Point** to **Activity** and **disable GameActivity**. Please go to Edit > Project Settings > Player > Select Android tab > Other Settings > Configuration > Application Entry Point > Select **Activity**.
+If you use Unity 2023, Unity 6 and above with HISPlayer SDK v4.4.0 and below, please set the **Application Entry Point** to **Activity** and **disable GameActivity**. Please go to Edit > Project Settings > Player > Select Android tab > Other Settings > Configuration > Application Entry Point > Select **Activity**.
 
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/a217594b-48e6-48cc-8eeb-8e9d681c84f4">
