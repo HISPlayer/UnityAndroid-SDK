@@ -13,7 +13,7 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
-    * **public IntPtr externalSurface**: Reference to the external surface object. (Only in SDK v4.3.2)
+    * **public IntPtr externalSurface**: Reference to the external surface object. (Only in SDK v4.3.2 and v4.5.2)
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
