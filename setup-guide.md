@@ -88,6 +88,7 @@ If you use Unity 2023, Unity 6 and above with HISPlayer SDK v4.4.0 and below, pl
 <img alt="image" src="https://github.com/user-attachments/assets/a217594b-48e6-48cc-8eeb-8e9d681c84f4">
 </p>
 
+**GameActivity** is supported in HISPlayer SDK v4.5.0 and above.
  
 ## 2.1 Setup HISPlayer Manager
 
