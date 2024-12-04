@@ -64,6 +64,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
   * 2021
   * 2022
   * 2023
+  * Unity 6
 
 ### Supported Unity's Rendering Mode
   * Render Texture
