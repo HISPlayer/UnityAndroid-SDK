@@ -8,7 +8,7 @@ HISPlayer is the most advanced Unity video streaming player for Android, support
 
 ## 📣 NEW! ✨  
 
-> **Upload and Host your videos with HISPlayer**
+> **HISPlayer Video Upload and Hosting**
 > 
 > Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? HISPlayer includes now the option to upload and host your videos that can be played by HISPlayer Unity SDK. **[Start your FREE trial here!](https://hisplayer.com/unity-asset-store-saas-registration/)**
 >
