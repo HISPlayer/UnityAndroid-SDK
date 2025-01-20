@@ -10,13 +10,13 @@ The most advanced Unity Video Player for Android, supporting local, VOD and live
 
 > **HISPlayer Video Upload and Hosting**
 > 
-> Need to convert your videos into HLS and DASH streams for multi-platform delivery at scale? HISPlayer includes now the option to upload and host your videos that can be played by HISPlayer Unity SDK. **[Start for FREE here!](https://hisplayer.com/unity-asset-store-saas-registration/)**
+> Need to convert your videos into HLS and DASH streaming URLs for multi-platform delivery at scale? HISPlayer includes the option to upload and host your videos online. Then you can play these video URLs seamlessly within your Unity projects using the HISPlayer Unity SDK. **[Start for FREE here!](https://hisplayer.com/unity-asset-store-saas-registration/)**
 >
->Moreover, there is a version of HISPlayer Unity SDK that allows you to upload your videos directly from the **Unity Editor**, **[contact our team to get more info about it](https://hisplayer.com/contact-unity3d-video-upload-hosting/).**
+>Moreover, HISPlayer Unity SDK allows you to upload your videos directly from the **Unity Editor**.
 > 
 >The following videos show how it works:
-> * **[How to upload videos from the Unity Editor with HISPlayer](https://www.youtube.com/watch?v=POzM5U31tzc)**
-> * **[How to upload video from HISPlayer Dashboard](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
+> * **[Upload videos from the Unity Editor with HISPlayer](https://www.youtube.com/watch?v=POzM5U31tzc)**
+> * **[Upload video from HISPlayer Dashboard](https://www.youtube.com/watch?v=awfN0zz-8zQ)**
 >   
 > We can help you with the full **end-to-end** delivery and playback.
 
