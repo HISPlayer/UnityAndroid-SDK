@@ -56,5 +56,15 @@ If you use Linear Color Space, please change the default shader to HISPlayer360S
 
 * Make sure you have the following setting of the material:
 <p align="center">
-  <img width="60%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/5ba12394-cc6a-4846-b7fc-4a682669dd66">
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/23317c69-6f45-4075-a89d-83b66faae48b">
+</p>
+
+
+## Vertically Inverted Video Issue
+
+If you face an issue where the video is vertically inverted or rendered upside down, please follow below approach: 
+* Use **HISPlayer360Shader.shader** and attach it to the material as explained in the previous section. Make sure that the **Flip Vertically** option is enabled.
+
+<p align="center">
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/3102cf49-0598-4914-8a54-ef00443853d5">
 </p>
