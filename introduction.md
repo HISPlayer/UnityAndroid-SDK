@@ -6,7 +6,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 
 <br>
 
-## Features
+## Compatibility
 
 ### Video Delivery Formats
   * DASH
@@ -49,8 +49,6 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
   * EMSG
 
 <br> 
-
-## Compatibility
 
 ### Supported Android Version
 
