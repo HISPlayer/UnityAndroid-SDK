@@ -4,8 +4,6 @@ HISPlayer is the most advanced video streaming player for Unity, supporting loca
 
 For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs](https://hisplayer.github.io/)**
 
-<br>
-
 ## Compatibility
 
 ### Video Delivery Formats
@@ -47,8 +45,6 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 ### Metadata
   * ID3 tags
   * EMSG
-
-<br> 
 
 ### Supported Android Version
 
