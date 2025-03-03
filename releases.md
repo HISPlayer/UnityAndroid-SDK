@@ -1,8 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.7.0
+##### March 3, 2025
+- [**Improvement**] Optimized Android plugin
+
 ### Version 4.6.0
 ##### January 16, 2025
-- [**Improvement**] Optimized Android plugin
+- [**Improvement**] Upgraded Android plugin
 
 ### Version 4.5.0
 ##### December 4, 2024
