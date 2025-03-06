@@ -22,8 +22,8 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 ### Audio Codecs
   * AAC-LC
   * MP3
-  * Dolby AC3
-  * Dolby EAC3
+  * Dolby AC3 (if codec is available in the device Hardware)
+  * Dolby EAC3 (if codec is available in the device Hardware)
 
 ### Subtitles
   * CEA-608
