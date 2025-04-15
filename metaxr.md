@@ -45,7 +45,7 @@ Select XR Plug-in Management, please make sure that you have the **Oculus** opti
 <img width="1040" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/beb2689c-d884-495c-9fa4-07b70014dfed">
 
 ## Import HISPlayer SDK
-If you have not imported HISPlayer SDK yet, please follow the [Quickstart Guide](./setup-guide.md).
+If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 ## Import HISPlayer Meta XR Sample
 Please, download the sample here: [**HISPlayer MetaXR 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email). The sample is intended for playing 360 video. 
@@ -114,8 +114,26 @@ If you use Linear Color Space in the Unity Project Settings > Player Settings > 
   <img width="60%" alt="image" src="https://github.com/user-attachments/assets/23317c69-6f45-4075-a89d-83b66faae48b">
 </p>
 
+## Common Issues
 
-## Vertically Inverted Video Issue
+### Meta Quest Store Android Target API Level 32 Requirement
+HISPlayer SDK requires Android Target API Level 33, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
+- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity6.zip)
+- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android32.zip)
+- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity2020_2021.zip)
+
+Please follow these steps after downloading the zip file:
+- Extract the zip file. It contains **gradleTemplate.properties**, **launcherTemplate.gradle** and **mainTemplate.gradle**.
+- Copy the 3 files above to your **UnityProject\Assets\Plugins\Android\...** This will replace the old files.
+- Build and run your project again.
+
+If you see the following errors and warning in HISPlayerSettings after copying the new files, you can ignore it.
+<p align="center">
+  <img width="40%" alt="image" src="https://github.com/user-attachments/assets/10591651-e27d-4d06-ba08-1280c10fd964">
+</p>
+
+
+### Vertically Inverted Video Issue
 
 If you face an issue where the video is vertically inverted or rendered upside down, please follow 1 of these 2 approaches: 
 * Approach 1 (Recommended): Use **HISPlayer360Shader.shader** and attach it to the material as explained in the previous section. Make sure that the **Flip Vertically** option is enabled.
