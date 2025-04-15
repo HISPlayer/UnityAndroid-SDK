@@ -1,7 +1,7 @@
 - [HISPlayer Unity Android SDK](/introduction.md)
 - [Quickstart Guide](/setup-guide.md)
 - [HISPlayer API](/hisplayer-api.md)
-- [Bright Video Issue | Custom Shaders for Linear Color Space](/shaders.md)
+- [Custom Shaders for Linear Color Space](/shaders.md)
 - [DRM](/drm.md)
 - [Meta XR All-in-One SDK | Meta Quest Set Up Guide](/metaxr.md)
 - [Playing Local Files](/local-files.md)
