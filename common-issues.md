@@ -3,7 +3,7 @@
 ## Bright Video Output
 If the video output is too bright when you are using **Linear** color space in the Unity Project Setting, please refer to this documentation: [Custom Shaders for Linear Color Space](https://hisplayer.github.io/UnityAndroid-SDK/#/shaders).
 
-## Vertically Inverted / Flipped Video Output with RawImage / RenderTexture / Material
+## Vertically Inverted / Flipped Video Output
 ### Normal Video (Non 180/360 Video)
 Select the GameObject where you render the video. In the **Inspector** window, set the **Y Scale** with negative value of the original value.
 <p align="center">
