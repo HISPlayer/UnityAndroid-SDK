@@ -12,5 +12,6 @@
 - [Caching](/caching.md)
 - [Google Cardboard Guide](/cardboard.md)
 - [Obtaining Logs](/obtaining-logs.md)
+- [Common Issues](/common-issues.md)
 - [Update the SDK](/update-the-sdk.md)
 - [Releases](/releases.md)
