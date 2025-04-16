@@ -4,14 +4,13 @@
 If the video output is too bright when you are using **Linear** color space in the Unity Project Setting, please refer to this documentation: [Custom Shaders for Linear Color Space](https://hisplayer.github.io/UnityAndroid-SDK/#/shaders).
 
 ## Vertically Inverted / Flipped Video Output with RawImage / RenderTexture / Material
-### Non 180/360 video
+### Normal Video (Non 180/360 Video)
 Select the GameObject where you render the video. In the **Inspector** window, set the **Y Scale** with negative value of the original value.
 <p align="center">
   <img width="50%" alt="image" src="https://github.com/user-attachments/assets/a65b409a-1af9-48be-a676-e2c8ed91aa96">
 </p>
 
-
-### 180/360 video
+### 180/360 Video
 Use **HISPlayer360Shader.shader** and attach it to the material as explained in the previous section. Make sure that the **Flip Vertically** option is enabled.
 
 <p align="center">
