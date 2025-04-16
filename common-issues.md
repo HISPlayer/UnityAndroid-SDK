@@ -33,6 +33,6 @@ If you see the following errors and warning in HISPlayerSettings after copying t
   <img width="40%" alt="image" src="https://github.com/user-attachments/assets/10591651-e27d-4d06-ba08-1280c10fd964">
 </p>
 
-## Android Asset Store Target API Level 34
+## Android PlayStore Target API Level 34
 If your project requires Target API Level higher than 33 such as 34, then you can select the higher Target API Level and ignore the error message in the HISPlayer settings window. 
 
