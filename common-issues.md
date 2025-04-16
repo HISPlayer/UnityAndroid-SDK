@@ -11,7 +11,7 @@ Select the GameObject where you render the video. In the **Inspector** window, s
 </p>
 
 ### 180/360 Video
-Use **HISPlayer360Shader.shader** and attach it to the material as explained in the previous section. Make sure that the **Flip Vertically** option is enabled.
+Use **HISPlayer360Shader.shader** and attach it to the material. Make sure that the **Flip Vertically** option is enabled.
 
 <p align="center">
   <img width="50%" alt="image" src="https://github.com/user-attachments/assets/3102cf49-0598-4914-8a54-ef00443853d5">
