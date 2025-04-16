@@ -13,7 +13,7 @@ The most advanced Unity Video Player for Android, supporting local, VOD and live
 >
 > Moreover, HISPlayer Unity SDK allows you to upload your videos directly from the **Unity Editor**.
 > Tutorial:
-> * **[Upload videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
+> * **[Host videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
 >   
 > We can help you with the full **end-to-end** delivery and playback.
 
