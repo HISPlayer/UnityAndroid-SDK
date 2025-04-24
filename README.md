@@ -1,6 +1,6 @@
 # HISPlayer Unity Android SDK
 
-The most advanced Unity Video Player for Android, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming inside your Unity games, metaverses, and XR apps on Android. We include the support of **Widevine Level 1 DRM** protection for premium contents and advanced features such as multistream or automatic bitrate adaptation to secure the best video quality. 
+The most advanced Unity Video Player for Android, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming in up to 8K resolution with the highest FPS inside your Unity games, metaverses, and XR apps on Android. We also include the support of **Widevine Level 1 DRM** protection for premium contents and advanced features such as multistream, WebRTC or automatic bitrate adaptation to secure the best video quality. 
 
 # [The full Documentation](https://hisplayer.github.io/UnityAndroid-SDK)
 
@@ -20,7 +20,7 @@ The most advanced Unity Video Player for Android, supporting local, VOD and live
 
 <br>
 
-## [REQUEST A DEMO HERE!](https://hisplayer.com/demo-unity-player-sdk-github/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
+## [GET YOUR FREE DEMO HERE!](https://hisplayer.com/demo-unity-player-sdk-github/?utm_source=github&utm_medium=referral&utm_campaign=unitygithub&utm_content=20200211--unitydemocontact)
 
 <br>
 
