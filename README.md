@@ -12,6 +12,7 @@ The most advanced Unity Video Player for Android, supporting local, VOD and live
 > Open a [**FREE account here**](https://dashboard.hisplayer.com/signup) to start hosting your videos and play them inside your Unity projects.
 >
 > Moreover, HISPlayer Unity SDK allows you to upload your videos directly from the **Unity Editor**.
+>
 > Tutorial:
 > * **[Host videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
 >   
