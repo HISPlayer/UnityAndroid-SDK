@@ -42,10 +42,6 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 ### Content Protection
   * Widevine DRM 
 
-### Metadata
-  * ID3 tags
-  * EMSG
-
 ### Supported Android Version
 
 |Name|SDK|
