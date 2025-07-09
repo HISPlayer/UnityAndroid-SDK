@@ -8,7 +8,7 @@ The following public APIs are provided by **HISPlayerManager**:
 * **public List <StreamProperties> multiStreamProperties**: List of properties for multi stream. Please, don't modify this list directly, use the **AddStream** or **RemoveStream** functions instead.
   
 * **public class StreamProperties**:
-    * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback** and **AutoTransition** properties respectively. 
+    * **public StreamProperties(bool isLoopPlaybackEnabled = true, bool isAutoTransitionEnabled = false, bool isUnityAudioEnabled = false)**: Constructor of the class. The received parameters will set the value of **LoopPlayback**, **AutoTransition** and **UnityAudio** properties respectively. 
     * **public HISPlayerRenderMode renderMode**: Type of texture for rendering. **HISPlayerRenderMode.NONE** by default.
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
@@ -19,8 +19,9 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
     * **public bool EnableRendering**: Determines if the stream will be rendered or not. The value can change in every moment for toggling between render or non-render mode. If true, the player will be rendered. It only can change in runtime.
     * **public bool FlipTextureVertically**: Flip the texture of the stream vertically. This value should be called before **SetUpPlayer**  or **AddStream** functions. Only supported on Android.
-    * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
-    * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition)**.
+    * **public bool LoopPlayback (Read-only)**: Loop the current playback. It's true by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition, unityAudio)**.
+    * **public bool AutoTransition (Read-only)**: Change the playback to the next video in the playlist. This action won't have effect when loopPlayback is true. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition, unityAudio)**.
+    * **public bool UnityAudio (Read-only)**: Retrieves the audio data that can be connected to Unity AudioSource through OnAudioFilterRead() instead of direct device speaker output. Calling SetVolume API to control the audio volume will not work, please control the corresponding Unity Audio Source volume instead. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition, unityAudio)**.
     * **public List \<string\> keyServerURI**: List of the DRM license key for each URL.
     * **public List \<DRM_Token\> DRMTokens**: List of the DRM tokens for each URL.
 
@@ -467,6 +468,18 @@ Enables the ABR to change automatically between tracks. The **playerIndex** is a
 
 #### protected void DisableABR(int playerIndex)
 Disables the ABR to prevent the player from changing tracks regardless of bandwidth. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+
+#### protected bool IsPlaying(int playerIndex)
+Check whether the certain player is playing. Returns True if the player is playing. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
+
+#### public float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
+Get the audio PCM data of each channel in float array. The order of the channel is the same as the order of the stream's audio channel layout, e.g. C L R Ls Rs. The **playerIndex** is the index of the player in multistream properties, the **sampleSizePerChannel** is the requested data size of each audio channel. Please use this API when **unityAudio** is set to true.
+
+#### public void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
+Fill the audio buffer with new audio PCM data. The **playerIndex** is the index of the player in multistream properties. The **audioData** is the audio buffer that will be filled with new audio data. The **channelIndex** is the index of the audio channel. The order of the channel index must be the same as the order of the stream's audio channel layout, e.g. C=0, L=1, R=2, Ls=3, Rs=4. Please use this API when **unityAudio** is set to true.
+
+#### public int GetAudioSessionId(int playerIndex)
+Provide the audio session identifier. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
 Only in SDK v3.4.3. Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
