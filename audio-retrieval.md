@@ -1,4 +1,4 @@
-# Audio PCM Retrieval
+# Audio PCM Data Retrieval and Connection to Unity Audio
 
 It is possible to retrieve the raw Audio PCM data and connect it to Unity Audio Source component through [OnAudioFilterRead()](https://docs.unity3d.com/6000.1/Documentation/ScriptReference/MonoBehaviour.OnAudioFilterRead.html). 
 
@@ -31,7 +31,9 @@ Fill the audio buffer with new audio PCM data. The **playerIndex** is the index 
 
 ## HISPlayer Android Spatial Audio Sample
 
-Please download the sample here: [HISPlayer_Android_SpatialAudio_Sample.unitypackage](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Android_SpatialAudio_Sample_v2.unitypackage)
+Please download the sample here: [HISPlayer_Android_SpatialAudio_Sample.unitypackage](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_Android_SpatialAudio_Sample_v2.unitypackage) and import it to your Unity project.
+
+Before using the sample, make sure that you have imported HISPlayer SDK. If not, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 The sample plays local video with 5 audio channels that are connected to 5 AudioSources. You may modify the sample depending on your audio channel count. 
 Please refer to the sample package which consists of the following Unity scenes in **HISPlayerSpatialAudioSample\Scenes**:
