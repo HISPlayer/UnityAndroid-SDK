@@ -473,10 +473,10 @@ Disables the ABR to prevent the player from changing tracks regardless of bandwi
 Check whether the certain player is playing. Returns True if the player is playing. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
 #### public float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
-Get the audio PCM data of each channel in float array. The order of the channel is the same as the order of the stream's audio channel layout, e.g. C L R Ls Rs. The **playerIndex** is the index of the player in multistream properties, the **sampleSizePerChannel** is the requested data size of each audio channel. Please use this API when **unityAudio** is set to true.
+Get the audio PCM data of each channel in float array. The order of the channel is the same as the order of the stream's audio channel layout, e.g. C L R Ls Rs. The **playerIndex** is the index of the player in multistream properties, the **sampleSizePerChannel** is the requested data size of each audio channel. Please use this API when **UnityAudio** is set to true.
 
 #### public void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
-Fill the audio buffer with new audio PCM data. The **playerIndex** is the index of the player in multistream properties. The **audioData** is the audio buffer that will be filled with new audio data. The **channelIndex** is the index of the audio channel. The order of the channel index must be the same as the order of the stream's audio channel layout, e.g. C=0, L=1, R=2, Ls=3, Rs=4. Please use this API when **unityAudio** is set to true.
+Fill the audio buffer with new audio PCM data. The **playerIndex** is the index of the player in multistream properties. The **audioData** is the audio buffer that will be filled with new audio data. The **channelIndex** is the index of the audio channel. The order of the channel index must be the same as the order of the stream's audio channel layout, e.g. C=0, L=1, R=2, Ls=3, Rs=4. Please use this API when **UnityAudio** is set to true.
 
 #### public int GetAudioSessionId(int playerIndex)
 Provide the audio session identifier. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
