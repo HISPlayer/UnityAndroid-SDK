@@ -2,7 +2,7 @@
 
 ### Version 4.9.0
 ##### July 10, 2025
-- [**Added**] Audio PCM data retrieval with the following APIs: UnityAudio, GetAudioData, FillAudioData
+- [**Added**] Audio PCM data retrieval with the following APIs: UnityAudio, GetAudioData, FillAudioData.
 - [**Added**] GetAudioSessionId API to get the audio session identifier.
 - [**Added**] IsPlaying API to check whether the certain player is playing.
 - [**Added**] 16KB memory pages support for Google Play Store.
