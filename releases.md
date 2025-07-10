@@ -1,5 +1,16 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.9.0
+##### July 10, 2025
+- [**Added**] Audio PCM data retrieval with the following APIs: UnityAudio, GetAudioData, FillAudioData.
+- [**Added**] GetAudioSessionId API to get the audio session identifier.
+- [**Added**] IsPlaying API to check whether the certain player is playing.
+- [**Added**] 16KB memory pages support for Google Play Store.
+
+### Version 4.8.0
+##### July 7, 2025
+- [**Improvement**] Enhancement to InspectorGUI to dynamically show/hide certain options.
+
 ### Version 4.7.0
 ##### March 3, 2025
 - [**Improvement**] Optimized Android plugin
