@@ -1,4 +1,4 @@
-# Audio PCM Data Retrieval and Connection to Unity Audio
+# Audio Data Retrieval and Unity Audio Connection
 
 It is possible to retrieve the raw Audio PCM data and connect it to Unity Audio Source component through [OnAudioFilterRead()](https://docs.unity3d.com/6000.1/Documentation/ScriptReference/MonoBehaviour.OnAudioFilterRead.html). 
 
