@@ -5,7 +5,7 @@
 - [DRM](/drm.md)
 - [Meta XR All-in-One SDK | Meta Quest Set Up Guide](/metaxr.md)
 - [Playing Local Files](/local-files.md)
-- [Audio PCM Data Retrieval and Connection to Unity Audio](/audio-retrieval.md)
+- [Audio Data Retrieval and Unity Audio Connection](/audio-retrieval.md)
 - [360 Video Playback](/android-360-video.md)
 - [Unity URP](/unity-urp.md)
 - [Unity HDRP](/unity-hdrp.md)
