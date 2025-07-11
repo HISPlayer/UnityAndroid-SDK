@@ -325,176 +325,176 @@ This error occurs when the Internet connection fails.
 ### Non-virtual functions 
 These functions can’t be overridden and they can be used only inside the inherited script. If it’s needed to use some of these functions into the Unity scene, for example with buttons, it is needed to create a public function which connects the button with the API.
 
-#### protected void SetUpPlayer()
+#### void SetUpPlayer()
 Initialize the player video stream system internally. It is necessary to use this function before anything else.
 
-#### protected void Release()
+#### void Release()
 Free all resources internally. In the SDK v4.3.0 and below, it's necessary to call this function before changing between Unity scenes or before quitting the application. In the SDK v4.4.0 and above, the release is called automatically when changing scenes or quitting the application and it's not required to call this function. 
 
-#### protected void Play(int playerIndex)
+#### void Play(int playerIndex)
 Play a certain stream giving a **playerIndex**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void Pause(int playerIndex)
+#### void Pause(int playerIndex)
 Pause a certain stream giving a **playerIndex**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void Stop(int playerIndex)
+#### void Stop(int playerIndex)
 Stop a certain stream giving a **playerIndex**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void Seek(int playerIndex, long milliseconds)
+#### void Seek(int playerIndex, long milliseconds)
 Seek a certain stream to a certain time giving a **playerIndex** and the time of the track to be sought in **milliseconds**. The stream is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SetVolume(int playerIndex, float volume)
+#### void SetVolume(int playerIndex, float volume)
 Modify the volume of a certain stream giving a **playerIndex**. The **volume** of the track value ranges between 0.0f and 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void AddStream(StreamProperties newStream)
+#### void AddStream(StreamProperties newStream)
 Add a new stream to the list multiStreamProperties. The stream must be added using this function instead of changing the list manually.
 
-#### protected void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
+#### void AddVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION (optional))
 Add new content to a certain player. If the **enableDRM** variable is true, a video content with an empty license will be added. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. Please, make sure the string is correct. This function supports local file paths. The parameter **mimeType** is optional and indicates which MIME type will be used for the new url.
 
-#### protected void AddVideoContent(int playerIndex, string url, string keyServerUri,  string tokenKey = “” (optional), string tokenValue = “” (optional), HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION(optional))
+#### void AddVideoContent(int playerIndex, string url, string keyServerUri,  string tokenKey = “” (optional), string tokenValue = “” (optional), HISPlayerMimeTypes mimeType = HISPlayerMimeTypes.URL_EXTENSION(optional))
 Add new content to a certain player and its respective key server uri and tokens if needed (tokenKey and tokenValue are optional parameters). The **enableDRM** variable must be true for using this function. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the string is correct. This function supports local file paths. The **mimeType** parameter is optional and indicates which MIME type will be used for the new url.
 
-#### protected void ChangeVideoContent(int playerIndex, int urlIndex)
+#### void ChangeVideoContent(int playerIndex, int urlIndex)
 Change the video’s URL  of a certain player. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The **urlIndex** is associated with the index of the element in the list of URLs.
 
-#### protected void ChangeVideoContent(int playerIndex, string url)
+#### void ChangeVideoContent(int playerIndex, string url)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL.
 
-#### protected void ChangeVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType)
+#### void ChangeVideoContent(int playerIndex, string url, HISPlayerMimeTypes mimeType)
 Change the video’s URL of a certain player given a new URL. The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. Please, make sure the new URL is correctly written. This function supports local file paths. This function will replace the Playlist with the new URL. The **mimeType** indicates which MIME type will be used for the new url.
 
-#### protected void ChangeVideoContent(int playerIndex, string url, string keyServerUri, string tokenKey = “” (optional), string tokenValue= “” (optional), HISPlayerMimeTypes, mimeType = HISPlayerMimeTypes.URL_EXTENSION(optional))
+#### void ChangeVideoContent(int playerIndex, string url, string keyServerUri, string tokenKey = “” (optional), string tokenValue= “” (optional), HISPlayerMimeTypes, mimeType = HISPlayerMimeTypes.URL_EXTENSION(optional))
 Change the video’s URL of a certain player given a new URL with DRM protection (tokenKey and tokenValue are optional parameters). The next playback will start paused if **autoPlay** is disabled. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list. The parameter **url** is the link to the new video. The **keyServerUri** is the license key associated with the URL. Please, make sure the parameters are correctly written. This function supports local file paths. This function will replace the Playlist with the new element. The **mimeType** parameter is optional and indicates which MIME type will be used for the new url.
 
-#### protected void RemoveVideoContent(int playerIndex, int urlIndex)
+#### void RemoveVideoContent(int playerIndex, int urlIndex)
 Remove content from a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.  The **urlIndex** is associated with the index of the element in the list of URLs.
 
-#### protected void RemoveStream(int playerIndex)
+#### void RemoveStream(int playerIndex)
 Remove a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SetPlaybackSpeedRate(int playerIndex, float speed)
+#### void SetPlaybackSpeedRate(int playerIndex, float speed)
 Modify the **speed rate** of a certain stream giving a **playerIndex**. The value of the player's speed must be greater (>) than 0.0f and less than or equal (<=) to 8.0f. The default value of player's speed is 1.0f. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected float GetPlaybackSpeedRate(int playerIndex)
+#### float GetPlaybackSpeedRate(int playerIndex)
 Obtain the **speed rate** of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected long GetVideoPosition(int playerIndex)
+#### long GetVideoPosition(int playerIndex)
 Provides information about the timeline position in **milliseconds**, of the current video of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected long GetVideoDuration(int playerIndex)
+#### long GetVideoDuration(int playerIndex)
 Provides information about the total duration in **milliseconds**, of the current video of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected HISPlayerTrack[] GetTracks(int playerIndex)
+#### HISPlayerTrack[] GetTracks(int playerIndex)
 Provides the list of the video tracks of the current video playing on a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetTrackBitrate(int playerIndex, int trackIndex)
+#### int GetTrackBitrate(int playerIndex, int trackIndex)
 Get the bitrate of a certain track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetTrackWidth(int playerIndex, int trackIndex)
+#### int GetTrackWidth(int playerIndex, int trackIndex)
 Get the width of a certain track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetTrackHeight(int playerIndex, int trackIndex)
+#### int GetTrackHeight(int playerIndex, int trackIndex)
 Get the height of a certain track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 of the list.
 
-#### protected int GetVideoWidth(int playerIndex)
+#### int GetVideoWidth(int playerIndex)
 Get the width of the current track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetVideoHeight(int playerIndex)
+#### int GetVideoHeight(int playerIndex)
 Get the height of the current track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetTrackID(int playerIndex, int trackIndex)
+#### int GetTrackID(int playerIndex, int trackIndex)
 Get the ID of a certain track of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected int GetTrackCount(int playerIndex)
+#### int GetTrackCount(int playerIndex)
 Get the number of tracks of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public void EnableCaptions(int playerIndex, bool enabled)
+#### void EnableCaptions(int playerIndex, bool enabled)
 Enables the captions of the stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
+#### HISPlayerCaptionTrack[] GetCaptionTrackList(int playerIndex)
 Provide information about all the captions of a certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public int GetCaptionsCount(int playerIndex)
+#### int GetCaptionsCount(int playerIndex)
 Obtain the number of captions of a  certain stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public string GetCaptionID(int playerIndex, int ccTrackIndex)
+#### string GetCaptionID(int playerIndex, int ccTrackIndex)
 Obtain the ID of a certain caption of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
+#### string GetCaptionLanguage(int playerIndex, int ccTrackIndex)
 Obtain the language of a certain caption of a certain player. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
+#### void SelectCaptionTrack(int playerIndex, int ccTrackIndex)
 Select a certain caption of a certain stream to be used. Before using this functions is recommended to use GetCaptionTrackList in order to know all the information about the captions. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SetMaxBitrate(int playerIndex, int bitrate)
+#### void SetMaxBitrate(int playerIndex, int bitrate)
 Set a new maximum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SetMinBitrate(int playerIndex, int bitrate)
+#### void SetMinBitrate(int playerIndex, int bitrate)
 Set a new minimum bitrate (in bits per second) of a specific track. This doesn't disable ABR. The possible tracks can be obtained from the tracks returned from the method GetTracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SelectTrack(int playerIndex, int trackIndex)
+#### void SelectTrack(int playerIndex, int trackIndex)
 Select a certain track of a certain stream to be used as the main track. This action will disable ABR, to enable it again you can use **EnableABR** API. The possible tracks can be obtained from the tracks returned from the method **GetTracks**. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0 (optional))
+#### void SetDecodedFrameBufferEnabled(bool enable, int playerIndex = 0 (optional))
 Enable the Decoded Frame Buffer Functionality. This function can be called independently of the SetUp function. This functionality can only be called for one single stream. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected async Task<Texture2D> GetDecodedFrameAtTimestamp(int msec, bool deletePreviousFrames = true (optional))
+#### async Task<Texture2D> GetDecodedFrameAtTimestamp(int msec, bool deletePreviousFrames = true (optional))
 Retrieves the Texture2D of the requested frame or null if the frame is not available for the given timestamp (parameter msec in milliseconds).
 
-#### protected Vector2Int GetDecodedFrameBufferRange()
+#### Vector2Int GetDecodedFrameBufferRange()
 Retrieves the range of the Decoded Frame Buffer in milliseconds. The X value of the Vector2Int corresponds to the timestamp in milliseconds of the oldest frame stored in the buffer, while the Y value corresponds to the newest.
 
-#### protected int GetNetworkBandwidth()
+#### int GetNetworkBandwidth()
 Returns the current network bandwidth. This value is an estimation in kbps.
    
-#### public HisPlayerAudioTrack[] GetAudioTrackList(int playerIndex)
+#### HisPlayerAudioTrack[] GetAudioTrackList(int playerIndex)
 Provide information about all the audio tracks of a certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### public int GetAudioCount(int playerIndex)
+#### int GetAudioCount(int playerIndex)
 Obtain the number of audio of a  certain stream. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
    
-#### public string GetAudioID(int playerIndex, int audioTrackIndex)
+#### string GetAudioID(int playerIndex, int audioTrackIndex)
 Obtain the ID of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### protected string GetAudioLanguage(int playerIndex, int audioTrackIndex)
+#### string GetAudioLanguage(int playerIndex, int audioTrackIndex)
 Obtain the language of a certain audio of a certain player. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### protected void SelectAudioTrack(int playerIndex, int audioTrackIndex)
+#### void SelectAudioTrack(int playerIndex, int audioTrackIndex)
 Select a certain audio-track of a certain stream to be used. Before using this functions is recommended to use GetAudioTrackList in order to know all the information about the audio-tracks. The playerIndex is associated with the index of the element of Multi Stream Properties, e.g. the index 0 is the element 0 in the list.
 
-#### protected void EnableABR(int playerIndex)
+#### void EnableABR(int playerIndex)
 Enables the ABR to change automatically between tracks. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void DisableABR(int playerIndex)
+#### void DisableABR(int playerIndex)
 Disables the ABR to prevent the player from changing tracks regardless of bandwidth. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected bool IsPlaying(int playerIndex)
+#### bool IsPlaying(int playerIndex)
 Check whether the certain player is playing. Returns True if the player is playing. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### public float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
+#### float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
 Get the audio PCM data of each channel in float array. The order of the channel is the same as the order of the stream's audio channel layout, e.g. C L R Ls Rs. The **playerIndex** is the index of the player in multistream properties, the **sampleSizePerChannel** is the requested data size of each audio channel. Please use this API when **UnityAudio** is set to true.
 
-#### public void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
+#### void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
 Fill the audio buffer with new audio PCM data. The **playerIndex** is the index of the player in multistream properties. The **audioData** is the audio buffer that will be filled with new audio data. The **channelIndex** is the index of the audio channel. The order of the channel index must be the same as the order of the stream's audio channel layout, e.g. C=0, L=1, R=2, Ls=3, Rs=4. Please use this API when **UnityAudio** is set to true.
 
-#### public int GetAudioSessionId(int playerIndex)
+#### int GetAudioSessionId(int playerIndex)
 Provide the audio session identifier. The **playerIndex** is associated with the index of the element of **Multi Stream Properties**, e.g. the index 0 is the element 0 in the list.
 
-#### protected void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
+#### void InitCacheInstance(long maxCacheSize = 150 * 1024 * 1024L)
 Only in SDK v3.4.3. Initialize the Cache Instance in order to use all the cache API. It can be called before or after SetUpPlayer(). In the case of overriding the Awake() function, InitCacheInstance must be called after calling base.Awake(). The maxCacheSize indicates the maximum permitted size by the cache in bytes. 150 MB will be set by default (150 * 1024 * 1024L bytes).
 
-#### protected void AddURLToCache(string url)
+#### void AddURLToCache(string url)
 Only in SDK v3.4.3. The cache must be initialized before using this function. Given the URL, a miminum amount of data will be stored in cache in order to initialize the video faster when it's needed. Once the video is loaded and played, it will continue caching the remaining fragments of the video. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy.
 
-#### protected void RemoveURLFromCache(string url)
+#### void RemoveURLFromCache(string url)
 Only in SDK v3.4.3. The cache must be initialized before using this function. Removes the given URL from the cache if exists. Live and Local video contents are not supported. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
 
-#### protected bool IsURLCached(string url)
+#### bool IsURLCached(string url)
 Only in SDK v3.4.3. The cache must be initialized before using this function. Determines if the given URL is cached. In the case the cache folder is full, the least recently used old files will be removed when new data is downloaded following the Least Recently Used (LRU) cache policy so it's possible the cached data from AddUrlToCache doesn't exist anymore.
   
-#### protected long GetRemainingCacheSpace() 
+#### long GetRemainingCacheSpace() 
 Only in SDK v3.4.3. The cache must be initialized before using this function. Retrieves the remaining cache space in bytes.
 
-#### protected void FlushCacheFolder()
+#### void FlushCacheFolder()
 Only in SDK v3.4.3. The cache must be initialized before using this function. Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
