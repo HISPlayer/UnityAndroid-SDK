@@ -24,10 +24,10 @@ Please refer to below APIs section and HISPlayer Android Spatial Audio Sample se
 
 **public bool UnityAudio (Read-only)**: Retrieves the audio data that can be connected to Unity AudioSource through OnAudioFilterRead() instead of direct device speaker output. Calling SetVolume API to control the audio volume will not work, please control the corresponding Unity Audio Source volume instead. It's false by default. To modify this value, please, use the Editor or the constructor **StreamProperties(loopPlayback, autoTransition, unityAudio)**.
 
-#### public float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
+#### float[][] GetAudioData(int playerIndex, int sampleSizePerChannel)
 Get the audio PCM data of each channel in float array. The order of the channel is the same as the order of the stream's audio channel layout, e.g. C L R Ls Rs. The **playerIndex** is the index of the player in multistream properties, the **sampleSizePerChannel** is the requested data size of each audio channel. Please use this API when **UnityAudio** is set to true.
 
-#### public void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
+#### void FillAudioData(int playerIndex, float[] audioData, int channelIndex)
 Fill the audio buffer with new audio PCM data. The **playerIndex** is the index of the player in multistream properties. The **audioData** is the audio buffer that will be filled with new audio data. The **channelIndex** is the index of the audio channel. The order of the channel index must be the same as the order of the stream's audio channel layout, e.g. C=0, L=1, R=2, Ls=3, Rs=4. Please use this API when **UnityAudio** is set to true.
 
 ## HISPlayer Android Spatial Audio Sample
