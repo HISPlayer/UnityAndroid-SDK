@@ -50,7 +50,6 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 |Major version - Android 13 'Tiramisu' |Target SDK / API Level: 33|
 
 ### Supported Unity Versions
-  * 2020
   * 2021
   * 2022
   * 2023
