@@ -65,7 +65,7 @@ Alternatively, you may set the Target API level to 33 or higher in the Unity pro
 
 *You may skip this section if you are using [**HISPlayerSample**](./import-sample.md) or any other sample from HISPlayer. The code set-up is already included in the sample script (HISPlayerSample.cs).*
 
-Create a new script which will inherit from **HISPlayerManager**, for example, AndroidStreamController. It is necessary to add the **'using HISPlayerAPI;'** dependancy. Then, add this component to a new game object (recommended to be empty).
+Create a new script which will inherit from **HISPlayerManager**, for example, AndroidStreamController. It is necessary to add the **'using HISPlayerAPI;'** dependency. Then, add this component to a new game object (recommended to be empty).
 
 Call the **SetUpPlayer()** function in order to initialize the stream environment internally. This function can be called whenever it’s needed.
 
