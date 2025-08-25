@@ -48,7 +48,7 @@ Select XR Plug-in Management, please make sure that you have the **Oculus** opti
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 ## Import HISPlayer Meta XR Sample
-Please, download the sample here: [**HISPlayer MetaXR 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email). The sample is intended for playing 360 video. 
+Please, download the sample here: [**HISPlayer MetaXR 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email). The sample is intended for playing 360 video. It's recommended to use this sample with OpenGL. If you need to use Vulkan to play high resolution video with Meta Quest devices, please [contact HISPlayer team](https://hisplayer.com/demo-unity-player-sdk-for-meta-quest/). 
 
 Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps :
   - Set up the Meta XR All-in-One environment
