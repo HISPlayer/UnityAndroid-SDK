@@ -147,6 +147,7 @@ If you see the following errors and warning in HISPlayerSettings after copying t
 
 There is a conflict between the recommended configuration of the HISPlayer SDK, which asks you to disable Multithreading, and the Meta XR SDK, which asks you to enable it. HISPlayer requires this to avoid certain issues with some Android devices, specifically mobile phones. Therefore, it is recommended to enable it as required by Meta and ignore the HISPlayer warning.
 <p align="center">
+  <img width="597" height="122" alt="image" src="https://github.com/user-attachments/assets/9868dc07-209c-49ae-a44f-d3f32a176a4e" />
   <img width="594" height="197" alt="image" src="https://github.com/user-attachments/assets/33d65cfa-623f-4526-b014-6a19234229bb" />
 </p>
 
