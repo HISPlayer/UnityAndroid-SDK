@@ -42,8 +42,8 @@ In older versions of the Meta XR SDK, this step automatically installed Oculus X
 ## Which plugin should you choose, Oculus XR or OpenXR?
 
 When setting up the Meta XR All-in-One SDK in Unity, you’ll be asked to pick one of two XR providers: Oculus XR Plugin or Unity OpenXR Plugin.
-- Oculus XR Plugin: Meta’s older, Oculus-specific integration. Only recommended if you are working with Unity < 6 or the Meta XR SDK prior to version v74. 
-- Unity OpenXR Plugin: Industry-standard OpenXR integration. Fully compatible with all new features of the Meta XR SDK (v74+). It also allows your app to run on other OpenXR-compliant platforms, not just Quest.
+- **Oculus XR Plugin**: Meta’s older, Oculus-specific integration. Only recommended if you are working with Unity < 6 or the Meta XR SDK prior to version v74. 
+- **Unity OpenXR Plugin**: Industry-standard OpenXR integration. Fully compatible with all new features of the Meta XR SDK (v74+). It also allows your app to run on other OpenXR-compliant platforms, not just Quest.
 
 To install these plugins, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* or *com.unity.xr.openxr* depending on which one best suits your application, and select install.
 
