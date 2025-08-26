@@ -21,6 +21,9 @@
 #### Target Architecture
 - IL2CPP - ARM64
 
+**Note**: If you plan to use **Meta XR SDK v74 or newer**, we recommend working with **Unity 2022.3 LTS or Unity 6+**.  
+Older Unity versions may still work but are limited to the Oculus XR Plugin and won’t support new Meta XR features.
+
 ## Integrate Meta XR All-in-One SDK
 
 Integrate HISPlayer SDK with the **[Meta XR All-in-One SDK](https://developer.oculus.com/downloads/package/meta-xr-sdk-all-in-one-upm/)**.
@@ -138,6 +141,9 @@ If you see the following errors and warning in HISPlayerSettings after copying t
   <img width="40%" alt="image" src="https://github.com/user-attachments/assets/10591651-e27d-4d06-ba08-1280c10fd964">
 </p>
 
+### Disable Multithreaded Rendering Requirement
+
+<img width="594" height="197" alt="image" src="https://github.com/user-attachments/assets/33d65cfa-623f-4526-b014-6a19234229bb" />
 
 ### Vertically Inverted Video Issue
 
