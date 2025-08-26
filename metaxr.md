@@ -143,7 +143,7 @@ If you see the following errors and warning in HISPlayerSettings after copying t
 
 ### Disable Multithreaded Rendering Requirement
 
-There's a conflict between the recommended configuration for the HISPlayer SDK, which asks you to disable Multithreading, and the Meta XR SDK, which asks you to enable it. HISPlayer requires this to avoid certain issues with some Android devices, specifically mobile phones. Therefore, it's recommended that you enable it as required by Meta.
+There is a conflict between the recommended configuration of the HISPlayer SDK, which asks you to disable Multithreading, and the Meta XR SDK, which asks you to enable it. HISPlayer requires this to avoid certain issues with some Android devices, specifically mobile phones. Therefore, it is recommended to enable it as required by Meta and ignore the HISPlayer warning.
 <img width="594" height="197" alt="image" src="https://github.com/user-attachments/assets/33d65cfa-623f-4526-b014-6a19234229bb" />
 
 ### Vertically Inverted Video Issue
