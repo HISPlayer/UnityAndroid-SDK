@@ -37,6 +37,8 @@ Open **Edit > Player Settings > MetaXR**, select the Android platform and clik "
 <img width="90%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/691d9de5-3874-4b6a-bb1e-3b2981020590">
 </p>
 
+In older versions of the Meta XR SDK, this step automatically installed Oculus XR. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR, so you should decide which plugin fits your project.
+
 ## Which plugin should you choose, Oculus XR or OpenXR?
 
 When setting up the Meta XR All-in-One SDK in Unity, you’ll be asked to pick one of two XR providers: Oculus XR Plugin or Unity OpenXR Plugin.
@@ -44,6 +46,9 @@ When setting up the Meta XR All-in-One SDK in Unity, you’ll be asked to pick o
 - Unity OpenXR Plugin: Industry-standard OpenXR integration. Fully compatible with all new features of the Meta XR SDK (v74+). It also allows your app to run on other OpenXR-compliant platforms, not just Quest.
 
 To install these plugins, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* or *com.unity.xr.openxr* depending on which one best suits your application, and select install.
+
+Go to **Project Settings → XR Plug-in Management** and make sure that the provider you’ve chosen (Oculus XR or OpenXR) is checked.
+<img width="1255" height="943" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
 
 ## Import HISPlayer SDK
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
