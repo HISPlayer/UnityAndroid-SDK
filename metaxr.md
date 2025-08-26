@@ -52,7 +52,7 @@ To install these plugins, open **Package Manage > Install Package by Name**, typ
 
 Go to **Project Settings → XR Plug-in Management** and make sure that the provider you’ve chosen (Oculus XR or OpenXR) is checked.
 <p align="center">
-  <img width="1255" height="943" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
+  <img width="70%" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
 </p>
 
 ## Import HISPlayer SDK
