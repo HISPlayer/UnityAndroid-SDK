@@ -31,13 +31,13 @@ Integrate HISPlayer SDK with the **[Meta XR All-in-One SDK](https://developer.oc
 First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/) and open **Window > Package Manager > Packages: In Project** to check Meta XR All-in-One SDK is installed properly.
 
 <p align="center">
-<img width="605" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b4e362ba-f3d1-4d07-a46b-7a76e73d30fb">
+  <img width="605" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b4e362ba-f3d1-4d07-a46b-7a76e73d30fb">
 </p>
 
 Open **Edit > Player Settings > MetaXR**, select the Android platform and clik "**Select All**" and "**Apply All**" in order to set up all the Oculus settings. It is possible that during the remaining processes new errors and warnings may arise that need to be fixed again.
 
 <p align="center">
-<img width="90%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/691d9de5-3874-4b6a-bb1e-3b2981020590">
+  <img width="90%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/691d9de5-3874-4b6a-bb1e-3b2981020590">
 </p>
 
 In older versions of the Meta XR SDK, this step automatically installed Oculus XR. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR, so you should decide which plugin fits your project.
@@ -51,7 +51,9 @@ When setting up the Meta XR All-in-One SDK in Unity, you’ll be asked to pick o
 To install these plugins, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* or *com.unity.xr.openxr* depending on which one best suits your application, and select install.
 
 Go to **Project Settings → XR Plug-in Management** and make sure that the provider you’ve chosen (Oculus XR or OpenXR) is checked.
-<img width="1255" height="943" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
+<p align="center">
+  <img width="1255" height="943" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
+</p>
 
 ## Import HISPlayer SDK
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
@@ -89,7 +91,7 @@ In our sample we're using the following options:
 * **3D Layout**: None
 
 <p align="center">
-<img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a1f1958-ed35-4283-9f54-dae66d43d24d">
+  <img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a1f1958-ed35-4283-9f54-dae66d43d24d">
 </p>
 
 ### 180 Degrees Video Playback
@@ -144,7 +146,9 @@ If you see the following errors and warning in HISPlayerSettings after copying t
 ### Disable Multithreaded Rendering Requirement
 
 There is a conflict between the recommended configuration of the HISPlayer SDK, which asks you to disable Multithreading, and the Meta XR SDK, which asks you to enable it. HISPlayer requires this to avoid certain issues with some Android devices, specifically mobile phones. Therefore, it is recommended to enable it as required by Meta and ignore the HISPlayer warning.
-<img width="594" height="197" alt="image" src="https://github.com/user-attachments/assets/33d65cfa-623f-4526-b014-6a19234229bb" />
+<p align="center">
+  <img width="594" height="197" alt="image" src="https://github.com/user-attachments/assets/33d65cfa-623f-4526-b014-6a19234229bb" />
+</p>
 
 ### Vertically Inverted Video Issue
 
