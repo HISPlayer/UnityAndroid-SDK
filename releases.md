@@ -1,5 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.10.0
+##### September 11, 2025
+- [**Improvement**] Optimized RemoveStream after Stop.
+- [**Improvement**] Editor no longer clears console logs after stopping Play mode.
+- [**Improvement**] Improved log when releasing player.
+- [**Improvement**] Improved package architecture for multiple packages combination.
+
 ### Version 4.9.0
 ##### July 10, 2025
 - [**Added**] Audio PCM data retrieval with the following APIs: UnityAudio, GetAudioData, FillAudioData.
