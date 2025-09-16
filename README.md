@@ -1,6 +1,6 @@
 # HISPlayer Unity Android SDK
 
-The most advanced Unity Video Player for Android, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming in up to 8K resolution with the highest FPS inside your Unity games, metaverses, and XR apps on Android. We also include the support of **Widevine Level 1 DRM** protection for premium contents and advanced features such as multistream, WebRTC or automatic bitrate adaptation to secure the best video quality. 
+The most advanced Unity Video Player for Android, supporting local, VOD and live contents. It enables premium DASH and HLS video streaming in up to 8K resolution with the highest FPS inside your Unity games, metaverses, and XR apps on Android. We also include the support of **Widevine Level 1 DRM** protection for premium contents and advanced features such as multistream, spatial audio, WebRTC or automatic bitrate adaptation to secure the best video quality. 
 
 # [The full Documentation](https://hisplayer.github.io/UnityAndroid-SDK)
 
@@ -8,14 +8,11 @@ The most advanced Unity Video Player for Android, supporting local, VOD and live
 
 ## 🚀 HISPlayer Video Hosting Platform 🚀
 
-> HISPlayer allows you to upload and host your local video files and generate HLS / DASH streaming formats.
-> Open a [**FREE account here**](https://dashboard.hisplayer.com/signup) to start hosting your videos and play them inside your Unity projects.
+> Upload and host your local video files, automatically converting them into adaptive HLS / DASH streaming formats.
+> Open a [**FREE account here**](https://dashboard.hisplayer.com/signup) to start hosting your videos and playing them inside your Unity projects.
 >
-> Moreover, HISPlayer Unity SDK allows you to upload your videos inside the **Unity Editor**.
+> Our Video Platform also includes this **Unity Android Player SDK for FREE**, allowing you to upload videos directly inside the **Unity Editor.**
 >
-> Tutorial:
-> * **[Host videos from the Unity Editor](https://www.youtube.com/watch?v=vSI7U6TjHqI)**
->   
 > We can help you with the full **end-to-end** delivery and playback.
 
 
