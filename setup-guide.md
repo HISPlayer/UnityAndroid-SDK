@@ -101,8 +101,8 @@ Create a new Material from **Assets > Create > Material** and attach it to the G
 You can also use the **Resources > Materials > HISPlayerDefaultMaterial.mat** we provide in our package. 
 
 <p align="center">
-<img width=40% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/eacab2a8-7cee-4218-add9-98672f250540">
-<img width=40% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/756b60e7-46f6-4efd-9ced-4221a2a782df">
+<img width=50% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/eacab2a8-7cee-4218-add9-98672f250540">
+<img width=50% alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/756b60e7-46f6-4efd-9ced-4221a2a782df">
 </p>
 
 ### <ins>Raw Image</ins>
