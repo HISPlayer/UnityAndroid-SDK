@@ -19,7 +19,7 @@ The most advanced Unity Video Player for Android, supporting local, VOD, and liv
 <br>
 
 ## Unity SDK - Premium Version!
-*If you need **DRM content protection**, **Meta Quest** specific streaming features, WebRTC, or require a custom solution with dedicated support, please contact us here to get the **HISPlayer Unity SDK Premium Version**.*
+*If you need **DRM content protection**, **Meta Quest** specific streaming features, WebRTC, or require a custom solution with dedicated support, [**please contact us here**](https://hisplayer.com/contact-hisplayer-unity-sdk-premium/) to get the **HISPlayer Unity SDK Premium Version**.*
 <br>
 <br>
 
