@@ -62,21 +62,77 @@ This updated sample includes multiple scenes designed for different video types:
 
 It is recommended to use OpenGL for best compatibility. If you need to use Vulkan for playing high-resolution video on Meta Quest devices, please [contact HISPlayer team](https://hisplayer.com/demo-unity-player-sdk-for-meta-quest/). 
 
-Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps:
-  - Change the platform to Android: **Build Profiles > Android > Switch Platform**
-  - Set up the Meta XR All-in-One environment: Open **Meta XR Tools > Project Setup Tool**, **Fix All** Outstanding Issues and **Apply All** Recommended Items.
+## Set-Up the Sample
 
-There is a recommendation that will continue to say "Beginning with v74, it is recommended to use the OpenXR plugin instead of the OculusXR plugin". It can be ignored.
-  - Import HISPlayer SDK
-  - Import HISPlayer Meta XR Sample 
-  - Open Assets/HISPlayerOculusSample/Scenes/HISPlayerOculusSample
-  - Input the license key through the Inspector Unity window: **StreamController GameObject > HISPlayerSample component > License Key**
-  - Open File > Build Settings > Add Open Scenes
-  - Build and Run
+Set-Up the Sample
 
-To check how to set up the SDK and API usage, please refer to Assets/HISPlayerOculusSample/Scripts/Sample/HISPlayerSample.cs and StreamController GameObject in the Editor.
+Before using the sample, make sure you have completed all the required setup steps described above — including importing all necessary packages and dependencies for Oculus and the HISPlayer SDK.
 
-To check more about the project explanation, please refer to Assets/HISPlayerOculusSample/README.pdf
+Follow these steps to configure and run the sample properly:
+
+* **1. Enable the New Input System**
+    Unity versions starting with 6000 use the Input System Package (New) by default.
+    To verify this, go to: **Edit > Project Settings > Player > Other Settings > Active Input Handling**
+    If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
+
+Switch the Platform to Android
+Go to:
+File > Build Profiles > Android > Switch Platform
+
+Run the Meta XR Project Setup Tool
+Navigate to:
+Meta XR Tools > Project Setup Tool
+Click Fix All Outstanding Issues and Apply All Recommended Items.
+
+Note: You can safely ignore the message:
+“Beginning with v74, it is recommended to use the OpenXR plugin instead of the OculusXR plugin.”
+
+Configure HISPlayer Settings
+Go to:
+Tools > HISPlayer > Player Settings Configuration
+Click Fix All, but do not enable “Set Multithreaded Rendering to Disable”.
+
+Ignore Target API Recommendation
+The Meta XR Project Setup Tool may show:
+“Target API should be set to 32 to ensure the latest supported version.”
+This can be ignored.
+
+Configure Graphics API
+Go to:
+Player Settings > Other Settings > Auto Graphics API
+
+Disable Auto Graphics API
+
+Keep OpenGLES3 only
+
+Remove Vulkan
+
+Open a Scene
+Open one of the three scenes located in:
+Assets/HISPlayerVRSample/Scenes/
+When opening a scene, a prompt may appear to import TMP Essentials.
+If it does not appear automatically, go to:
+Window > TextMeshPro > Import TMP Essential Resources
+
+Enter License Key (if required)
+In the Inspector Window, select:
+StreamController GameObject → HISPlayerVRController component → License Key
+Enter your provided HISPlayer license key.
+
+Add the Scene to Build List
+Go to:
+File > Build Profiles > Scene List
+Add the selected scene as the first in the list.
+
+Select the Target Device
+Go to:
+Build Profiles > Android > Run Device
+and select your connected device.
+
+Build the Project
+Choose Build or Build and Run.
+A warning may appear saying “Disable Multithreaded”.
+Click Continue and ignore it.
 
 ## HISPlayer Oculus Controllers
 <p align="center">
