@@ -108,10 +108,6 @@ Open one of the three scenes located in `Assets/HISPlayerVRSample/Scenes/`. When
 
 If it does not appear automatically, go to `Window > TextMeshPro > Import TMP Essential Resources`
 
-<p align="center">
-  <img width="831" height="882" alt="image" src="https://github.com/user-attachments/assets/4c1a395a-b87e-48b0-aa86-71af4f4c41f9" />
-</p>
-
 **7. Enter License Key (if required)**
 
 In the Inspector Window, select `StreamController GameObject → HISPlayerVRController component → License Key`. Enter your provided HISPlayer license key.
