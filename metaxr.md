@@ -38,7 +38,7 @@ In older versions of the Meta XR SDK, this step automatically installed Oculus X
 
 ## Import Oculus XR Plugin
 
-To install these plugin, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* and select install.
+To install these plugin, open `Package Manage > Install Package by Name`, type *com.unity.xr.oculus* and select install.
 
 <p align="center">
   <img width="469" height="99" alt="image" src="https://github.com/user-attachments/assets/fe2b17de-a500-476d-a7b7-cf93d8e6119e" />
