@@ -42,15 +42,15 @@ Open **Edit > Player Settings > MetaXR**, select the Android platform and clik "
 
 In older versions of the Meta XR SDK, this step automatically installed Oculus XR. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR, so you should decide which plugin fits your project.
 
-## Which plugin should you choose, Oculus XR or OpenXR?
+## Import Oculus XR Plugin?
 
-When setting up the Meta XR All-in-One SDK in Unity, you’ll be asked to pick one of two XR providers: Oculus XR Plugin or Unity OpenXR Plugin.
-- **Oculus XR Plugin**: Meta’s older, Oculus-specific integration. Only recommended if you are working with Unity < 6 or the Meta XR SDK prior to version v74. 
-- **Unity OpenXR Plugin**: Industry-standard OpenXR integration. Fully compatible with all new features of the Meta XR SDK (v74+). It also allows your app to run on other OpenXR-compliant platforms, not just Quest.
+To install these plugin, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* and select install.
 
-To install these plugins, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* or *com.unity.xr.openxr* depending on which one best suits your application, and select install.
+<p align="center">
+  <img width="469" height="99" alt="image" src="https://github.com/user-attachments/assets/fe2b17de-a500-476d-a7b7-cf93d8e6119e" />
+</p>
 
-Go to **Project Settings → XR Plug-in Management** and make sure that the provider you’ve chosen (Oculus XR or OpenXR) is checked.
+Go to **Project Settings → XR Plug-in Management** and make sure that the provider Oculus XR is checked.
 <p align="center">
   <img width="70%" alt="image" src="https://github.com/user-attachments/assets/6c2237d4-092a-46aa-9a73-c8f5202a1725" />
 </p>
