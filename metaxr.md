@@ -64,8 +64,6 @@ It is recommended to use OpenGL for best compatibility. If you need to use Vulka
 
 ## Set-Up the Sample
 
-Set-Up the Sample
-
 Before using the sample, make sure you have completed all the required setup steps described above — including importing all necessary packages and dependencies for Oculus and the HISPlayer SDK.
 
 Follow these steps to configure and run the sample properly:
