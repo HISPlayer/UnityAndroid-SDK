@@ -70,7 +70,8 @@ Before using the sample, make sure you have completed all the required setup ste
 
 Follow these steps to configure and run the sample properly:
 
-* **1. Enable the New Input System**
+**1. Enable the New Input System**
+
     Unity versions starting with 6000 use the Input System Package (New) by default.
     To verify this, go to: **Edit > Project Settings > Player > Other Settings > Active Input Handling**
     If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
