@@ -92,7 +92,7 @@ Navigate to `Meta XR Tools > Project Setup Tool`. Click **Fix All** Outstanding 
 Go to `Tools > HISPlayer > Player Settings Configuration`
 Click **Fix All**, but do not enable “Set Multithreaded Rendering to Disable”.
 
-**Note:** The Meta XR Project Setup Tool may show “Target API should be set to 32 to ensure the latest supported version.” This can be ignored or refer to the common issue section.
+**Note:** The Meta XR Project Setup Tool may show “Target API should be set to 32 to ensure the latest supported version.” This can be ignored or refer to the [Common Issues section](#common-issues).
 
 **5. Configure Graphics API**
 
