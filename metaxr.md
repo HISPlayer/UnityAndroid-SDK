@@ -132,8 +132,6 @@ Choose Build or Build and Run. A warning may appear saying “Disable Multithrea
 
 This sample includes three different scenes, each demonstrating a different playback configuration: **Standard VR**, **180° Stereoscopic**, and **360°**.
 
----
-
 ### HISPlayer VR Scene
 
 **Video Rendering:** The video is rendered to the `Screen` GameObject.
@@ -144,15 +142,20 @@ This sample includes three different scenes, each demonstrating a different play
 1. Click on `HISPlayerVRMaterial.mat` and check the **Inspector** window.  
 2. Shader: `HISPlayer/HISPlayerDefaultShader`
 
+<p align="center">
+  <img width="917" height="375" alt="image" src="https://github.com/user-attachments/assets/fd991e75-f6e4-4c0d-81bc-499e670a2bd5" />
+</p>
+
 **Setting HISPlayer Stream Properties:**  
-- In the **Hierarchy Window**, select:  
-  `StreamController`  
+- In the **Hierarchy Window**, select `StreamController`  
 - Then go to the **Inspector Window** → `HISPlayerVRController (Script)` → **MultiStream Properties**  
   - **Render Mode:** `Material`  
   - **Material:** `HISPlayerVRMaterial.mat`  
   - **URL:** A default URL is provided, but you can modify it to test your own stream.
 
----
+<p align="center">
+  <img width="823" height="589" alt="image" src="https://github.com/user-attachments/assets/723b7bb9-c8b1-4b19-b873-aaed47140d5d" />
+</p>
 
 ### HISPlayer VR 180° Stereoscopic Scene
 
@@ -160,7 +163,7 @@ This sample includes three different scenes, each demonstrating a different play
 The video is rendered to the **Unity Skybox**.
 
 **Material Used:**  
-`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR180StereoscopicMaterial.mat`
+`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR180StereoscopicMaterial.mat`S
 
 **Material Settings:**  
 1. Click on `HISPlayerVR180StereoscopicMaterial.mat` and check the **Inspector** window.  
@@ -168,6 +171,10 @@ The video is rendered to the **Unity Skybox**.
 3. Image Type: `180 Degrees`  
 4. 3D Layout: `Side by Side`  
 5. Render Queue: `2501`
+
+<p align="center">
+  <img width="736" height="517" alt="image" src="https://github.com/user-attachments/assets/5116d627-4d3f-440c-a995-d5cb00a8c923" />
+</p>
 
 **Setting HISPlayer Stream Properties:**  
 - In the **Hierarchy Window**, select:  
@@ -177,7 +184,9 @@ The video is rendered to the **Unity Skybox**.
   - **Material:** `HISPlayerVR180StereoscopicMaterial.mat`  
   - **URL:** A default URL is provided, but you can modify it to test your own stream.
 
----
+<p align="center">
+  <img width="849" height="614" alt="image" src="https://github.com/user-attachments/assets/cddc2171-07ee-4d6e-bf5f-51440f3ab446" />
+</p>
 
 ### HISPlayer VR 360° Scene
 
@@ -194,6 +203,10 @@ The video is rendered to the **Unity Skybox**.
 4. 3D Layout: `None`  
 5. Render Queue: `2501`
 
+<p align="center">
+  <img width="742" height="500" alt="image" src="https://github.com/user-attachments/assets/7ecc36ad-f624-40fc-be7c-bac108139fcd" />
+</p>
+
 **Setting HISPlayer Stream Properties:**  
 - In the **Hierarchy Window**, select:  
   `StreamController`  
@@ -202,6 +215,9 @@ The video is rendered to the **Unity Skybox**.
   - **Material:** `HISPlayerVR360Material.mat`  
   - **URL:** A default URL is provided, but you can modify it to test your own stream.
 
+<p align="center">
+  <img width="778" height="566" alt="image" src="https://github.com/user-attachments/assets/cbff7849-99a4-4237-b79b-31816e1854e4" />
+</p>
 
 ## HISPlayer Oculus Controllers
 <p align="center">
