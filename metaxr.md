@@ -72,6 +72,10 @@ Follow these steps to configure and run the sample properly:
 
 Unity versions starting with 6000 use the Input System Package (New) by default. To verify this, go to: `Edit > Project Settings > Player > Other Settings > Active Input Handling` If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
 
+<p align="center">
+  <img width="843" height="143" alt="image" src="https://github.com/user-attachments/assets/813cc63d-284e-4960-bbe9-de582617c89b" />
+</p>
+
 **2. Switch the Platform to Android**
 
 Go to `File > Build Profiles > Android > Switch Platform`
@@ -97,7 +101,16 @@ Go to `Player Settings > Other Settings > Auto Graphics API` and disable it. **K
 **6. Open a Scene**
 
 Open one of the three scenes located in `Assets/HISPlayerVRSample/Scenes/`. When opening a scene, a prompt may appear to **import TMP Essentials.**
+
+<p align="center">
+  <img width="1024" height="381" alt="image" src="https://github.com/user-attachments/assets/7c23779f-e457-427c-83a2-8b1e70763477" />
+</p>
+
 If it does not appear automatically, go to `Window > TextMeshPro > Import TMP Essential Resources`
+
+<p align="center">
+  <img width="831" height="882" alt="image" src="https://github.com/user-attachments/assets/4c1a395a-b87e-48b0-aa86-71af4f4c41f9" />
+</p>
 
 **7. Enter License Key (if required)**
 
@@ -114,6 +127,11 @@ Go to `Build Profiles > Android > Run Device` and select your connected device.
 **10. Build the Project**
 
 Choose Build or Build and Run. A warning may appear saying “Disable Multithreaded”. Click **Continue** and ignore it.
+
+<p align="center">
+  <img width="593" height="198" alt="image" src="https://github.com/user-attachments/assets/8f9ff15e-158a-49dc-a15e-10ca86731503" />
+</p>
+
 
 ## HISPlayer Oculus Controllers
 <p align="center">
