@@ -36,7 +36,7 @@ First, please configure the Unity project for Oculus by following this [Tutorial
 
 In older versions of the Meta XR SDK, this step automatically installed Oculus XR Plugin. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR Plugin, but is recommended to use **Oculus XR Plugin** for best compatibility.
 
-## Import Oculus XR Plugin?
+## Import Oculus XR Plugin
 
 To install these plugin, open **Package Manage > Install Package by Name**, type *com.unity.xr.oculus* and select install.
 
