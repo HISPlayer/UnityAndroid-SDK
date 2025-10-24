@@ -34,13 +34,7 @@ First, please configure the Unity project for Oculus by following this [Tutorial
   <img width="605" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b4e362ba-f3d1-4d07-a46b-7a76e73d30fb">
 </p>
 
-Open **Edit > Player Settings > MetaXR**, select the Android platform and clik "**Fix All**" and "**Apply All**" in order to set up all the Oculus settings. It is possible that during the remaining processes new errors and warnings may arise that need to be fixed again.
-
-<p align="center">
-  <img width="90%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/691d9de5-3874-4b6a-bb1e-3b2981020590">
-</p>
-
-In older versions of the Meta XR SDK, this step automatically installed Oculus XR. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR, so you should decide which plugin fits your project.
+In older versions of the Meta XR SDK, this step automatically installed Oculus XR Plugin. However, starting with Meta XR SDK v74 and later, the choice of plugin is up to you. Meta’s support has shifted to focus on OpenXR Plugin, but is recommended to use **Oculus XR Plugin** for best compatibility.
 
 ## Import Oculus XR Plugin?
 
@@ -59,10 +53,20 @@ Go to **Project Settings → XR Plug-in Management** and make sure that the prov
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 ## Import HISPlayer Meta XR Sample
-Please, download the sample here: [**HISPlayer MetaXR 360 Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email). The sample is intended for playing 360 video. It's recommended to use this sample with OpenGL. If you need to use Vulkan to play high resolution video with Meta Quest devices, please [contact HISPlayer team](https://hisplayer.com/demo-unity-player-sdk-for-meta-quest/). 
+Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email).
 
-Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps :
-  - Set up the Meta XR All-in-One environment
+This updated sample includes multiple scenes designed for different video types:
+  - **360° Scene:** for immersive 360-degree video playback.
+  - **180° Stereoscopic Scene:** for 3D/VR180 stereoscopic video playback.
+  - **Standard Video Scene:** for regular flat video playback.
+
+It is recommended to use OpenGL for best compatibility. If you need to use Vulkan for playing high-resolution video on Meta Quest devices, please [contact HISPlayer team](https://hisplayer.com/demo-unity-player-sdk-for-meta-quest/). 
+
+Before using the sample, please make sure you have followed the above requirements to set-up your Unity project for Oculus and HISPlayer SDK. To use the sample, please follow these steps:
+  - Change the platform to Android: **Build Profiles > Android > Switch Platform**
+  - Set up the Meta XR All-in-One environment: Open **Meta XR Tools > Project Setup Tool**, **Fix All** Outstanding Issues and **Apply All** Recommended Items.
+
+There is a recommendation that will continue to say "Beginning with v74, it is recommended to use the OpenXR plugin instead of the OculusXR plugin". It can be ignored.
   - Import HISPlayer SDK
   - Import HISPlayer Meta XR Sample 
   - Open Assets/HISPlayerOculusSample/Scenes/HISPlayerOculusSample
