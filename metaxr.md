@@ -76,9 +76,8 @@ Unity versions starting with 6000 use the Input System Package (New) by default.
 To verify this, go to: **Edit > Project Settings > Player > Other Settings > Active Input Handling**
 If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
 
-Switch the Platform to Android
-Go to:
-File > Build Profiles > Android > Switch Platform
+**2. Switch the Platform to Android**
+Go to `File > Build Profiles > Android > Switch Platform`
 
 Run the Meta XR Project Setup Tool
 Navigate to:
