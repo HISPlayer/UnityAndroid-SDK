@@ -72,67 +72,50 @@ Follow these steps to configure and run the sample properly:
 
 **1. Enable the New Input System**
 
-Unity versions starting with 6000 use the Input System Package (New) by default.
-To verify this, go to: **Edit > Project Settings > Player > Other Settings > Active Input Handling**
-If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
+Unity versions starting with 6000 use the Input System Package (New) by default. To verify this, go to: `Edit > Project Settings > Player > Other Settings > Active Input Handling` If you are using Input Manager (Old) or Both, change it to **Input System Package (New).**
 
 **2. Switch the Platform to Android**
+
 Go to `File > Build Profiles > Android > Switch Platform`
 
-Run the Meta XR Project Setup Tool
-Navigate to:
-Meta XR Tools > Project Setup Tool
-Click Fix All Outstanding Issues and Apply All Recommended Items.
+**3. Run the Meta XR Project Setup Tool**
 
-Note: You can safely ignore the message:
+Navigate to `Meta XR Tools > Project Setup Tool`. Click **Fix All** Outstanding Issues and **Apply All** Recommended Items.
+
+**Note:** You can safely ignore the message:
 “Beginning with v74, it is recommended to use the OpenXR plugin instead of the OculusXR plugin.”
 
-Configure HISPlayer Settings
-Go to:
-Tools > HISPlayer > Player Settings Configuration
-Click Fix All, but do not enable “Set Multithreaded Rendering to Disable”.
+**4. Configure HISPlayer Settings**
 
-Ignore Target API Recommendation
-The Meta XR Project Setup Tool may show:
-“Target API should be set to 32 to ensure the latest supported version.”
-This can be ignored.
+Go to `Tools > HISPlayer > Player Settings Configuration`
+Click **Fix All**, but do not enable “Set Multithreaded Rendering to Disable”.
 
-Configure Graphics API
-Go to:
-Player Settings > Other Settings > Auto Graphics API
+**Note:** The Meta XR Project Setup Tool may show: “Target API should be set to 32 to ensure the latest supported version.” This can be ignored.
 
-Disable Auto Graphics API
+**5. Configure Graphics API**
 
-Keep OpenGLES3 only
+Go to `Player Settings > Other Settings > Auto Graphics API` and disable it. **Keep OpenGLES3** only and remove Vulkan.
 
-Remove Vulkan
+**6. Open a Scene**
 
-Open a Scene
-Open one of the three scenes located in:
-Assets/HISPlayerVRSample/Scenes/
-When opening a scene, a prompt may appear to import TMP Essentials.
-If it does not appear automatically, go to:
-Window > TextMeshPro > Import TMP Essential Resources
+Open one of the three scenes located in `Assets/HISPlayerVRSample/Scenes/`. When opening a scene, a prompt may appear to **import TMP Essentials.**
+If it does not appear automatically, go to `Window > TextMeshPro > Import TMP Essential Resources`
 
-Enter License Key (if required)
-In the Inspector Window, select:
-StreamController GameObject → HISPlayerVRController component → License Key
-Enter your provided HISPlayer license key.
+**7. Enter License Key (if required)**
 
-Add the Scene to Build List
-Go to:
-File > Build Profiles > Scene List
-Add the selected scene as the first in the list.
+In the Inspector Window, select `StreamController GameObject → HISPlayerVRController component → License Key`. Enter your provided HISPlayer license key.
 
-Select the Target Device
-Go to:
-Build Profiles > Android > Run Device
-and select your connected device.
+**8. Add the Scene to Build List**
 
-Build the Project
-Choose Build or Build and Run.
-A warning may appear saying “Disable Multithreaded”.
-Click Continue and ignore it.
+Go to `File > Build Profiles > Scene List` and add the selected scene as the first in the list.
+
+**9. Select the Target Device** 
+
+Go to `Build Profiles > Android > Run Device` and select your connected device.
+
+**10. Build the Project**
+
+Choose Build or Build and Run. A warning may appear saying “Disable Multithreaded”. Click **Continue** and ignore it.
 
 ## HISPlayer Oculus Controllers
 <p align="center">
