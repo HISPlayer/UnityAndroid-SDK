@@ -130,31 +130,85 @@ Choose Build or Build and Run. A warning may appear saying “Disable Multithrea
 
 
 ## HISPlayer Oculus Controllers
+
 <p align="center">
   <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d820d25f-a38b-4fa6-8bcc-8b7a8824125f">
 </p>
 
-## HISPlayer 360 Material
-Unity provides ways to configure how you will display your video content on the 360 environment. Please, refer to the following Unity documentation to check what kind of settings you will need: [Unity Video Panoramic Tutorial](https://docs.unity3d.com/Manual/VideoPanoramic.html).
+## HISPlayer Scenes Overview
 
-We provide a material to configure the options of your video so please, refer to **Assets/HISPlayerOculusSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.material** to check the 360 settings.
+This sample includes three different scenes, each demonstrating a different playback configuration: **Standard VR**, **180° Stereoscopic**, and **360°**.
 
-In our sample we're using the following options: 
+---
 
-* **Mapping**: Latitude Longitude Layout
-* **Image Type**: 360 Degrees
-* **3D Layout**: None
+### HISPlayer VR Scene
 
-<p align="center">
-  <img width="1069" height="533" alt="image" src="https://github.com/user-attachments/assets/7923a179-3e65-493b-8197-d25818a1316a" />
-</p>
+**Video Rendering:** The video is rendered to the `Screen` GameObject.
 
-### 180 Degrees Video Playback
-For 180 degrees playback usage, please change the **Image Type** of the material (HISPlayer_360_Material.mat) to **180 Degrees**.
+**Material Used:** `Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVRMaterial.mat`
 
-<p align="center">
-  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/7834b9fc-8bb5-42de-a40e-ce04a4984ed4">
-</p>
+**Material Settings:**  
+1. Click on `HISPlayerVRMaterial.mat` and check the **Inspector** window.  
+2. Shader: `HISPlayer/HISPlayerDefaultShader`
+
+**Setting HISPlayer Stream Properties:**  
+- In the **Hierarchy Window**, select:  
+  `StreamController`  
+- Then go to the **Inspector Window** → `HISPlayerVRController (Script)` → **MultiStream Properties**  
+  - **Render Mode:** `Material`  
+  - **Material:** `HISPlayerVRMaterial.mat`  
+  - **URL:** A default URL is provided, but you can modify it to test your own stream.
+
+---
+
+### HISPlayer VR 180° Stereoscopic Scene
+
+**Video Rendering:**  
+The video is rendered to the **Unity Skybox**.
+
+**Material Used:**  
+`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR180StereoscopicMaterial.mat`
+
+**Material Settings:**  
+1. Click on `HISPlayerVR180StereoscopicMaterial.mat` and check the **Inspector** window.  
+2. Shader: `HISPlayer/HISPlayer360Shader`  
+3. Image Type: `180 Degrees`  
+4. 3D Layout: `Side by Side`  
+5. Render Queue: `2501`
+
+**Setting HISPlayer Stream Properties:**  
+- In the **Hierarchy Window**, select:  
+  `StreamController`  
+- Then go to the **Inspector Window** → `HISPlayerVRController (Script)` → **MultiStream Properties**  
+  - **Render Mode:** `Material`  
+  - **Material:** `HISPlayerVR180StereoscopicMaterial.mat`  
+  - **URL:** A default URL is provided, but you can modify it to test your own stream.
+
+---
+
+### HISPlayer VR 360° Scene
+
+**Video Rendering:**  
+The video is rendered to the **Unity Skybox**.
+
+**Material Used:**  
+`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR360Material.mat`
+
+**Material Settings:**  
+1. Click on `HISPlayerVR360Material.mat` and check the **Inspector** window.  
+2. Shader: `HISPlayer/HISPlayer360Shader`  
+3. Image Type: `360 Degrees`  
+4. 3D Layout: `None`  
+5. Render Queue: `2501`
+
+**Setting HISPlayer Stream Properties:**  
+- In the **Hierarchy Window**, select:  
+  `StreamController`  
+- Then go to the **Inspector Window** → `HISPlayerVRController (Script)` → **MultiStream Properties**  
+  - **Render Mode:** `Material`  
+  - **Material:** `HISPlayerVR360Material.mat`  
+  - **URL:** A default URL is provided, but you can modify it to test your own stream.
+
 
 ## HISPlayer 360 Shader for Linear Color Space
 If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** for 360 video playback in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/*.
