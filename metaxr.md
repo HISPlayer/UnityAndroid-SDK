@@ -132,7 +132,7 @@ In our sample we're using the following options:
 * **3D Layout**: None
 
 <p align="center">
-  <img width="600" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/4a1f1958-ed35-4283-9f54-dae66d43d24d">
+  <img width="1069" height="533" alt="image" src="https://github.com/user-attachments/assets/7923a179-3e65-493b-8197-d25818a1316a" />
 </p>
 
 ### 180 Degrees Video Playback
