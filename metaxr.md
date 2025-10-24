@@ -163,7 +163,7 @@ This sample includes three different scenes, each demonstrating a different play
 The video is rendered to the **Unity Skybox**.
 
 **Material Used:**  
-`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR180StereoscopicMaterial.mat`S
+`Assets/HISPlayerVRSample/Resources/Materials/HISPlayerVR180StereoscopicMaterial.mat`
 
 **Material Settings:**  
 1. Click on `HISPlayerVR180StereoscopicMaterial.mat` and check the **Inspector** window.  
