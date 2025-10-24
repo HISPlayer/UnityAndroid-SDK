@@ -44,7 +44,7 @@ To install these plugin, open **Package Manage > Install Package by Name**, type
   <img width="469" height="99" alt="image" src="https://github.com/user-attachments/assets/fe2b17de-a500-476d-a7b7-cf93d8e6119e" />
 </p>
 
-Go to **Project Settings → XR Plug-in Management** and make sure that the provider Oculus XR is checked.
+Go to **Project Settings → XR Plug-in Management** and make sure that the provider Oculus is checked.
 <p align="center">
   <img width="1250" height="565" alt="image" src="https://github.com/user-attachments/assets/5ec3a3c3-cd08-4e69-afba-efc4c706b68c" />
 </p>
