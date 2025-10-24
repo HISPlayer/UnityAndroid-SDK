@@ -128,13 +128,6 @@ Choose Build or Build and Run. A warning may appear saying “Disable Multithrea
   <img width="593" height="198" alt="image" src="https://github.com/user-attachments/assets/8f9ff15e-158a-49dc-a15e-10ca86731503" />
 </p>
 
-
-## HISPlayer Oculus Controllers
-
-<p align="center">
-  <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d820d25f-a38b-4fa6-8bcc-8b7a8824125f">
-</p>
-
 ## HISPlayer Scenes Overview
 
 This sample includes three different scenes, each demonstrating a different playback configuration: **Standard VR**, **180° Stereoscopic**, and **360°**.
@@ -209,6 +202,11 @@ The video is rendered to the **Unity Skybox**.
   - **Material:** `HISPlayerVR360Material.mat`  
   - **URL:** A default URL is provided, but you can modify it to test your own stream.
 
+
+## HISPlayer Oculus Controllers
+<p align="center">
+  <img width="100%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d820d25f-a38b-4fa6-8bcc-8b7a8824125f">
+</p>
 
 ## HISPlayer 360 Shader for Linear Color Space
 If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISPlayer360Shader.shader** for 360 video playback in *Packages/com.hisplayer.hisplayersdk/HISPlayer/Scripts/Shaders/*.
