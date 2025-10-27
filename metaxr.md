@@ -53,7 +53,7 @@ Go to **Project Settings → XR Plug-in Management** and make sure that the prov
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 ## Import HISPlayer Meta XR Sample
-Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_360_Sample.unitypackage) (no need to download it if you have received it in the email).
+Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_Sample.unitypackage) (no need to download it if you have received it in the email).
 
 This updated sample includes multiple scenes designed for different video types:
   - **360° Scene:** for immersive 360-degree video playback.
@@ -230,10 +230,10 @@ If you are using **HISPlayer SDK version 3.4.0** and above, you will find **HISP
   <img width="70%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/e95a25a0-82ca-4c7b-b27b-e5ea3a84ae84">
 </p>
 
-HISPlayerOculusSample uses the default Unity Skybox/Panoramic shader, as explained in the [HISPlayer 360 Material](./metaxr.md#HISPlayer-360-Material).
+HISPlayerVRSample uses the default Unity Skybox/Panoramic shader, as explained in the [HISPlayer 360 Material](./metaxr.md#HISPlayer-360-Material).
 
 If you use Linear Color Space in the Unity Project Settings > Player Settings > Other Settings > Rendering > Color Space, please change the default shader to HISPlayer360Shader which will improve the video rendering quality by following these steps : 
-* Open Assets/HISPlayerOculusSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.mat
+* Open Assets/HISPlayerVRSample/Resources/RenderTextures/Materials/HISPlayer_360_Material.mat
 <p align="center">
   <img width="70%" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/32887298/2e32d3c3-86b9-4bc2-829a-e1750a8524ba">
 </p>
