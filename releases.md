@@ -1,5 +1,13 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.12.0
+##### October 29, 2025
+- [**Improvement**] Optimized Unity lifecylce callbacks when releasing player.
+- [**Improvement**] Optimized render texture cleaning when release player.
+- [**Improvement**] Optimized playback repeat mode.
+- [**Improvement**] Optimized stop function.
+- [**Improvement**] Improved the UI appearance of HISPlayerManager in the inspector.
+
 ### Version 4.10.0
 ##### September 11, 2025
 - [**Improvement**] Editor no longer clears console logs after stopping Play mode.
