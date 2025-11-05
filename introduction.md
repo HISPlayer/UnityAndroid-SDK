@@ -15,6 +15,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
   * H.263
   * H.264 (AVC)
   * H.265 (HEVC)
+  * AV1
   * MPEG-4
   * MPEG-2
   * VP9
