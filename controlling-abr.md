@@ -13,16 +13,16 @@ Given the *maximum* and *minimum* bitrate values, the player automatically adjus
 
 To set the maximum bitrate to be used, please refer to the following API : 
 
-[**void SetMaxBitrate(int playerIndex, int bitrate)**](./hisplayer-api.md#protected-void-setmaxbitrateint-playerindex-int-bitrate)
+[**void SetMaxBitrate(int playerIndex, int bitrate)**](./hisplayer-api.md#void-setmaxbitrateint-playerindex-int-bitrate)
 
 To set the minimum bitrate to be used, please refer to the following API : 
 
-[**void SetMinBitrate(int playerIndex, int bitrate)**](./hisplayer-api.md#protected-void-setminbitrateint-playerindex-int-bitrate)
+[**void SetMinBitrate(int playerIndex, int bitrate)**](./hisplayer-api.md#void-setminbitrateint-playerindex-int-bitrate)
 
 ## No ABR
 ABR is disabled and the player selects single resolution. To disable ABR and select specific resolution, please refer to the following API : 
 
-[**void SelectTrack(int playerIndex, int bitrate)**](./hisplayer-api.md#protected-void-selecttrackint-playerindex-int-bitrate)
+[**void SelectTrack(int playerIndex, int trackIndex)**](./hisplayer-api.md#void-selecttrackint-playerindex-int-trackindex)
 
-If you need to re-enable ABR after disabling it, you need to set the minimum and maximum bitrate values by calling [SetMinBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#protected-void-setminbitrateint-playerindex-int-bitrate) and [SetMaxBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#protected-void-setmaxbitrateint-playerindex-int-bitrate) . 
+If you need to re-enable ABR after disabling it, you need to set the minimum and maximum bitrate values by calling [SetMinBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#void-setminbitrateint-playerindex-int-bitrate) and [SetMaxBitrate(int playerIndex, int bitrate)](./hisplayer-api.md#void-setmaxbitrateint-playerindex-int-bitrate) . 
 Please refer to the previous section :  [ABR with Maximum and Minimum Resolution](controlling-abr.md#abr-with-maximum-and-minimum-resolution)
