@@ -498,3 +498,16 @@ Only in SDK v3.4.3. The cache must be initialized before using this function. Re
 
 #### void FlushCacheFolder()
 Only in SDK v3.4.3. The cache must be initialized before using this function. Free the cache folder. If a video was loaded from using the cache data, it will continue downloading the new fragments into the cache folder after the flushing is completed.
+
+#### void SetLogLevel(LogLevel logLevel)
+Establishes the amount of logs to be shown.
+**logLevel**: The log level to be used: 0->DEBUG, 1->INFO, 2->WARNING, 3->ERROR, 4->NONE
+
+#### void SetLogSystemColorized(bool show)
+Enables or disables colorized logs in the HISPlayer log system. Only available for Unity Editor.
+
+#### void SetLogSystemPlatform(bool show)
+Enables or disables colorized logs in the HISPlayer log system.
+
+#### void SetLogSystemTimestamp(bool show)
+Enables or disables timestamps in the HISPlayer log system.
