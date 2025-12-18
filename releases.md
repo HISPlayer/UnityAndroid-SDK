@@ -2,7 +2,7 @@
 
 ### Version 4.14.0
 ##### December 18, 2025
-- [**Improvement**] Improved runtime stream addition to better handle license validation when initializing streams without predefined URLs.
+- [**Improvement**] Improved adding stream at runtime when initializing streams without predefined URLs.
 - [**Improvement**] Improved volume change event handling to ensure HISPLAYER_EVENT_VOLUME_CHANGE is triggered consistently and behaves uniformly across all supported platforms.
 - [**Improvement**] Updated GetProgramDateTimeEpoch to return the exact Epoch time of the current frame, ensuring consistent behavior across WebGL, Windows, Android, iOS, and macOS.
 - [**Improvement**] Improved seek event handling to ensure HISPLAYER_EVENT_PLAYBACK_SEEK_END is consistently triggered across all platforms, including WebGL.
