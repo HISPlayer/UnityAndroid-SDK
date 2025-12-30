@@ -1,5 +1,9 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.14.1
+##### December 23, 2025
+- [**Improvement**] Updated eventType of EventPlaybackSeekEnd to output HISPLAYER_EVENT_PLAYBACK_SEEK_END.
+
 ### Version 4.14.0
 ##### December 18, 2025
 - [**Improvement**] Improved adding stream at runtime when initializing streams without predefined URLs.
