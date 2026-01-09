@@ -26,7 +26,7 @@ Older Unity versions may still work but are limited to the Oculus XR Plugin and 
 
 ## Integrate Meta XR All-in-One SDK
 
-Integrate HISPlayer SDK with the **[Meta XR All-in-One SDK](https://developer.oculus.com/downloads/package/meta-xr-sdk-all-in-one-upm/)**.
+Integrate HISPlayer SDK with the **[Meta XR All-in-One SDK](https://developer.oculus.com/downloads/package/meta-xr-sdk-all-in-one-upm/)** or **Meta XR Core SDK** only for smaller package size.
 
 First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/) and open `Window > Package Manager > Packages: In Project` to check Meta XR All-in-One SDK is installed properly.
 
