@@ -53,13 +53,13 @@ Open the window **Tools > HISPlayer** located in the upper side of the screen > 
 Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTemplate.properties** in your ProjectRoot\Assets\Plugins\Android. Please make sure you use the correct **mainTemplate.gradle** that is generated from our SDK. If you need to modify it, please make sure the dependencies and configurations from HISPlayer SDK's mainTemplate.gradle exist in your modified gradle file.
 
 #### Android Target API Level
-It is recommended to set Target API Level to 33 or higher. By selecting Android target 33, Unity is going to ask you to update (in the case you don't have the SDK installed). Please, press "Update Android SDK" button.
+It is recommended to set Target API Level to 34 or higher. By selecting Android target 34, Unity is going to ask you to update (in the case you don't have the SDK installed). Please, press "Update Android SDK" button.
 
 <p align="center">
 <img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
 </p>
 
-Alternatively, you may set the Target API level to 33 or higher in the Unity project settings.
+Alternatively, you may set the Target API level to 34 or higher in the Unity project settings.
  
 ## 2.1 Setup HISPlayer Manager
 
