@@ -18,10 +18,10 @@ Use **HISPlayer360Shader.shader** and attach it to the material. Make sure that 
 </p>
 
 ## Meta Quest Store Android Target API Level 32
-HISPlayer SDK requires Android Target API Level 33, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
-- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity6.zip)
-- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android32.zip)
-- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity2020_2021.zip)
+HISPlayer SDK requires Android Target API Level 34, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
+- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity6.zip)
+- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android34.zip)
+- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity2020_2021.zip)
 
 Please follow these steps after downloading the zip file:
 - Extract the zip file. It contains **gradleTemplate.properties**, **launcherTemplate.gradle** and **mainTemplate.gradle**.
@@ -33,6 +33,6 @@ If you see the following errors and warning in HISPlayerSettings after copying t
   <img width="40%" alt="image" src="https://github.com/user-attachments/assets/10591651-e27d-4d06-ba08-1280c10fd964">
 </p>
 
-## Android PlayStore Target API Level 34
-If your project requires Target API Level higher than 33 such as 34, then you can select the higher Target API Level and ignore the error message in the HISPlayer settings window. 
+## Android PlayStore Target API Level 35
+If your project requires Target API Level higher than 34 such as 35, then you can select the higher Target API Level and ignore the error message in the HISPlayer settings window. 
 

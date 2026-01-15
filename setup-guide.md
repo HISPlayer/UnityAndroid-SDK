@@ -43,11 +43,7 @@ In the case you don't want to include the HISPlayer Sample, please disable it fr
 Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to Android** > Set all the required settings.
 
 <p align="center">
-<img width="550" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b3203548-b0c3-46c9-ae74-dded00c5915a">
-</p>
-
-<p align="center">
-      <img width="50%" alt="image" src="https://github.com/user-attachments/assets/31964b54-f40b-4590-a081-e45dd865f73a">
+<img width="450" src="assets/image-player-setting-configuration.png">
 </p>
 
 Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTemplate.properties** in your ProjectRoot\Assets\Plugins\Android. Please make sure you use the correct **mainTemplate.gradle** that is generated from our SDK. If you need to modify it, please make sure the dependencies and configurations from HISPlayer SDK's mainTemplate.gradle exist in your modified gradle file.
@@ -56,8 +52,9 @@ Setting **"Plugins folder"** will create **mainTemplate.gradle** and **gradleTem
 It is recommended to set Target API Level to 34 or higher. By selecting Android target 34, Unity is going to ask you to update (in the case you don't have the SDK installed). Please, press "Update Android SDK" button.
 
 <p align="center">
-<img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
+<img width="250" alt="image" src="assets/image-android-sdk-update.png">
 </p>
+
 
 Alternatively, you may set the Target API level to 34 or higher in the Unity project settings.
  
