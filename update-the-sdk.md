@@ -32,17 +32,13 @@ Select the package of HISPlayer SDK and import it.
 Open the window **Tools > HISPlayer** located in the upper side of the screen > Click on Player Settings Configuration > Select **Build Target to Android** > Set all the required settings.
 
 <p align="center">
-<img width="550" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/b3203548-b0c3-46c9-ae74-dded00c5915a">
+<img width="450" src="assets/image-player-setting-configuration.png">
 </p>
 
-<p align="center">
-<img width="400" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/020bb6bb-fbc4-47b4-9503-347908f64254">
-</p>
-
-It is recommended to set Target API Level to 33 or higher. By selecting Android target 33, Unity is going to ask you to update (in the case you don't have the SDK installed). Please, press "Update Android SDK" button.
+It is recommended to set Target API Level to 34 or higher. By selecting Android target 34, Unity is going to ask you to update (in the case you don't have the SDK installed). Please, press "Update Android SDK" button.
 
 <p align="center">
-<img width="292" alt="image" src="https://github.com/HISPlayer/UnityAndroid-SDK/assets/47497948/d4cfb0b6-5d5f-4233-bd42-b454ae64925e">
+<img width="250" alt="image" src="assets/image-android-sdk-update.png">
 </p>
 
 Alternatively, you may set the Target API level to 33 or higher in the Unity project settings.

@@ -1,5 +1,9 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.15.0
+##### January 15, 2026
+- [**Improvement**] Change Android Target SDK version to 34.
+
 ### Version 4.14.3
 ##### January 8, 2026
 - [**Added**] SDK import and compilation for Unity Linux editor.

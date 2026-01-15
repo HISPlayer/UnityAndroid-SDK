@@ -251,10 +251,10 @@ If you use Linear Color Space in the Unity Project Settings > Player Settings > 
 ## Common Issues
 
 ### Meta Quest Store Android Target API Level 32 Requirement
-HISPlayer SDK requires Android Target API Level 33, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
-- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity6.zip)
-- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android32.zip)
-- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android32_Unity2020_2021.zip)
+HISPlayer SDK requires Android Target API Level 34, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
+- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity6.zip)
+- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android34.zip)
+- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity2020_2021.zip)
 
 Please follow these steps after downloading the zip file:
 - Extract the zip file. It contains **gradleTemplate.properties**, **launcherTemplate.gradle** and **mainTemplate.gradle**.
