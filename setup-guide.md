@@ -161,3 +161,10 @@ Use Multi Stream Properties to set all the configuration needed for multi stream
 
 ## Build and Run
 Once the configuration it’s done, open 'Build Settings' and press 'Build And Run'.
+
+## Windows Editor and Unity 6
+If you are using Unity and Windows editor, open your Unity Project Settings > Player Settings for Editor, please change the Graphics API for Windows to **Direct3D11**, then close and reopen your Unity project.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c8f839b5-d044-481d-9350-7885217a94e3">
+</p>
