@@ -4,6 +4,7 @@
 ##### January 15, 2026
 - [**Improvement**] Change Android Target SDK version to 34.
 - [**Improvement**] Updated mainTemplate.gradle and Android gradle dependencies.
+- [**Added**] Windows editor supports Direct3D12 Graphics API and Auto Graphics API in Unity6.
 
 ### Version 4.14.3
 ##### January 8, 2026
