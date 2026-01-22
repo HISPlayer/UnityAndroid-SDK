@@ -48,7 +48,7 @@ For the complete Documentation for all Platforms, visit **[HISPlayer Unity SDKs]
 |Name|SDK|
 |-|-|
 |Minor version - Android 8.0 ‘Oreo’ | Minimum SDK: 26|
-|Major version - Android 13 'Tiramisu' |Target SDK / API Level: 33|
+|Major version - Android 14 'Upside Down Cake' |Target SDK / API Level: 34|
 
 ### Supported Unity Versions
   * 2021

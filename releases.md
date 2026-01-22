@@ -1,5 +1,12 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.15.0
+##### January 21, 2026
+- [**Improvement**] Change Android Target SDK version to 34.
+- [**Improvement**] Updated mainTemplate.gradle and Android gradle dependencies.
+- [**Improvement**] Optimized HISPLAYER_EVENT_PLAYBACK_SEEK_END and EventPlaybackSeekEnd for Windows editor.
+- [**Added**] Windows editor supports Direct3D12 Graphics API and Auto Graphics API in Unity6.
+
 ### Version 4.14.5
 ##### January 15, 2026
 - [**Improvement**] Updated param1 of EventVolumeChange to return the correct volume value.
