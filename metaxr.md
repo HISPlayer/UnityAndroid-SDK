@@ -250,22 +250,6 @@ If you use Linear Color Space in the Unity Project Settings > Player Settings > 
 
 ## Common Issues
 
-### Meta Quest Store Android Target API Level 32 Requirement
-HISPlayer SDK requires Android Target API Level 34, but Meta Quest Store requires Android Target API Level 32. To solve this, please download the updated custom Android gradle files from the following links depending on your Unity version:
-- [Unity 6](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity6.zip)
-- [Unity 2022](https://downloads.hisplayer.com/Unity/Resources/Android34.zip)
-- [Unity 2021 & 2020](https://downloads.hisplayer.com/Unity/Resources/Android34_Unity2020_2021.zip)
-
-Please follow these steps after downloading the zip file:
-- Extract the zip file. It contains **gradleTemplate.properties**, **launcherTemplate.gradle** and **mainTemplate.gradle**.
-- Copy the 3 files above to your **UnityProject\Assets\Plugins\Android\...** This will replace the old files.
-- Build and run your project again.
-
-If you see the following errors and warning in HISPlayerSettings after copying the new files, you can ignore it.
-<p align="center">
-  <img width="40%" alt="image" src="https://github.com/user-attachments/assets/10591651-e27d-4d06-ba08-1280c10fd964">
-</p>
-
 ### Disable Multithreaded Rendering Requirement
 
 There is a conflict between the recommended configuration of the HISPlayer SDK, which asks you to disable Multithreading, and the Meta XR SDK, which asks you to enable it. HISPlayer requires this to avoid certain issues with some Android devices, specifically mobile phones. Therefore, it is recommended to enable it as required for Meta Quest usage and ignore the HISPlayer warning.
