@@ -1,5 +1,9 @@
 # HISPlayer Unity Android SDK Release Notes
 
+### Version 4.17.0
+##### April 7, 2026
+- [**Improvement**] Updated stereoscopic shader to improve rendering behavior and added support for Side-by-Side and Top-Bottom layouts.
+
 ### Version 4.15.0
 ##### January 21, 2026
 - [**Improvement**] Change Android Target SDK version to 34.
