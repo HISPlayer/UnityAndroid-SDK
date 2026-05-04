@@ -53,7 +53,7 @@ Go to **Project Settings → XR Plug-in Management** and make sure that the prov
 If you have not imported HISPlayer SDK yet, please follow the [**Quickstart Guide**](./setup-guide.md).
 
 ## Import HISPlayer Meta XR Sample
-Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_Sample.unitypackage) (no need to download it if you have received it in the email).
+Please, download the sample here: [**HISPlayer MetaXR Sample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_MetaXR_Sample_1.0.1.unitypackage) (no need to download it if you have received it in the email).
 
 This updated sample includes multiple scenes designed for different video types:
   - **360° Scene:** for immersive 360-degree video playback.
