@@ -102,19 +102,19 @@ The following public APIs are provided by **HISPlayerManager**:
    * **public string stringInfo**: Log information about the error.
 
 * **public struct HISPlayerTrack**:
-   * **public string id**: Id of the track
+   * **public string id**: Id of the track.
    * **public int bitrate**: Bitrate of the track in bits per second.
    * **public int width**: Width of the track.
    * **public int height**: Height of the track.
    * **public int framerate**: Framerate of the track in frames per second.
 
-* **public struct HISPlayerCaptionTrack**:
-   * **public string id**: ID of the caption
-   * **public string language**: Language of the caption
-
 * **public struct HisPlayerAudioTrack**:
-   * **public string id**: ID of the caption
-   * **public string language**: Language of the caption
+   * **public string id**: ID of the audio track.
+   * **public string language**: Language of the audio.
+
+* **public struct HISPlayerCaptionTrack**:
+   * **public string id**: ID of the caption.
+   * **public string language**: Language of the caption.
  
 * **public struct HISPlayerCaptionElement**: The information of the triggered event turns into caption’s format.
    * **public int playerIndex**: The index of the player where the event is triggered.
