@@ -13,7 +13,6 @@ The following public APIs are provided by **HISPlayerManager**:
     * **public Material material**: Reference to the Unity Material.
     * **public RawImage rawImage**: Reference to the Unity Raw Image.
     * **public RenderTexture renderTexture**: Reference to the Unity Render Texture.
-    * **public IntPtr externalSurface**: Reference to the external surface object. (Only SDK for Meta Quest)
     * **public List \<string\> url**: List of the URLs for the stream.
     * **public list \<string\> urlMimeTypes**: List of the HISPlayerMimeTypes attached to each URL from the url list.
     * **public bool autoPlay**: If true, the players will start playing automatically after set-up.
@@ -34,7 +33,6 @@ The following public APIs are provided by **HISPlayerManager**:
     * **Material**
     * **RawImage**
     * **NONE**
-    * **ExternalSurface**
  
 * **public enum HISPlayerMimeTypes**: The list of the supported MIME Types:
    * **URL_EXTENSION**: The MIME type will be extracted from the URL extension
