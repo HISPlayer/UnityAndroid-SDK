@@ -3,6 +3,7 @@
 - [HISPlayer API](/hisplayer-api.md)
 - [Custom Shaders for Linear Color Space](/shaders.md)
 - [DRM](/drm.md)
+- [Custom HTTP Headers](/custom-http-headers.md)
 - [Meta XR All-in-One SDK | Meta Quest Set Up Guide](/metaxr.md)
 - [Playing Local Files](/local-files.md)
 - [Audio Data Retrieval and Unity Audio Connection](/audio-retrieval.md)
