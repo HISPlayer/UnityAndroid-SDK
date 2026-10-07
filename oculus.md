@@ -2,7 +2,7 @@
 
 In this tutorial we will explain how to integrated HISPlayer SDK with the deprecated [OculusIntegration.unitypackage](https://developer.oculus.com/downloads/package/unity-integration/). 
 
-If you need the latest **Meta XR All-in-One SDK** integration (available since November 13th 2023), please refer to the following documentation:[HISPlayer MetaXR Integration](./metaxr.md)
+If you are developing for VR devices, please use the OpenXR setup instead. Refer to the following documentation: [OpenXR | VR Set Up Guide](./openxr.md)
 
 First, please configure the Unity project for Oculus by following this [Tutorial](https://developer.oculus.com/documentation/unity/unity-tutorial-hello-vr/). In the **Step 4. Import Meta XR All-in-One SDK from the Unity Asset Store**, instead of importing Meta XR All-in-One SDK, please import the Oculus Integration package instead and accept all the pop-ups in order to config properly the SDK.
 

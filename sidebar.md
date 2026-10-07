@@ -4,7 +4,7 @@
 - [Custom Shaders for Linear Color Space](/shaders.md)
 - [DRM](/drm.md)
 - [Custom HTTP Headers](/custom-http-headers.md)
-- [Meta XR All-in-One SDK | Meta Quest Set Up Guide](/metaxr.md)
+- [OpenXR | VR Set Up Guide](/openxr.md)
 - [Playing Local Files](/local-files.md)
 - [Audio Data Retrieval and Unity Audio Connection](/audio-retrieval.md)
 - [360 Video Playback](/android-360-video.md)
