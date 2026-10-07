@@ -85,6 +85,11 @@ Alternatively, you may set the Target API level to 34 or higher in the Unity pro
 #### Graphics API
 It is recommended to go to **Edit > Project Settings > Player > Android Tab > Other Settings**, disable **Auto Graphics API** and keep **OpenGLES3** only.
 
+
+<p align="center">
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/1e465770-688d-4b10-9ccc-b909ae8c71dc" />
+</p>
+
 For optimized Vulkan support, please check the [**HISPlayer Unity XR SDK**](https://hisplayer.github.io/UnityXR-SDK/#/).
 
 ## 1.4 Configure OpenXR
@@ -133,6 +138,10 @@ For optimized Vulkan support, please check the [**HISPlayer Unity XR SDK**](http
     - Scroll down to the bottom of the OpenXR settings panel.
     - Check the box for **Meta Quest Support** or other option depending on your VR headset (PICO, etc). 
     - Check the box for **Composition Layer Support**.
+  
+<p align="center">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/859cca71-9488-421c-bfb5-a2935fcd1614" />
+</p>
 
 ## 2.1 Import HISPlayer OpenXR Sample
 
