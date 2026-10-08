@@ -145,7 +145,7 @@ For optimized Vulkan support, please check the [**HISPlayer Unity XR SDK**](http
 
 ## 2.1 Import HISPlayer OpenXR Sample
 
-Please, download the sample here: [**OpenXRSample**](https://downloads.hisplayer.com/Unity/XR/HISPlayer_OpenXR_Sample_2.1.0_AllPlatforms.unitypackage) (no need to download it if you have received it in the email). 
+Please, download the sample here: [**OpenXRSample**](https://downloads.hisplayer.com/Unity/AllPlatforms/HISPlayer_OpenXR_Sample_2.1.0_AllPlatforms.unitypackage) (no need to download it if you have received it in the email). 
 
 Before using the sample, please make sure you have followed the above steps to set-up your Unity project for OpenXR and HISPlayer SDK. To use the sample, please follow these steps :
   - Configure OpenXR
